@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "@fontsource-variable/aleo";
+
+@theme {
+  --color-brand-blue: #005670;
+  --color-brand-beige-light: #e4d0c5;
+  --color-brand-beige-dark: #b09180;
+  --font-aleo: "Aleo Variable", serif;
+}
+CSS :root {
+  font-variant-numeric: tabular-nums;
+}
+@supports (font-variation-settings: normal) {
+  /* Use variable font if supported */
+  :root {
+    font-family: monospace;
+  }
+}

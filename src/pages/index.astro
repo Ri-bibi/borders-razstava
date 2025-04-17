@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { I18nProvider } from "../i18n/TransProvider";
+import { MyComponent } from "../components/Translated";
+import Container from "../layouts/Container.astro";
+import LeftText from "../components/TextIslands.tsx/LeftText.astro";
+import Image from "astro/components/Image.astro";
+import image from "./slika.png";
+import imagew from "./slika-w.png";
+import RightText from "../components/TextIslands.tsx/RightText.astro";
+import BlueBoxText from "../components/TextIslands.tsx/BlueBoxText.astro";
+import Sticky from "../components/UtilLayouts/Sticky.astro";
+import OverlayText from "../components/TextIslands.tsx/OverlayText.astro";
+import OverlayRightBox from "../components/TextIslands.tsx/OverlayRightBox.astro";
+import ImageTitleText from "../components/TextIslands.tsx/ImageTitleText.astro";
+import { MapComponent } from "../components/map/Map";
+import TitleCols from "../components/titleSection/TitleCols.astro";
+import ArrowNext from "../components/ArrowNext.astro";
+---
+
+<Layout>
+  <MapComponent client:load />
+  <Container>
+    <TitleCols
+      title1="Meja in"
+      title2="Most"
+      author="Nina Hofman"
+      body1="Nekdaj času Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. /Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most.  /Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most.   "
+      body2="Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most.  Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most. "
+    />
+  </Container>
+  <!-- <I18nProvider client:only>
+    <MyComponent client:only />
+  </I18nProvider> -->
+  <Container>
+    <RightText
+      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+      image={image}
+      title="People"
+      source="Source V.J."
+    />
+    <LeftText
+      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+      image={image}
+      title="People"
+      source="Source V.J."
+    />
+    <BlueBoxText
+      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+      image={imagew}
+      title="People"
+      source="Source V.J."
+    />
+    <ImageTitleText
+      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+      image={imagew}
+      title="People"
+      source="Source V.J."
+    />
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+
+  <OverlayText
+    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+    image={imagew}
+    title="People"
+    source="Source V.J."
+  />
+  <div class="py-64">.</div>
+
+  <LeftText
+    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+    image={image}
+    title="People"
+    source="Source V.J."
+  />
+  <OverlayRightBox
+    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+    image={imagew}
+    title="People"
+    source="Source V.J."
+  />
+  <div class="py-64">.</div>
+  <RightText
+    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+    image={image}
+    title="People"
+    source="Source V.J."
+  />
+  <BlueBoxText
+    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
+    image={imagew}
+    title="People"
+    source="Source V.J."
+  />
+</Layout>

@@ -1,0 +1,35 @@
+---
+import TextInitial from "../TextInitial.astro";
+
+interface Props {
+  title1: string;
+  title2: string;
+  body1: string;
+  body2: string;
+  author: string;
+}
+
+const { body1, body2, title1, title2, author } = Astro.props;
+---
+
+<div class="grid grid-cols-2 w-full pb-55">
+  <div class="w-full flex flex-col -mt-[30vh] z-30">
+    <h1 class="text-9xl font-black text-white font-aleo">{title1}</h1>
+    <div class="bg-white flex flex-col px-8 z-30 gap-8 py-8">
+      <div class="ml-auto">
+        <span class="text-brand-beige-dark text-2xl font-bold">{author}</span>
+      </div>
+      <span class="max-w-lg text-justify mx-auto text-lg">
+        <TextInitial text={body1} />
+      </span>
+    </div>
+  </div>
+  <div class="flex flex-col z-30 -mt-[20vh]">
+    <h1 class="text-9xl font-black text-white font-aleo px-8">{title2}</h1>
+    <div class="bg-white flex flex-col p-8 py-16">
+      <span class="max-w-lg text-justify mx-auto text-lg">
+        {body1}
+      </span>
+    </div>
+  </div>
+</div>

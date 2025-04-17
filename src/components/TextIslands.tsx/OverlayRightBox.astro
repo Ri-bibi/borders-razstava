@@ -1,0 +1,45 @@
+---
+import TitleBox from "../TitleBox.astro";
+import Image from "astro/components/Image.astro";
+import Sticky from "../UtilLayouts/Sticky.astro";
+import Container from "../../layouts/Container.astro";
+interface Props {
+  title: string;
+  body: string;
+  source: string;
+  image: ImageMetadata;
+}
+
+const { title, body, image, source } = Astro.props;
+---
+
+<Sticky>
+  <div slot="sticky" class="w-full h-full flex justify-center items-center">
+    <!-- <Container> -->
+    <div class="flex flex-col w-full h-screen">
+      <Image src={image} alt="ajow" class="w-full h-full object-cover" />
+    </div>
+    <!-- </Container> -->
+  </div>
+  <div slot="overlay">
+    <Container>
+      <div
+        class="flex flex-col gap-4 lg:items-end items:center min-h-screen p-12"
+      >
+        <h3
+          class="bg-white text-brand-blue px-16 py-4 w-fit text-5xl font-bold"
+        >
+          {title}
+        </h3>
+        <div
+          class="flex flex-col gap-8 text-white font-bold bg-brand-blue p-16"
+        >
+          <span class="text-justify max-w-prose">
+            {body}
+          </span>
+          <span class="font-light ml-auto">{source}</span>
+        </div>
+      </div>
+    </Container>
+  </div>
+</Sticky>

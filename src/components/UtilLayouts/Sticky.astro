@@ -1,0 +1,19 @@
+---
+
+---
+
+<div class="relative">
+  <!-- The actual sticky content -->
+  <div class="sticky top-0 z-10 h-screen">
+    <slot name="sticky" />
+  </div>
+
+  <!-- Overlay content -->
+  <div class="relative z-20 pt-64">
+    <div class="min-h-[150] pt-[50]">
+      <!-- Adjust height as needed -->
+      <slot name="overlay" />
+      <!-- Rest of your normal page content -->
+    </div>
+  </div>
+</div>

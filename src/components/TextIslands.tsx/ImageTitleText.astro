@@ -1,0 +1,32 @@
+---
+import Image from "astro/components/Image.astro";
+import TitleBox from "../TitleBox.astro";
+interface Props {
+  title: string;
+  body: string;
+  source: string;
+  image: ImageMetadata;
+}
+
+const { title, body, image, source } = Astro.props;
+---
+
+<div class="w-full grid md:grid-cols-4 grid-cols-1 py-8 px-4 gap-16">
+  <div
+    class="bg-gray-50 flex items-center justify-center col-span-3 border-4 border-white"
+  >
+    <Image src={image} alt="ajow" class="w-full h-full object-contain" />
+  </div>
+
+  <div class="flex flex-col gap-8">
+    <TitleBox title={title} class:list="-ml-8" />
+  </div>
+  <div class="col-span-full flex justify-center">
+    <div class="flex flex-col">
+      <span class="text-justify max-w-prose">
+        {body}
+      </span>
+      <span class="ml-auto font-light text-brand-beige-dark">{source}</span>
+    </div>
+  </div>
+</div>
