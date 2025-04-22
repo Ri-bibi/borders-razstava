@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { I18nProvider } from "../i18n/TransProvider";
+import { I18nProvider } from "../i18n/TransProvider.tsx.old";
 import { MyComponent } from "../components/Translated";
 import Container from "../layouts/Container.astro";
 import LeftText from "../components/TextIslands.tsx/LeftText.astro";
@@ -19,7 +19,9 @@ import ArrowNext from "../components/ArrowNext.astro";
 ---
 
 <Layout>
-  <MapComponent client:load />
+  <div class="">
+    <MapComponent client:load />
+  </div>
   <Container>
     <TitleCols
       title1="Meja in"

@@ -1,0 +1,26 @@
+{
+  "generic": {
+    "source": "Vir"
+  },
+  "bridge": {
+    "title1": "Meja in",
+    "title2": "Most",
+    "author": "Nina Hofman",
+    "intro": {
+      "first": "V času Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. Njihovi gospodarski, družbeni in osebni odnosi so se razvijali vse do leta 1991, ko je bilo prečkanje mostu z osamosvojitvijo obeh držav prepovedano.",
+      "second": "Od takrat je objekt služil le še kot izletniška točka. Slovenija se je pridružila EU leta 2004 in schengenskemu območju leta 2007. Na tok beguncev, ki so čez balkansko pot prišli dobro desetletje pozneje, se je odzvala z gradnjo žičnate ograje ob rečnem bregu. Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most."
+    },
+    "people": {
+      "source": "M. J.",
+      "text": "Po kočevskem časopisu Novice z dne 7. 12. 1957 so moški, ženske in otroci pri gradnji visečega mostu med Slavskim Lazom in Čedanjom delali 2500 ur. Med njimi je bil tudi takratni lokalni ribiški inšpektor, ki je tukaj poziral. "
+    },
+    "places": {
+      "source": "Nina Hofmann",
+      "text": "Ljudje so se poškodovali, ko so poskušali priti čez ograjo, nekateri so celo utonili. Migracija divjih živali je bila močno ovirana, za dostop do plaže pa je bilo treba poklicati policijo, da je nekdo odklenil vrata ograje."
+    },
+    "practices": {
+      "source": "B. K.",
+      "text": "Prebivalci z obeh strani reke so se srečevali pri nakupovanju, v službi in v prostem času, kot tukaj v hrvaški vasi Čedanj na turnirju v kegljanju. Po zaprtju mostu, ki je tukaj povezoval dolino, so čezmejni odnosi postopoma skoraj zastali."
+    }
+  }
+}

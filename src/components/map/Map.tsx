@@ -26,13 +26,13 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
 export const MapComponent = () => {
   return (
     <div className="w-full relative">
-      <div className="w-full h-full absolute bg-brand-blue/40 z-10" />
+      <div className="w-full h-full absolute bg-brand-blue/30 z-10" />
       <Map
         tileComponent={ImgTile}
         height={800}
         defaultCenter={[46.1797619, 13.7337097]}
         metaWheelZoom={false}
-        defaultZoom={11}
+        defaultZoom={12}
       >
         <Marker width={16} anchor={[46.1797619, 13.7337097]}>
           <div className="p-6 bg-brand-blue/40 rounded-full">

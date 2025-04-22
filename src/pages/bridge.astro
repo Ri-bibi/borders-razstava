@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../layouts/Container.astro";
+import { MapComponent } from "../components/map/Map";
+
+import { getLocale } from "astro-i18n-aut";
+import { initializei18n } from "../utils/i18n";
+import TitleCols from "../components/titleSection/TitleCols.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent client:load />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("bridge.title1")}
+      title2={t("bridge.title2")}
+      author={t("bridge.author")}
+      body1={t("bridge.intro.first")}
+      body2={t("bridge.intro.second")}
+    />
+  </Container>
+</Layout>

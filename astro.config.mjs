@@ -3,13 +3,36 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
-import react from '@astrojs/react';
+import { i18n, filterSitemapByDefaultLocale } from "astro-i18n-aut/integration";
+import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
+import react from "@astrojs/react";
+
+const defaultLocale = "sl";
+const locales = {
+  en: "en-US",
+  sl: "sl-SI",
+};
+
 export default defineConfig({
+  trailingSlash: "always",
+  build: {
+    format: "directory",
+  },
   vite: {
     plugins: [tailwindcss()]
   },
 
-  integrations: [react()]
+  integrations: [i18n({
+    locales,
+    defaultLocale,
+  }), sitemap({
+    i18n: {
+      locales,
+      defaultLocale,
+    },
+    filter: filterSitemapByDefaultLocale({ defaultLocale }),
+  }),
+  react(),
+  ],
 });
