@@ -1,0 +1,41 @@
+---
+import Image from "astro/components/Image.astro";
+import ERCImage from "./ERC.png";
+import OpenbordersLogo from "./openborders.png";
+import ZRSLogo from "./ZRS.png";
+import Container from "../../layouts/Container.astro";
+---
+
+<div class="w-full mt-[30vh] border-t border-brand-beige-light">
+  <div class="w-full bg-white flex justify-around flex-wrap">
+    <Image src={ERCImage} alt="ERC logo" />
+    <Image src={OpenbordersLogo} alt="Open borders logo" />
+    <Image src={ZRSLogo} alt="ZRS logo" />
+  </div>
+  <div class="w-full bg-brand-beige-light text-brand-blue p-8 text-lg">
+    <Container>
+      <span>
+        <b>OPEN BORDERS</b>: Cold War Europe Beyond Borders. A Transnational
+        History of Cross-Border Practices in the Alps-Adriatic area from World
+        War II to the present
+      </span>
+    </Container>
+  </div>
+  <div class="w-full bg-brand-blue text-white p-8">
+    <Container>
+      <div class="flex flex-col gap-4 w-full">
+        <span>
+          The OPEN BORDERS project is funded by the European Research Council
+          under ERC 2021 Advanced Grant funding scheme / ERC Grant Agreement n.
+          101054963; Copyright © {new Date().getFullYear()} Open borders
+        </span>
+        <span>
+          <a
+            href="https://erc-openborders.eu/privacy-cookies/"
+            class="underline">Privacy & Cookies</a
+          >
+        </span>
+      </div>
+    </Container>
+  </div>
+</div>
