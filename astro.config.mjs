@@ -17,22 +17,24 @@ const locales = {
 export default defineConfig({
   trailingSlash: "always",
   build: {
-    format: "directory",
+    format: "file",
   },
   vite: {
     plugins: [tailwindcss()]
   },
 
-  integrations: [i18n({
-    locales,
-    defaultLocale,
-  }), sitemap({
-    i18n: {
+  integrations: [
+    i18n({
       locales,
       defaultLocale,
-    },
-    filter: filterSitemapByDefaultLocale({ defaultLocale }),
-  }),
-  react(),
+    }),
+    sitemap({
+      i18n: {
+        locales,
+        defaultLocale,
+      },
+      filter: filterSitemapByDefaultLocale({ defaultLocale }),
+    }),
+    react(),
   ],
 });

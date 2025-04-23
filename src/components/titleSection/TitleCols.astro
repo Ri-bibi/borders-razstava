@@ -12,22 +12,27 @@ interface Props {
 const { body1, body2, title1, title2, author } = Astro.props;
 ---
 
-<div class="grid grid-cols-2 w-full pb-55">
-  <div class="w-full flex flex-col -mt-[30vh] z-30">
-    <h1 class="text-9xl font-black text-white font-aleo">{title1}</h1>
+<div class="grid lg:grid-cols-2 grid-cols-1 w-full lg:pb-55">
+  <div class="w-full flex flex-col lg:-mt-[30vh] z-30">
+    <h1 class="text-9xl font-black text-white font-aleo hidden lg:block">
+      {title1}
+    </h1>
+
     <div class="bg-white flex flex-col px-8 z-30 gap-8 py-8">
-      <div class="ml-auto">
-        <span class="text-brand-beige-dark text-2xl font-bold">{author}</span>
-      </div>
-      <span class="max-w-lg text-justify mx-auto text-lg">
+      <span class="lg:max-w-lg max-w-prose text-justify lg:mx-auto text-lg">
         <TextInitial text={body1} />
       </span>
     </div>
   </div>
-  <div class="flex flex-col z-30 -mt-[20vh]">
-    <h1 class="text-9xl font-black text-white font-aleo px-8">{title2}</h1>
-    <div class="bg-white flex flex-col p-8 py-16">
-      <span class="max-w-lg text-justify mx-auto text-lg">
+  <div class="flex flex-col z-30 lg:-mt-[20vh]">
+    <h1 class="text-9xl font-black text-white font-aleo px-8 hidden lg:block">
+      {title2}
+    </h1>
+    <div class="bg-white flex flex-col lg:py-8 gap-8">
+      <div class="ml-auto px-16">
+        <span class="text-brand-beige-dark text-2xl font-bold">{author}</span>
+      </div>
+      <span class="lg:max-w-lg max-w-prose text-justify lg:mx-auto text-lg">
         {body2}
       </span>
     </div>

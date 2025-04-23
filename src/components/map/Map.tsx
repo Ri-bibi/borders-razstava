@@ -23,13 +23,19 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   />
 );
 
-export const MapComponent = () => {
+export const MapComponent = ({ title }: { title: string }) => {
   return (
     <div className="w-full relative">
-      <div className="w-full h-full absolute bg-brand-blue/30 z-10" />
+      <div className="w-full h-full absolute bg-brand-blue/30 z-10 flex items-end justify-center ">
+        <div className="z-30 px-8 lg:hidden pb-16">
+          <h1 className="text-8xl font-black text-white font-aleo z-30 text-center">
+            {title}
+          </h1>
+        </div>
+      </div>
       <Map
         tileComponent={ImgTile}
-        height={800}
+        height="70vh"
         defaultCenter={[46.1797619, 13.7337097]}
         metaWheelZoom={false}
         defaultZoom={12}

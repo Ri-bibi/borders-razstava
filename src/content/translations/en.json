@@ -1,26 +1,29 @@
 {
   "generic": {
-    "source": "Source"
+    "source": "Source",
+    "people": "People",
+    "places": "Places",
+    "practices": "Practices"
   },
   "bridge": {
     "title1": "Barrier and",
-    "title2": "the brdige",
+    "title2": "the Bridge",
     "author": "Nina Hofman",
     "intro": {
-      "first": "V času Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. Njihovi gospodarski, družbeni in osebni odnosi so se razvijali vse do leta 1991, ko je bilo prečkanje mostu z osamosvojitvijo obeh držav prepovedano.",
-      "second": "Od takrat je objekt služil le še kot izletniška točka. Slovenija se je pridružila EU leta 2004 in schengenskemu območju leta 2007. Na tok beguncev, ki so čez balkansko pot prišli dobro desetletje pozneje, se je odzvala z gradnjo žičnate ograje ob rečnem bregu. Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most."
+      "first": "During the time of Yugoslavia, the Kolpa/Kupa River represented part of the border between the socialist republics of Slovenia and Croatia. In 1957, residents from both banks jointly financed and built a bridge. Their economic, social, and personal relationships developed until 1991, when the bridge crossing was prohibited following the independence of both countries.",
+      "second": "Since then, the structure served only as an excursion spot. Slovenia joined the EU in 2004 and the Schengen area in 2007. About a decade later, in response to the flow of refugees arriving via the Balkan route, Slovenia built a wire fence along the riverbank. The bridge subsequently deteriorated. In autumn 2023, access to the river was reopened, and with Croatia's EU accession, both countries became neighboring states within the same border-free agreement. Simultaneously, a civil initiative founded by residents from both banks began funding and renovating the bridge."
     },
     "people": {
       "source": "M. J.",
-      "text": "Po kočevskem časopisu Novice z dne 7. 12. 1957 so moški, ženske in otroci pri gradnji visečega mostu med Slavskim Lazom in Čedanjom delali 2500 ur. Med njimi je bil tudi takratni lokalni ribiški inšpektor, ki je tukaj poziral. "
+      "text": "According to the Kočevje newspaper Novice from December 7, 1957, men, women, and children worked 2,500 hours to build the suspension bridge between Slavski Laz and Čedanj. Among them was the local fishing inspector at the time, who fished here."
     },
     "places": {
       "source": "Nina Hofmann",
-      "text": "Ljudje so se poškodovali, ko so poskušali priti čez ograjo, nekateri so celo utonili. Migracija divjih živali je bila močno ovirana, za dostop do plaže pa je bilo treba poklicati policijo, da je nekdo odklenil vrata ograje."
+      "text": "People were injured trying to climb the fence, and some even drowned. Wildlife migration was severely hindered, and accessing the beach required calling the police to unlock the fence gate."
     },
     "practices": {
       "source": "B. K.",
-      "text": "Prebivalci z obeh strani reke so se srečevali pri nakupovanju, v službi in v prostem času, kot tukaj v hrvaški vasi Čedanj na turnirju v kegljanju. Po zaprtju mostu, ki je tukaj povezoval dolino, so čezmejni odnosi postopoma skoraj zastali."
+      "text": "Residents from both sides of the river would meet while shopping, at work, and during leisure time, like here in the Croatian village of Čedanj during a bowling tournament. After the bridge closure, which had connected the valley, cross-border relations gradually nearly ceased."
     }
   }
 }

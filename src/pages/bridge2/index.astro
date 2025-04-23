@@ -1,0 +1,63 @@
+---
+import placesImg from "./places.png";
+import practicesImg from "./practices.png";
+import OverlayText from "../../components/textIslands/OverlayText.astro";
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import Footer from "../../components/footer/Footer.astro";
+import { MapComponent } from "../../components/map/Map";
+import ImageTitleText from "../../components/TextIslands.tsx/ImageTitleText.astro";
+import OverlayRightBox from "../../components/TextIslands.tsx/OverlayRightBox.astro";
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("bridge.title1") + " " + t("bridge.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("bridge.title1")}
+      title2={t("bridge.title2")}
+      author={t("bridge.author")}
+      body1={t("bridge.intro.first")}
+      body2={t("bridge.intro.second")}
+    />
+
+    <OverlayText
+      body={t("bridge.places.text")}
+      image={placesImg}
+      source={t("bridge.places.source")}
+      title={t("generic.places")}
+    />
+
+    <ImageTitleText
+      body={t("bridge.people.text")}
+      image={practicesImg}
+      source={t("bridge.people.source")}
+      title={t("generic.people")}
+    />
+
+    <OverlayRightBox
+      body={t("bridge.practices.text")}
+      image={practicesImg}
+      source={t("bridge.practices.source")}
+      title={t("generic.practices")}
+    />
+
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+
+    <Footer />
+  </Container>
+</Layout>

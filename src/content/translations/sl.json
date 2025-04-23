@@ -1,13 +1,16 @@
 {
   "generic": {
-    "source": "Vir"
+    "source": "Vir",
+    "people": "People",
+    "places": "Places",
+    "practices": "Practices"
   },
   "bridge": {
     "title1": "Meja in",
     "title2": "Most",
-    "author": "Nina Hofman",
+    "author": "Nina Hofman 👍",
     "intro": {
-      "first": "V času Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. Njihovi gospodarski, družbeni in osebni odnosi so se razvijali vse do leta 1991, ko je bilo prečkanje mostu z osamosvojitvijo obeh držav prepovedano.",
+      "first": "Včasu Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. Njihovi gospodarski, družbeni in osebni odnosi so se razvijali vse do leta 1991, ko je bilo prečkanje mostu z osamosvojitvijo obeh držav prepovedano.",
       "second": "Od takrat je objekt služil le še kot izletniška točka. Slovenija se je pridružila EU leta 2004 in schengenskemu območju leta 2007. Na tok beguncev, ki so čez balkansko pot prišli dobro desetletje pozneje, se je odzvala z gradnjo žičnate ograje ob rečnem bregu. Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most."
     },
     "people": {

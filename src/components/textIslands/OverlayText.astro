@@ -17,7 +17,7 @@ const { title, body, image, source } = Astro.props;
   <div slot="sticky" class="w-full h-full flex justify-center items-center">
     <!-- <Container> -->
     <div class="flex flex-col w-full h-screen">
-      <Image src={image} alt="ajow" class="w-full h-full object-containt" />
+      <Image src={image} alt="ajow" class="w-full h-full object-cover" />
     </div>
     <!-- </Container> -->
   </div>
@@ -27,13 +27,15 @@ const { title, body, image, source } = Astro.props;
         {title}
       </h3>
       <div
-        class="w-wcreen bg-brand-blue/85 flex justify-center items-center min-h-screen"
+        class="w-wcreen bg-brand-blue/85 flex justify-center items-center min-h-[120vh]"
       >
         <div class="flex flex-col gap-8 text-white font-bold">
-          <span class="text-justify max-w-prose">
+          <span class="text-justify max-w-prose px-8">
             {body}
           </span>
-          <span class="font-light ml-auto">{source}</span>
+          <span class="font-light ml-auto px-8 py-2 bg-brand-beige-dark"
+            >{source}</span
+          >
         </div>
       </div>
     </Container>
