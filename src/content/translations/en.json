@@ -1,26 +1,50 @@
 {
-  "generic": {
-    "source": "Source"
-  },
-  "bridge": {
-    "title1": "Barrier and",
-    "title2": "the brdige",
-    "author": "Nina Hofman",
-    "intro": {
-      "first": "V času Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. Njihovi gospodarski, družbeni in osebni odnosi so se razvijali vse do leta 1991, ko je bilo prečkanje mostu z osamosvojitvijo obeh držav prepovedano.",
-      "second": "Od takrat je objekt služil le še kot izletniška točka. Slovenija se je pridružila EU leta 2004 in schengenskemu območju leta 2007. Na tok beguncev, ki so čez balkansko pot prišli dobro desetletje pozneje, se je odzvala z gradnjo žičnate ograje ob rečnem bregu. Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most."
+    "generic": {
+      "source": "Source",
+      "people": "People",
+      "places": "Places",
+      "practices": "Practices"
     },
-    "people": {
-      "source": "M. J.",
-      "text": "Po kočevskem časopisu Novice z dne 7. 12. 1957 so moški, ženske in otroci pri gradnji visečega mostu med Slavskim Lazom in Čedanjom delali 2500 ur. Med njimi je bil tudi takratni lokalni ribiški inšpektor, ki je tukaj poziral. "
+    "bridge": {
+      "title1": "Barrier and",
+      "title2": "the Bridge",
+      "author": "Nina Hofman",
+      "intro": {
+        "first": "During the time of Yugoslavia, the Kolpa/Kupa River represented part of the border between the socialist republics of Slovenia and Croatia. In 1957, residents from both banks jointly financed and built a bridge. Their economic, social, and personal relationships developed until 1991, when the bridge crossing was prohibited following the independence of both countries.",
+        "second": "Since then, the structure served only as an excursion spot. Slovenia joined the EU in 2004 and the Schengen area in 2007. About a decade later, in response to the flow of refugees arriving via the Balkan route, Slovenia built a wire fence along the riverbank. The bridge subsequently deteriorated. In autumn 2023, access to the river was reopened, and with Croatia's EU accession, both countries became neighboring states within the same border-free agreement. Simultaneously, a civil initiative founded by residents from both banks began funding and renovating the bridge."
+      },
+      "people": {
+        "source": "M. J.",
+        "text": "According to the Kočevje newspaper Novice from December 7, 1957, men, women, and children worked 2,500 hours to build the suspension bridge between Slavski Laz and Čedanj. Among them was the local fishing inspector at the time, who fished here."
+      },
+      "places": {
+        "source": "Nina Hofmann",
+        "text": "People were injured trying to climb the fence, and some even drowned. Wildlife migration was severely hindered, and accessing the beach required calling the police to unlock the fence gate."
+      },
+      "practices": {
+        "source": "B. K.",
+        "text": "Residents from both sides of the river would meet while shopping, at work, and during leisure time, like here in the Croatian village of Čedanj during a bowling tournament. After the bridge closure, which had connected the valley, cross-border relations gradually nearly ceased."
+      }
     },
-    "places": {
-      "source": "Nina Hofmann",
-      "text": "Ljudje so se poškodovali, ko so poskušali priti čez ograjo, nekateri so celo utonili. Migracija divjih živali je bila močno ovirana, za dostop do plaže pa je bilo treba poklicati policijo, da je nekdo odklenil vrata ograje."
-    },
-    "practices": {
-      "source": "B. K.",
-      "text": "Prebivalci z obeh strani reke so se srečevali pri nakupovanju, v službi in v prostem času, kot tukaj v hrvaški vasi Čedanj na turnirju v kegljanju. Po zaprtju mostu, ki je tukaj povezoval dolino, so čezmejni odnosi postopoma skoraj zastali."
-    }
+    "alpeadria":{
+        "author": "Benedetto Zaccaria",
+        "intro": {
+         "first": "The “Working Community of the Länder Regions and Republics of the Eastern Alps” – commonly known as “Alpe Adria” – was established in Venice in 1978.  It included Veneto and Friuli-Venezia Giulia (Italy), Carinthia, Upper Austria,",
+         "second": "Styria, and Salzburg (Austria), Croatia and Slovenia (Yugoslavia). The West German state of Bavaria participated as an observer. The development of Alpe Adria had a unique path. Regional and republican governments collected demands for trans-border cooperation, suggested by local businessmen, chambers of commerce and intellectuals, and transformed them into political initiatives."
+        },
+        "people": {
+         "source": "RegioneVento Bulletin.",
+         "text": "The political drivers of inter-regional cooperation in Alpe Adria were the presidents of regional, federal and republican governments. In this picture, taken at the 10th anniversary of Alpe Adria celebrated in Venice in 1988, Peter Ambrozy (Governor of Carinthia) and Carlo Bernini (Governor of Veneto Region) are sitting side-by-side."
+        },
+        "places": {
+         "source": "Istituto per gli Studi di Politica Internazionale.",
+         "text": "Between 1978 and 1988, Alpe-Adria expanded to the Austrian Burgenland (1987), the Hungarian Györ-Sopron and Vas (1988), the Italian Trentino-Alto Adige (1981) and Lombardy (1988). Interregional integration involving Italian, Austrian, Yugoslav and Hungarians regions, overcame the barriers of the Cold War."
+        },
+        "practices": {
+         "source": "Archivio Generale, Regione Veneto.",
+         "text": "The idea for inter-regional cooperation in the Alpes-Adriatic region initiated in the local fairs involving businessmen from Italy, Austria, Slovenia and Croatia from the early 1960s on. The cover of the pamphlet for the 1981 Ljubljana Fair was prepared by the Regional Federation of Veneto Industrialist"
+        },
+        "title1": "Regional diplomacy",
+        "title2": "in Alpe Adria"
+       }
   }
-}
