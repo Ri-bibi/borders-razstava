@@ -5,25 +5,277 @@
     "places": "Places",
     "practices": "Practices"
   },
-  "bridge": {
-    "title1": "Meja in",
-    "title2": "Most",
-    "author": "Nina Hofman 👍",
+  "alpeadria": {
+    "author": "Benedetto Zaccaria",
     "intro": {
-      "first": "Včasu Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. Njihovi gospodarski, družbeni in osebni odnosi so se razvijali vse do leta 1991, ko je bilo prečkanje mostu z osamosvojitvijo obeh držav prepovedano.",
-      "second": "Od takrat je objekt služil le še kot izletniška točka. Slovenija se je pridružila EU leta 2004 in schengenskemu območju leta 2007. Na tok beguncev, ki so čez balkansko pot prišli dobro desetletje pozneje, se je odzvala z gradnjo žičnate ograje ob rečnem bregu. Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most."
+      "first": "»Delovna skupnost dez el in regij vzhodnoalpskega obmoc ja«, znana kot Delovna skupnost Alpe– Jadran, je bila ustanovljena v Benetkah leta 1978. Vkljuc evala je italijanski dez eli Veneto in Furlanijo - Julijsko krajino, avstrijske dez ele Koros ko, S tajersko, Zgornjo Avstrijo in Salzburs ko ter jugoslovanski republiki Hrvas ko in Slovenijo. Bavarska (Zahodna Nemc ija) in Salzburg (Avstrija) sta sodelovala kot aktivna opazovalca.",
+      "second": "Razvoj delovne skupnosti Alpe–Jadran je potekal po nac elu od spodaj navzgor: regionalne vlade so zbirale predloge lokalnih podjetnikov, gospodarskih zbornic in intelektualcev za c ezmejno sodelovanje ter jih preoblikovale v politic ne pobude."
+    },
+    "people": {
+      "source": "Neznani avtor",
+      "text": "Glavni nosilci medregionalnega sodelovanja v prostoru Alpe–Jadran so bili politic ni predstavniki regionalnih oblasti. Na fotografiji, posneti ob deseti obletnici ustanovitve Delovne skupnosti Alpe–Jadran, ki so jo praznovali v Benetkah leta 1988, sedita drug ob drugem koros ki dez elni glavar Peter Ambrozy in predsednik dez ele Veneto Carlo Bernini."
+    },
+    "places": {
+      "source": "© Historical Archives of the European Union",
+      "text": "Med letoma 1978 in 1988 se je Delovna skupnost Alpe–Jadran razs irila na italijanski dez eli Trentinsko-Zgornje Poadiz je (1981) in Lombardijo (1988), avstrijsko Gradis c ansko (1987) ter madz arski Gyo r-Moson-Sopron in Vas (1988) (1988), in Bavarska (1988). Od leta 1989 je vkljuc ila s e madz arska okroz ja Zala, Baranya in Somogy, kanton Ticino in italijansko regijo Emilija Romanja."
+    },
+    "practices": {
+      "source": "© General Archives, Regione Veneto",
+      "text": "Zamisel o medregionalnem sodelovanju v regiji Alpe–Jadran se je porodila na lokalnih sejmih, na katerih so od zac etka s estdesetih let sodelovali poslovnez i iz Italije, Avstrije, Slovenije in Hrvas ke. Naslovnico zloz enke za sejem v Ljubljani leta 1981 je pripravila Dez elna zveza industrialcev Veneta."
+    },
+    "title1": "ALPE-ADRIA",
+    "title2": "Delovna skupnost Alpe–Jadran"
+  },
+  "bridge": {
+    "author": "Nina Hofmann",
+    "intro": {
+      "first": "V času Jugoslavije je reka Kolpa predstavljala del upravne meje med republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci z obeh bregov skupaj financirali in zgradili most pri Slavskem Lazu (SI) in Čedanju (HR).",
+      "second": "Njihovi gospodarski, družbeni in osebni stiki so se nemoteno razvijali do leta 1991, ko je bilo ob osamosvojitvi obeh držav prečkanje mostu prepovedano. Odtlej je objekt služil le še kot izletniška točka. Slovenija se je pridružila EU leta 2004 in schengenskemu območju leta 2007. Odziv na tok beguncev, ki so začeli prihajati po balkanski poti slabo desetletje pozneje, je bil postavitev ograje ob rečnem bregu, most pa je začel propadati. Leta 2023 je tudi Hrvaška vstopila v schengensko območje. Vrata ograje so se odprla in posamezniki so začeli čistiti zaraščen dostop do mostu. Istega leta je bila ograja odstranjena, prebivalci z obeh bregov pa so sprožili civilno iniciativo za obnovo mostu."
     },
     "people": {
       "source": "M. J.",
-      "text": "Po kočevskem časopisu Novice z dne 7. 12. 1957 so moški, ženske in otroci pri gradnji visečega mostu med Slavskim Lazom in Čedanjom delali 2500 ur. Med njimi je bil tudi takratni lokalni ribiški inšpektor, ki je tukaj poziral. "
+      "text": "Kot je 7. decembra 1957 pisal kočevski časopis Novice, so moški, ženske in otroci pri gradnji visečega mostu med Slavskim Lazom in Čedanjom opravili 2500 delovnih ur. Med njimi je bil tudi takratni lokalni ribiški inšpektor na fotografiji. "
     },
     "places": {
       "source": "Nina Hofmann",
-      "text": "Ljudje so se poškodovali, ko so poskušali priti čez ograjo, nekateri so celo utonili. Migracija divjih živali je bila močno ovirana, za dostop do plaže pa je bilo treba poklicati policijo, da je nekdo odklenil vrata ograje."
+      "text": "Ob poskusih prehoda skozi žičnato ograjo so se ljudje poškodovali, nekateri pa so celo utonili. Migracija divjih živali je bila močno ovirana, za dostop do plaže pa je bilo treba poklicati policiste, da so odklenili vrata ograje. "
     },
     "practices": {
       "source": "B. K.",
-      "text": "Prebivalci z obeh strani reke so se srečevali pri nakupovanju, v službi in v prostem času, kot tukaj v hrvaški vasi Čedanj na turnirju v kegljanju. Po zaprtju mostu, ki je tukaj povezoval dolino, so čezmejni odnosi postopoma skoraj zastali."
-    }
+      "text": "Prebivalci z obeh strani reke so se srečevali ob nakupovanju, v službi in v prostem času, kot denimo na turnirju v kegljanju v hrvaški vasi Čedanj na fotografiji. Po zaprtju mostu, ki je na tem mestu povezoval dolino, so čezmejni stiki sčasoma skoraj povsem zamrli. "
+    },
+    "title1": "Ovira in",
+    "title2": "most"
+  },
+  "business": {
+    "author": "Jure Ramšak",
+    "intro": {
+      "first": "Pretok kapitala prek ideoloških ločnic v času hladne vojne ni bil povsem nepoznan pojav. Njegova pot je običajno vodila od kapitalističnih držav k podjetjem v mešani lasti v socialističnih državah.",
+      "second": "Toda v sedemdesetih in osemdesetih letih se je zgodil obraten primer: socialistična Jugoslavija se je odločila investirati v kapitalistično Avstrijo. Namen te odločitve je bil ustvariti delovna mesta na območju Koroške, poseljenem s slovensko manjšino. Hkrati je bil ta program zamišljen kot nov kanal za poglobitev čezmejnega ekonomskega sodelovanja. Ambiciozen načrt investicij v moderne industrijske in storitvene obrate po vsej etnično mešani južni Koroški je naletel na različne odzive tako v Celovcu kot na Dunaju. Kljub preprekam je bilo do konca osemdesetih let vzpostavljenih več kot 20 podjetij z 800 zaposlenimi, predvsem iz vrst lokalnega prebivalstva. Za tiste redke menedžerje, ki so prihajali iz Jugoslavije, je delovanje na presečišču dveh političnih in pravnih sistemov prineslo dragocene mednarodne ekonomske izkušnje. Tako kot številna podjetja v Sloveniji pa se tudi ta niso izognila tranziciji in stagnaciji v devetdesetih letih."
+    },
+    "people": {
+      "source": "Arhiv Republike Slovenije",
+      "text": "Izjava za medije deželnega nacionalističnega združenja Koroška domovinska služba (Kärntner Heimatdienst) iz leta 1978. Z njim je združenje nasprotovalo jugoslovanskim investicijam iz političnih razlogov.\n© Arhiv Republike Slovenije"
+    },
+    "places": {
+      "source": "Alpski smučarski Muzej Elan",
+      "text": "Arhitekturno dovršena stavba tovarne smuči in industrijske prodajalne Elan v Brnci blizu Beljaka, konec sedemdesetih let.\n© Alpski smučarski Muzej Elan"
+    },
+    "practices": {
+      "source": "Arhiv Republike Slovenije",
+      "text": "Reklamni letak iz leta 1977, na katerem je hotel Obir iz Železne Kaple označen kot »hiša prijateljstva«, v kateri bodo gostje iz Slovenije postreženi v njihovem maternem jeziku.\n© Arhiv Republike Slovenije"
+    },
+    "title1": "BUSINESS",
+    "title2": "Jugoslovanske investicije na avstrijskem Koroškem"
+  },
+  "health": {
+    "author": "Marta Verginella",
+    "intro": {
+      "first": "Primer zdravstvene oskrbe jasno izkazuje poroznost povojne italijansko-jugoslovanske meje. Mobilnost je potekala v obeh smereh in je zadovoljevala potrebe tako italijanskih in jugoslovanskih posameznikov kot tudi institucij. Iskanje zdravniške pomoči v Jugoslaviji je bilo pogosto zlasti med projugoslovansko usmerjenimi Slovenci in Slovenkami z območja, ki je bilo leta 1947 dodeljeno Italiji.",
+      "second": "To je bila dragocena priložnost, da so bili deležni zdravstvene oskrbe v svojem jeziku in da so imeli dostop do zdravstvenih uslug, ki so bile v Italiji zanje nedosegljive. Takšno prakso so spodbujali zdravniki iz Italije, ki so delali v slovenskem zdravstvenem sistemu in so postali referenčni za številne italijanske bolnike. Podobno so si prizadevali tudi zdravniki v Trstu in Gorici, ki so ohranjali tesne prijateljske in poklicne stike s kolegi v Jugoslaviji."
+    },
+    "people": {
+      "source": "© Društvo za zdravje srca in ožilja Slovenije",
+      "text": "Boris Cibic (1921–2024), slovenski kardiolog iz Proseka pri Trstu, po drugi svetovni vojni zaposlen v Bolnišnici dr. Petra Držaja v Ljubljani. Strokovno se je izpopolnjeval v Hamburgu in Londonu ter se udeleževal strokovnih srečanj doma in na tujem. Intenzivne stike je vzpostavil tudi s tržaškimi kardiologi."
+    },
+    "places": {
+      "source": "© Arhiv Republike Slovenije, avtor: Igor Bervar",
+      "text": "Bolnišnica Valdoltra v Ankaranu je bila sprva specializirana zdravstvena ustanova za kostno tuberkulozo, nato pa za ortopedijo. Pomembna je bila\ntudi za številne paciente iz tržaške regije."
+    },
+    "practices": {
+      "source": "© Narodna in študijska knjižnica Trst",
+      "text": "Številni člani protifašističnega odporništva, ki so zboleli za različnimi boleznimi, so imeli po letu 1945 zdravstveno oskrbo v Jugoslaviji. Mara Samsa, učiteljica, pisateljica in publicistka iz Trsta, se je v Sežani in na Golniku zdravila za tuberkulozo."
+    },
+    "title1": "HEALTH",
+    "title2": "Zdravstvene storitve"
+  },
+  "hunt": {
+    "author": "Urška Strle",
+    "intro": {
+      "first": "Z lovom in ribolovom so bile razmeroma zgodaj vzpostavljene mednarodne povezave, ki so pronicale skozi togo povojno politično delitev. Že leta 1948 so na Bledu gostili generalno skupščino Mednarodne kinološke zveze s sedežem v Bruslju, na kateri so lovci s svojimi lovskimi psi igrali ključno vlogo. Lovni in ribiški turizem za tuje državljane je bil uzakonjen leta 1955.",
+      "second": "Ker so bili številni pripadniki jugoslovanske elite tudi sami lovci in ribiči, je državni protokol za pomembne tuje goste pogosto organiziral lov in ribolov. Oba sta bila razumljena kot posebna oblika razvedrila in druženja, pa tudi kot priložnost za neuradne politične razgovore s tujimi predstavniki. Lovski in ribiški turizem so jugoslovanske oblasti spodbujale zlasti kot sredstvo za pridobivanje trdnih tujih valut. Jugoslovanski bilateralni obmejni sporazumi z Avstrijo in Italijo so od sredine petdesetih let lajšali čezmejno kulturno in gospodarsko sodelovanje, ki je vključevalo tudi možnost ribolova in lova. Obe aktivnosti sta se na lokalni ravni, od leta 1947 ločeni z državno mejo, promovirali tudi preko sorodstva, manjšinskih skupnosti in prijateljstev."
+    },
+    "people": {
+      "source": "© Zasebni arhiv Silvane Orel Kos, http://stareslike.cerknica.org/",
+      "text": "Lov z italijanskimi gosti v okolici Cerknice leta 1959. V bližini se je nahajalo Lovišče s posebnim namenom Snežnik (danes LPN Jelen), ki je trajnostno upravljal lovne živali kot so jelenjad, srnjad, divji prašič, medved, volk in ris."
+    },
+    "places": {
+      "source": "© Pokrajinski muzej Murska Sobota, avtor: Jože Kološa",
+      "text": "Hotel Diana, otvorjen leta 1967 v Murski Soboti, je poimenovan po rimski boginji lova. V njem so pogosto nočili tuji gostje, sprva zlasti Italijani, ki so lovili in ribarili v Prekmurju. Hotel je razpolagal tudi s pasjimi utami. Pročelje hotela krasi likovna upodobitev srnjaka Jožeta Horvata-Jakija."
+    },
+    "practices": {
+      "source": "© Pokrajinski arhiv Nova Gorica",
+      "text": "Izpolnjeno poročilo o lovskem prihodku 1969/70 v Občini Tolmin, ki je naveden v ameriških dolarjih. Dokument prikazuje tudi, katere so bile glavne lovne živali na območju (srnjad, gamsi, muflon, zajec, ruševec, gozdni jereb, kotorna, divja raca, kozica, kljunač) in državljani katere države so bili lovni gostje (Italijani, Francozi, Avstrijci)."
+    },
+    "title1": "Na lov in",
+    "title2": "ribolov preko meje"
+  },
+  "mount": {
+    "author": "Marco Abram",
+    "intro": {
+      "first": "Gore so bile pogosto predstavljene kot naravnogeografske ločnice in prizorišča planinskega rivalstva, kdo bo na vrhu prvi zasadil svojo nacionalno zastavo. Toda planinstvo je ljudi iz sosednjih držav tudi povezovalo – v obdobju med obema vojnama so nastale mednarodne planinske organizacije –, čeprav je bilo to v času spopadov močno oteženo.",
+      "second": "V šestdesetih letih so, tudi zaradi zanimanja za razvoj turizma, predstavniki nekaterih pomembnih planinskih društev iz Furlanije - Julijske krajine, Slovenije in Koroške začeli obujati izročilo »planinskega prijateljstva« prek državnih meja ter od leta 1965 organizirali vsakoletna Srečanja treh dežel. Kljub številnim težavam in nesoglasjem se je razvilo sodelovanje pri doseganju sporazumov o planinskih kočah, ki so članom planinskih društev omogočali prednostno obravnavo tudi v kočah drugih držav, poleg tega pa so si prizadevali za večjo prepustnost gorskih meja in zaščito skupnega okolja. Tako so nastale številne iniciative, ki so spodbujale planince in pohodnike k čezmejnemu raziskovanju gora. Postopoma se je spremenilo dojemanje gorskih vrhov, ki so namesto obrambnih ovir postajali kraji srečevanja in izmenjave."
+    },
+    "people": {
+      "source": "Arhiv Republike Slovenije",
+      "text": "Osebni stiki med planinci so bili ključnega pomena za spodbujanje sodelovanja. To pismo je vodja italijanskega Alpskega kluba Gorica poslal načelniku Planinske zveze Slovenije leta 1967. V njem so bile poudarjene vrednote nadnacionalnega in čezmejnega prijateljstva med planinci."
+    },
+    "places": {
+      "source": "Planinski vestnik, Il Piccolo",
+      "text": "Od leta 1980 je bilo na Peči (Monte Forno/Dreiländereck) vsako leto organizirano Srečanje treh dežel, ki je na stičišče italijanske, jugoslovanske (danes slovenske) in avstrijske meje privabljajo na tisoče udeležencev. Tradicija se nadaljuje še danes."
+    },
+    "practices": {
+      "source": "CAI - Sezione di Gorizia; Planinska Zveza Slovenije; ÖAV - Sektionenverband Kärnten; preserved by the Museo Storico Italiano della Guerra",
+      "text": "Leta 1972 je bila sprožena iniciativa Pot prijateljstva, ki je spodbujala vzpone na 30 najpomembnejših vrhov med Furlanijo - Julijsko krajino, Slovenijo in Koroško. Pobuda je doživela izjemen uspeh, saj je bilo do leta 1990 prodanih več kot 10.000 trijezičnih knjižic z opisom poti."
+    },
+    "title1": "MOUNT",
+    "title2": "Alpinizem in planinstvo"
+  },
+  "pass": {
+    "author": "Borut Klabjan",
+    "intro": {
+      "first": "Prepustnica je bil dvostranski večjezični potni list, ki so ga uvedli, da bi imetnikom olajšali omejitve življenja ob meji in jim omogočili čezmejno mobilnost. Po vojni so bile državne meje skoraj hermetično zaprte. Prečkali so jih lahko le prebivalci, ki so imeli na drugi strani nepremičnine, ali tisti, ki so živeli v »100-metrskem pasu«.",
+      "second": "Vendar je bila že sredi petdesetih let pravica do te prepustnice na avstrijsko-italijansko-jugoslovanskih obmejnih območjih razširjena na prebivalce desetkilometrskega pasu, kasneje pa se je območje še razširilo. Mejni prehodi »druge kategorije« so bili vzpostavljeni samo za imetnike prepustnice. Jugoslovanski vizumi so bili postopoma ukinjeni in tako je čezmejna mobilnost za številne prebivalce obmejnih območij postala del njihovega vsakdana, za mnoge druge pa redna praksa. Ta povečana mobilnost je spodbudila povezovanje večjih območij, kar je daleč presegalo ozek obmejni pas. Z uvedbo schengenskega prostora brez meja je prepustnica izgubila svoj namen. Ali bo ponovno uvedena?\n"
+    },
+    "people": {
+      "source": "© Borut Klabjan, Ana Hawlina",
+      "text": "Prebivalci v obmejnem pasu so bili upravičeni do prepustnice. Za razliko od osebnih izkaznic in potnih listov je prepustnica ljudi povezovala z obmejnim prostorom in ne zgolj z eno državo. Posledično so »mejaši« razvili posebno občutljivost do redne in manj restriktivne čezmejne mobilnosti.\n"
+    },
+    "places": {
+      "source": "© Narodna in študijska knjižnica, avtor: Mario Magajna",
+      "text": "Izmenjava novoletnih voščil na italijansko-jugoslovanskem mejnem prehodu na Fernetičih leta 1956. Z vrsto povojnih mednarodnih in bilateralnih sporazumov so mejni prehodi postali vozlišča in mikrokozmosi čezmejnih praks.\n"
+    },
+    "practices": {
+      "source": "© Narodna in študijska knjižnica, avtor: Fotokroma",
+      "text": "Ljudje iz Jugoslavije so radi hodili v Italijo po kavo, oblačila, gospodinjske aparate ali igrače. Poceni alkohol, tobak, mesni in mlečni izdelki, restavracije, bari, počitniška naselja in bencin pa so privlačili italijanske potrošnike. Slika prikazuje prizor na bencinski črpalki v Krvavem potoku pri Kozini med vojno za slovensko neodvisnost leta 1991.\n"
+    },
+    "title1": "Prepustnica",
+    "title2": ""
+  },
+  "politics": {
+    "author": "Mateja Režek in Karlo Ruzicic-Kessler",
+    "intro": {
+      "first": "V šestdesetih letih, sredi hladne vojne, se je med takratno jugoslovansko republiko Slovenijo ter avstrijskima deželama Koroško in Štajersko razvilo edinstveno medregionalno sodelovanje. Njegov razvoj so omogočila prizadevanja regionalnih politikov in drugih akterjev, ki so spoznali, da je ideološke in politične delitve mogoče učinkoviteje preseči na regionalni kot na državni ravni.",
+      "second": "Tovrstno sodelovanje je bilo izjemen dosežek za regije, ki so delovale v različnih političnih in gospodarskih sistemih ter si delile zapleteno in konfliktno preteklost. Ključno vlogo pri vzpostavljanju medregionalnega sodelovanja so odigrali osebni stiki in medsebojno zaupanje. Predsednik slovenske vlade Stane Kavčič in koroški deželni glavar Hans Sima sta konec šestdesetih in v začetku sedemdesetih let razvila plodne dvostranske odnose. Naslavljala sta tudi občutljive teme, vključno z vprašanjem slovenske manjšine na Koroškem. S krepitvijo regionalnega sodelovanja nista prispevala le k gospodarskemu razvoju obmejnih regij, temveč tudi k preseganju težavne preteklosti in pomiritvi na mednacionalni ravni."
+    },
+    "people": {
+      "source": "© Koroški pokrajinski arhiv",
+      "text": "Predsednik slovenske vlade Stane Kavčič in koroški deželni glavar Hans Sima (v sredini) pod Ankoglom na avstrijskem Koroškem leta 1969. "
+    },
+    "places": {
+      "source": "© Muzej novejše in sodobne zgodovine Slovenije, avtor: Edi Šelhaus",
+      "text": "Dobrososedski odnosi med Avstrijo in Jugoslavijo so se najočitneje pokazali ob odprtju Mostu prijateljstva čez reko Muro med Gornjo Radgono in avstrijsko Radgono (Bad Radkersburg) 12. oktobra 1969. Slovesnosti sta se poleg predsednikov obeh držav, Josipa Broza Tita in Franza Jonasa, udeležila tudi predsednik slovenske vlade Stane Kavčič in štajerski deželni glavar Josef Krainer."
+    },
+    "practices": {
+      "source": "© Muzej novejše in sodobne zgodovine Slovenije, avtor: Nace Bizilj",
+      "text": "Plod stabilnih dvostranskih odnosov je bila tudi skupna izgradnja osemkilometrskega cestnega predora skozi Karavanke, ključne prometne povezave med Slovenijo in Avstrijo. Predor je bil slovesno odprt za promet 1. junija 1991, le nekaj tednov pred osamosvojitvijo Slovenije."
+    },
+    "title1": "POLITICS Mostovi",
+    "title2": "sodelovanja med regijami"
+  },
+  "punk": {
+    "author": "Federico Tenca Montini",
+    "intro": {
+      "first": "Osemdeseta leta so bila čas, ko je bila alternativna glasbena scena ob Jadranu na vrhuncu svoje popularnosti. Jugoslovanske skupine, kot so Laibach, Borghesia in Kud Idijoti, so postale prepoznavne tudi onkraj lokalne scene.",
+      "second": "V zahodnih obmejnih krajih je vzniknilo več avantgardah glasbenih klubov, med njimi CRMK v Šempetru pri Gorici in Strelišče v Dobrovem. Ta prizorišča so redno privabljala mlado italijansko publiko, ki se je podala čez mejo, čim je pridobila vozniško dovoljenje in potni list. S podobnim namenom obiskovanja klubov in koncertov so v Italijo potovali mladi Slovenci, ki so, kjer je bilo to mogoče, poslušali tudi videmski radio Onde Furlane, znan po svojem avantgardnem glasbenem programu. Ta čezmejna interakcija je ostala v spominu po številnih odmevnih koncertih, med katerimi sta izstopala nastop Borghesije v mladinskem centru v Buji 21. maja 1988 in koncert Laibacha v videmskem avditoriju Zanon 28. marca 1991."
+    },
+    "people": {
+      "source": "© Federico Tenca Montini",
+      "text": "Čezmejni vplivi so se v največji meri odrazili pri elektro-punk skupini Borghesia, ki sta jo v Ljubljani ustanovila Aldo Ivančić in Dario Seraval, oba po poreklu iz Pulja. Njihov prvi album (na fotografiji) je so-ustvarila legendarna založba Attack Punk Records iz Bologne, pri kateri je svojo pot začela tudi skupina CCCP."
+    },
+    "places": {
+      "source": "© Zasebna zbirka Francesca Tamija",
+      "text": "Letak za glasbeni dogodek v Strelišču leta 1992 s poenostavljenim zemljevidom z navodili, kako priti iz Gorice do prizorišča. Skupaj z novogoriškim CRMK je bilo Strelišče glavno prizorišče za pankovske koncerte, ki se jih je udeleževala mešana slovensko-italijanska publika."
+    },
+    "practices": {
+      "source": "© Andrea Batigello",
+      "text": "V poznih osemdesetih letih se je CSS Stalno eksperimentalno gledališče Furlanije - Julijske krajine v Vidmu podalo tudi v svet mladinske glasbe in umetnosti. To se je odražalo v vrsti dogodkov, ki še danes veljajo za legendarne: leta 1990 so se tam odvili koncerti Demolition Group iz Slovenije in Disciplina kičme iz Srbije, to prizorišče pa se pojavlja tudi v dokumentarnem filmu o skupini Laibach »Victory under the Sun«."
+    },
+    "title1": "Alternativna",
+    "title2": "glasba"
+  },
+  "sport": {
+    "author": "Urban Orel in Urška Strle",
+    "intro": {
+      "first": "Šport je predstavljal eno prvih in najbolj živahnih oblik čezmejnega sodelovanja med Italijo in Jugoslavijo po razmejitvi leta 1947. Prva športna srečanja, ki jih je omogočil Videmski sporazum (1955), so potekala med ekipami iz Slovenije in slovenskimi zamejci v Italiji.",
+      "second": "Čezmejne športne dejavnosti so se razvijale vzdolž celotne obmejne črte, na tem mestu pa je predstavljen primer mest Gorice in Nove Gorice.\nOd sredine petdesetih let dalje so tako potekale klubske nogometne tekme in hitrostne avtomoto dirke v Novi Gorici. V naslednjem desetletju se je čezmejno športno udejstvovanje okrepilo, odvijala so se tudi tekmovanja v atletiki."
+    },
+    "people": {
+      "source": "© Športna zveza Nova Gorica",
+      "text": "Udeleženci kolesarske tekme pred štartom leta 1986. Organizatorji so kolesarjem omogočili prost prehod meje na mejnih prehodih Rožna Dolina, Solkan, Šempeter pri Gorici in Miren. Na Erjavčevi /Via S. Gabriele so v ta namen odstranili mejno ograjo."
+    },
+    "places": {
+      "source": "© Arhiv AK Bor, Trst",
+      "text": "V Novi Gorici je leta 1965 potekala tekma med tremi slovenskimi atletskimi klubi: AK Gorica, AK Torriana (Gradišče ob Soči) in AK Bor (Trst). Tovrstni dogodki so zaradi možnosti čezmejnega druženja presegali okvire običajnega športnega tekmovanja."
+    },
+    "practices": {
+      "source": "© Pokrajinski arhiv Nova Gorica",
+      "text": "Dvojezični letak za Pohod prijateljstva v sodelovanju italijanskega društva Italijanski mladinski socialni turizem iz Gorice in slovenske Športne zveze Nova Gorica. Pohod je v vseh letih privabil več kot 55.000 udeležencev, največ leta 1985, ko se ga je udeležilo kar 5500 pohodnikov."
+    },
+    "title1": "Šport: primer",
+    "title2": "obmejnih mest"
+  },
+  "turism": {
+    "author": "Urška Strle",
+    "intro": {
+      "first": "Po drugi svetovni vojni je turizem po vsem svetu dobil nesluten zagon. Tuji gostje so se v Jugoslaviji beležili že v prvih povojnih letih, čeprav je bila turistična infrastruktura tedaj še zelo pomanjkljiva. Od konca petdesetih let dalje so v zdraviliščih, obmorskih letoviščih in planinskih kočah v vedno večjem številu nočili tuji državljani. V Jugoslavijo so z vizo vstopali predvsem preko Slovenije. Goste iz Nemčije, Italije, Avstrije, Francije, ZDA, Velike Britanije, Nizozemske, Belgije in drugod je pritegnil zlasti oddih v neokrnjeni naravi. Jugoslavija se je leta 1963 v Rimu udeležila Konference Združenih narodov o mednarodnih potovanjih in turizmu, ki je pomenila izhodišče za sprostitev vizumske politike.",
+      "second": "Posebnost jugoslovanske turistične ponudbe je bil tudi naturizem, katerega zametki v zahodni Evropi segajo v 19. stoletje. Številni obmorski kraji vzdolž vzhodne jadranske obale so nudili možnosti za prakticiranje t. i. Freikörperkultur, kulture svobodnega telesa. Leta 1961 je bil v istrskem naselju Koversada na pobudo naturističnega društva iz Münchna ustanovljen prvi nudistični kamp, ki je lahko gostil 5000 ljudi."
+    },
+    "people": {
+      "source": "© Arhiv Republike Slovenije",
+      "text": "Liberalizacija prehajanja meja je povečala število inozemskih turistov. Vzporedno s tem so se povečale možnosti ne le za jugoslovansko gospodarsko rast in nova delovna mesta za lokalno prebivalstvo, ampak tudi za medkulturne stike."
+    },
+    "places": {
+      "source": "© Muzej novejše in sodobne zgodovine Slovenije, avtor: Edi Šelhaus",
+      "text": "Kolone avtomobilov iz različnih evropskih dežel so v poletnih mesecih napolnile regionalne ceste proti morju in nazaj, kot prikazuje fotografija, posneta na cesti med Planino in Postojno leta 1965. Naraščajoči mednarodni turizem je spodbudil razmišljanja o izgradnji avtocestnega omrežja."
+    },
+    "practices": {
+      "source": "© Jerko Sladoljev, avtor: Alberto Abram",
+      "text": "Leta 1972 je v Koversadi potekal 13. kongres Mednarodne naturistične zveze, ki je privabila več kot 200 tujih novinarjev. V sedemdesetih in osemdesetih letih je bila Jugoslavija ena največjih nudističnih destinacij na svetu."
+    },
+    "title1": "Na-Turizem",
+    "title2": ""
+  },
+  "tvkc": {
+    "author": "Federico Tenca Montini",
+    "intro": {
+      "first": "Leta 1971 je TV Koper-Capodistria (TV KC) pričela z oddajanjem svojega signala z oddajnika na Nanosu, ki se nahaja približno 15 kilometrov zračne linije od italijanske meje. Poleg tega, da je bila uradna televizijska postaja italijanske manjšine v Jugoslaviji, je TV KC prevzela tudi nalogo zadovoljevanja potreb slovenske manjšine v Italiji, obenem pa si je prizadevala za izboljšanje podobe Jugoslavije v Italiji.",
+      "second": "Mreža se je hitro uveljavila kot alternativa italijanski javni televiziji RAI, ki je na začetku sedemdesetih let ponujala le dva črno-bela programa, medtem ko je TV KC že oddajala v barvah. Ker na njen informativni program niso vplivale vodilne italijanske politične stranke, je TV KC postala upoštevanja vreden vir alternativnih stališč, zlasti glede spornih tem (politične razmere v Južni Ameriki, vietnamska vojna idr.). Podobno so Jugoslovani v obmejnem prostoru z Italijo in ob jadranski obali spoznavali italijansko popularno kulturo (zlasti festival italijanske popevke v Sanremu) in se seznanjali z italijansko produkcijo, ki ni bila pod nadzorom lokalnih oblasti. S postopno liberalizacijo italijanskega televizijskega trga v osemdesetih letih se je TV KC začela osredotočati na športne vsebine. Ta razvoj je dosegel vrhunec leta 1987 s sklenitvijo pogodbe z medijskim imperijem Silvia Berlusconija, ki je mrežo preoblikoval v pionirski, povsem športni kanal."
+    },
+    "people": {
+      "source": "© Wikipedija",
+      "text": "Športni novinar Luigi Garanzini, ki je poleg dela na različnih televizijskih postajah sodeloval tudi z več italijanskimi časopisi, kot so Corriere della Sera, La Repubblica, La Stampa, in Il Sole 24 Ore. Njegova vloga športnega komentatorja na TV Koper-Capodistria v poznih osemdesetih letih simbolizira dogovor, ki ga je ta postaja dosegla z Berlusconijevim Fininvestom."
+    },
+    "places": {
+      "source": "© Wikipedija",
+      "text": "Fotografija oddajnika na Nanosu, ki še vedno deluje. Pred vzpostavitvijo mreže repetitorjev širom Italije je bila TV KC v svojih zgodnjih letih dosegljiva italijanskim gledalcem le prek tega oddajnika."
+    },
+    "practices": {
+      "source": "© Il Piccolo",
+      "text": "Oglas, objavljen v tržaškem časopisu Il Piccolo 25. julija 1971. Ker v Italiji sprejemanje televizijskega signala v barvah takrat še ni bilo mogoče, je to koprski televiziji prinašalo pomembno tržno prednost."
+    },
+    "title1": "TV Koper-Capodistria",
+    "title2": ""
+  },
+  "contraband": {
+    "author": "Sabine Rutar",
+    "intro": {
+      "first": "Na območju Alpe–Jadran so domačini stoletja na skrivaj prodajali sol in soljene ribe, živino in meso, tobak in volno, kavo in olje, jajca, mleko in sir, celo premog. V času fašizma je bilo tihotapstvo še vedno družbeno sprejemljiva praksa revnejših slojev prebivalstva.",
+      "second": "Po drugi svetovni vojni so morali ljudje postati še bolj iznajdljivi, saj je bilo nove politične meje zelo težko prestopiti. Gospodarske vezi in delovna migracija so bile prekinjene, pojavile so se različne valute, kot tudi različne plače in cene. Trst je bil težko dostopen, vozači na delo pa so bili prikrajšani za sredstva za preživljanje. Območje je bilo polno vojske in policije, ki naj bi nadzirali tihotapljenje, vendar sta v praksi pogosto pogledali stran. Do začetka petdesetih let se je veliko ljudi preskrbovalo s pomočjo živilskih kart, na črnem trgu pa so prodajali blago, kot je sladkor. Pri nabavi materiala za obnovo so se lahko vedno zanašali na preskrbo čez mejo. Ko je Videmski sporazum (1955) sprostil lokalne morske in kopenske mejne prehode med Italijo in Jugoslavijo, je bilo tihotapljenje spet lažje."
+    },
+    "people": {
+      "source": "© Nina Hofmann",
+      "text": "Danilo Petrinja je bil vodilna osebnost pri industrializaciji Kopra. Leta 2000 je v intervjuju povedal, kako je nezakonit izvoz v in uvoz iz Italije pomagal pri elektrifikaciji istrskih vasi. Podobno je bilo veliko ceneje nezakonito graditi vodovodne cevi čez mejo."
+    },
+    "places": {
+      "source": "© Pokrajinski muzej Koper",
+      "text": "Slovenski poročevalec je maja 1950 poročal, kako so delavci odstranjevali ruševine v premogovniku Sečovlje v Istri. Italijanski grafiti slavijo Titovo Jugoslavijo. Meje in lastniki rudnika so se v kratkem času njegovega obstoja rudnika dvakrat spremenili: Italija (trideseta in štirideseta leta), nacistična Nemčija (1943–1945) in Jugoslavija (od petdesetih do sedemdesetih let)."
+    },
+    "practices": {
+      "source": "© CIA FOIA",
+      "text": "Tihotapstvo je zaradi svoje subverzivne narave omenjeno v pisnih virih le takrat, ko so bili tihotapci ujeti. CIA, ki je spremljala razmere v severovzhodnem Jadranu, je zabeležila te dejavnosti. Citati poudarjajo vztrajnost povezav med Istro in Trstom kljub povojnemu mejnemu režimu."
+    },
+    "title1": "Tihotapstvo",
+    "title2": ""
   }
 }

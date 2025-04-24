@@ -1,6 +1,9 @@
 ---
 import Image from "astro/components/Image.astro";
 import TitleBox from "../TitleBox.astro";
+import ImageWraper from "../ImageWraper.astro";
+import TextWithYears from "../yearWrapper/TextWithYears";
+
 interface Props {
   title: string;
   body: string;
@@ -16,20 +19,22 @@ const { title, body, image, source } = Astro.props;
     <TitleBox title={title} class:list="-ml-8" />
 
     <span class="text-justify lg:max-w-prose px-8 lg:px-0">
-      {body}
+      <TextWithYears body={body} client:idle />
     </span>
     <span class="ml-auto font-light text-brand-beige-dark px-8 lg:px-0"
       >{source}</span
     >
   </div>
 
-  <div
-    class="bg-gray-50 flex items-center justify-center col-span-2 lg:-mt-48 mt-8 lg:border-4 border-white"
-  >
-    <Image
-      src={image}
-      alt={`${title} image`}
-      class="w-full h-full object-contain"
-    />
+  <div class="flex items-center justify-center col-span-2 lg:-mt-48 mt-8">
+    <div class="border-4 border-white lg:pt-0 pt-8 z-10">
+      <ImageWraper>
+        <Image
+          src={image}
+          alt={`${title} image`}
+          class="w-full h-full object-contain"
+        />
+      </ImageWraper>
+    </div>
   </div>
 </div>

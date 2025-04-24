@@ -12,6 +12,7 @@ const defaultLocale = "sl";
 const locales = {
   en: "en-US",
   sl: "sl-SI",
+  it: "it-IT",
 };
 
 export default defineConfig({

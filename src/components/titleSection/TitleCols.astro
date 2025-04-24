@@ -1,5 +1,6 @@
 ---
 import TextInitial from "../TextInitial.astro";
+import TextWithYears from "../yearWrapper/TextWithYears";
 
 interface Props {
   title1: string;
@@ -33,7 +34,7 @@ const { body1, body2, title1, title2, author } = Astro.props;
         <span class="text-brand-beige-dark text-2xl font-bold">{author}</span>
       </div>
       <span class="lg:max-w-lg max-w-prose text-justify lg:mx-auto text-lg">
-        {body2}
+        <TextWithYears body={body2} client:idle />
       </span>
     </div>
   </div>

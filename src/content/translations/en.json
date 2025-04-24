@@ -5,46 +5,277 @@
     "places": "Places",
     "practices": "Practices"
   },
-  "bridge": {
-    "title1": "Barrier and",
-    "title2": "the Bridge",
-    "author": "Nina Hofman",
-    "intro": {
-      "first": "During the time of Yugoslavia, the Kolpa/Kupa River represented part of the border between the socialist republics of Slovenia and Croatia. In 1957, residents from both banks jointly financed and built a bridge. Their economic, social, and personal relationships developed until 1991, when the bridge crossing was prohibited following the independence of both countries.",
-      "second": "Since then, the structure served only as an excursion spot. Slovenia joined the EU in 2004 and the Schengen area in 2007. About a decade later, in response to the flow of refugees arriving via the Balkan route, Slovenia built a wire fence along the riverbank. The bridge subsequently deteriorated. In autumn 2023, access to the river was reopened, and with Croatia's EU accession, both countries became neighboring states within the same border-free agreement. Simultaneously, a civil initiative founded by residents from both banks began funding and renovating the bridge."
-    },
-    "people": {
-      "source": "M. J.",
-      "text": "According to the Kočevje newspaper Novice from December 7, 1957, men, women, and children worked 2,500 hours to build the suspension bridge between Slavski Laz and Čedanj. Among them was the local fishing inspector at the time, who fished here."
-    },
-    "places": {
-      "source": "Nina Hofmann",
-      "text": "People were injured trying to climb the fence, and some even drowned. Wildlife migration was severely hindered, and accessing the beach required calling the police to unlock the fence gate."
-    },
-    "practices": {
-      "source": "B. K.",
-      "text": "Residents from both sides of the river would meet while shopping, at work, and during leisure time, like here in the Croatian village of Čedanj during a bowling tournament. After the bridge closure, which had connected the valley, cross-border relations gradually nearly ceased."
-    }
-  },
   "alpeadria": {
     "author": "Benedetto Zaccaria",
     "intro": {
-      "first": "The “Working Community of the Länder Regions and Republics of the Eastern Alps” – commonly known as “Alpe Adria” – was established in Venice in 1978.  It included Veneto and Friuli-Venezia Giulia (Italy), Carinthia, Upper Austria,",
-      "second": "Styria, and Salzburg (Austria), Croatia and Slovenia (Yugoslavia). The West German state of Bavaria participated as an observer. The development of Alpe Adria had a unique path. Regional and republican governments collected demands for trans-border cooperation, suggested by local businessmen, chambers of commerce and intellectuals, and transformed them into political initiatives."
+      "first": "The “Working Community of the La nder and Regions of the Eastern Alps” – commonly known as the “Alps-Adriatic Working Community” – was established in Venice in 1978. It included Veneto and Friuli-Venezia Giulia (Italy), Carinthia, Upper Austria, Styria (Austria), Croatia and Slovenia (then part of Yugoslavia). Bavaria (West Germany) and Salzburg (Austria) participated as active observers.",
+      "second": "The development of the Alps-Adriatic Working Community followed a bottom-up pattern: regional governments gathered requests for trans-border cooperation from local entrepreneurs, chambers of commerce and intellectuals, transforming them into political initiatives."
     },
     "people": {
-      "source": "RegioneVento Bulletin.",
-      "text": "The political drivers of inter-regional cooperation in Alpe Adria were the presidents of regional, federal and republican governments. In this picture, taken at the 10th anniversary of Alpe Adria celebrated in Venice in 1988, Peter Ambrozy (Governor of Carinthia) and Carlo Bernini (Governor of Veneto Region) are sitting side-by-side."
+      "source": "Author unknown",
+      "text": "The main drivers of the Alps-Adriatic Working Community were the political representatives of regional governments. In this photo, taken on the occasion of its 10th anniversary celebrated in Venice in 1988, Peter Ambrozy (Governor of Carinthia) and Carlo Bernini (Governor of the Veneto Region) are seated next to each other."
     },
     "places": {
-      "source": "Istituto per gli Studi di Politica Internazionale.",
-      "text": "Between 1978 and 1988, Alpe-Adria expanded to the Austrian Burgenland (1987), the Hungarian Györ-Sopron and Vas (1988), the Italian Trentino-Alto Adige (1981) and Lombardy (1988). Interregional integration involving Italian, Austrian, Yugoslav and Hungarians regions, overcame the barriers of the Cold War."
+      "source": "© Historical Archives of the European Union",
+      "text": "Between 1978 and 1988, the Alps-Adriatic Working Community extended to the Italian TrentinoAlto Adige (1981) and Lombardy (1988), the Austrian Burgenland (1987), the Hungarian Gyo r-Moson-Sopron and Vas (1988), and Bavaria (1988). After 1989, it further expanded to the Hungarian counties of Zala, Baranya and Somogy, the Canton of Ticino, and the Italian region of Emilia Romagna."
     },
     "practices": {
-      "source": "Archivio Generale, Regione Veneto.",
-      "text": "The idea for inter-regional cooperation in the Alpes-Adriatic region initiated in the local fairs involving businessmen from Italy, Austria, Slovenia and Croatia from the early 1960s on. The cover of the pamphlet for the 1981 Ljubljana Fair was prepared by the Regional Federation of Veneto Industrialist"
+      "source": "© General Archives, Regione Veneto",
+      "text": "The idea for inter-regional cooperation in the Alps-Adriatic region took root at local trade fairs involving entrepreneurs from Italy, Austria, Slovenia and Croatia from the early 1960s on. The cover of the pamphlet for the 1981 Ljubljana Fair was prepared by the Regional Federation of Veneto Industrialists."
     },
-    "title1": "Regional diplomacy",
-    "title2": "in Alpe Adria"
+    "title1": "ALPE-ADRIA",
+    "title2": "The Alps-Adriatic Working Community"
+  },
+  "bridge": {
+    "author": "Nina Hofmann",
+    "intro": {
+      "first": "During the times of Yugoslavia, the Kolpa/Kupa River made up part of the administrative border between the republics of Slovenia and Croatia. In 1957, the inhabitants of both banks jointly financed and built a bridge near Slavski Laz (SI) and Čedanj (HR).",
+      "second": "Their economic, social and personal relationships developed until 1991, when crossing the bridge was banned upon the two states declaring independence from Yugoslavia.  From then on the structure served only as a sightseeing point. Slovenia joined the EU in 2004 and the Schengen Area in 2007. Less than a decade later, Slovenia responded to the influx of refugees by erecting a fence along the riverbank. The bridge has since fallen into ruin. Since 2023, Croatia has also been a member of the Schengen Area. The gates of the fence were unlocked and the overgrown access to the bridge was cleared. In the same year, the fence was dismantled and a citizens' initiative was formed by residents from both banks to repair the bridge."
+    },
+    "people": {
+      "source": "M. J.",
+      "text": "According to the Kočevje newspaper Novice from December 7, 1957, men, women and children worked 2500 hours to build the suspension bridge between Slavski Laz and Čedanj. One of those who participated in the construction was the local fisheries inspector at the time, pictured here"
+    },
+    "places": {
+      "source": "Nina Hofmann",
+      "text": "People were injured trying to get over the fence, some even drowned. Wildlife migration was severely disrupted, and accessing the beach meant calling the police to have an officer unlock the gate."
+    },
+    "practices": {
+      "source": "B.K.",
+      "text": "The inhabitants on both sides of the river met when shopping, at work and in their free time, as pictured here at a bowling tournament in the Croatian village of Čedanj. After the closure of the bridge that connected the valley, cross-border relations gradually came to a near standstill."
+    },
+    "title1": "The Barrier and",
+    "title2": "the Bridge"
+  },
+  "business": {
+    "author": "Jure Ramšak",
+    "intro": {
+      "first": "The flow of capital across ideological divides was not an entirely unknown phenomenon during the Cold War. Its route usually led from capitalist countries to joint-ventures in socialist countries.",
+      "second": "In the 1970s and 1980s, however, the reverse was the case, with socialist Yugoslavia deciding to invest in capitalist Austria. This decision was dictated by the intention to create jobs in the area of Carinthia, which was populated by a Slovenian minority. At the same time, this programme was conceived as a new channel for deepening cross-border economic cooperation. The ambitious plan to invest in modern industrial and service facilities throughout ethnically mixed southern Carinthia met with mixed reactions in both Klagenfurt and Vienna. Despite the obstacles, by the end of the 1980s more than 20 enterprises with 800 employees, mainly from the local population, had been set up. For the few managers who came from Yugoslavia, operating at the intersection of two political and legal systems brought valuable international economic experience. However, like many Slovenian enterprises, these companies did not escape the transition and stagnation of the 1990s."
+    },
+    "people": {
+      "source": "Archives of the Republic of Slovenia",
+      "text": "A press release issued in 1978 by Kärntner Heimatdienst, a regional nationalist group, opposing Yugoslav investment on political grounds. © Archives of the Republic of Slovenia"
+    },
+    "places": {
+      "source": "Alpine Ski Museum Elan",
+      "text": "The Elan establishment in Fürnitz/Brnca near Villach/Beljak towards the end of the 1970s. The architecturally sophisticated building housed a ski factory and an outlet store. © Alpine Ski Museum Elan"
+    },
+    "practices": {
+      "source": "Archives of the Republic of Slovenia",
+      "text": "A 1977 promotional letter from the Obir Hotel in Bad Eisenkappel/Železna Kapla, advertising itself as a “house of friendship” where Slovenian guests would be served in their mother tongue. © Archives of the Republic of Slovenia"
+    },
+    "title1": "BUSINESS",
+    "title2": "Yugoslav investments in Austrian Carinthia"
+  },
+  "health": {
+    "author": "Marta Verginella",
+    "intro": {
+      "first": "The case of health care is a good illustration of the porosity of the postwar Italo-Yugoslav border. Mobility took place in both directions, meeting the needs of both Italian and Yugoslav individuals and institutions. Seeking medical help in Yugoslavia was common, especially among pro-Yugoslav Slovene men and women from the area assigned to Italy in 1947.",
+      "second": "This was a valuable opportunity to receive medical care in their own language and to have access to medical services unavailable to them in Italy. This practice was encouraged by doctors from Italy who worked in the Slovenian healthcare system and became a reference for many Italian patients. Similar efforts were also made by doctors in Trieste and Gorizia, who maintained close friendships and professional contacts with their colleagues in Yugoslavia."
+    },
+    "people": {
+      "source": "© Heart and Vascular Health Association of Slovenia",
+      "text": "Boris Cibic (1921-2024), Slovenian cardiologist from Prosecco/Prosek near Trieste employed in the Dr. Peter Držaj Hospital in Ljubljana after the Second World War. He received professional training in Hamburg and London and attended professional meetings at home and abroad. He also established close contact with cardiologists in Trieste."
+    },
+    "places": {
+      "source": "© Archives of the Republic of Slovenia, author: Igor Bervar",
+      "text": "The Valdoltra Hospital in Ankaran/Ancarano was initially a specialised hospital for bone tuberculosis, later for orthopaedics. It was also vital for many patients from the region of Trieste."
+    },
+    "practices": {
+      "source": "© Narodna in študijska knjižnica Trst",
+      "text": "Many members of the antifascist resistance who suffered from various medical conditions received medical care in Yugoslavia after 1945. Mara Samsa (1906-1959), a teacher, writer and publicist from Trieste was treated in Sežana and Golnik for tuberculosis."
+    },
+    "title1": "HEALTH",
+    "title2": "Medical Services"
+  },
+  "hunt": {
+    "author": "Urška Strle",
+    "intro": {
+      "first": "Hunting and fishing established international connections relatively early on, cutting across the rigid postwar political divisions. Already in 1948, the Slovenian town of Bled hosted the general assembly of the Brussels-based International Cynological Federation, where hunters played a key role with their hunting hounds. Foreign citizens were granted permission to hunt and fish in 1955.",
+      "second": "As many members of the Yugoslav elite were hunters and fishermen themselves, the State Protocol Office often organised hunting and fishing trips for important foreign guests. Both were considered a special form of entertainment and socialising but also an opportunity to conduct informal political talks with foreign representatives. Hunting and fishing tourism was stimulated by the Yugoslav authorities as a means of obtaining stable foreign currency in particular. Since the mid-1950s, Yugoslav bilateral border agreements with Austria and Italy facilitated trans-border cultural and economic cooperation, which also included the possibility to fish and hunt. Both activities were also promoted in the once united local context that had been separated by the new state border in 1947. In this respect, kinship ties, friendships and national minorities on both sides of the border proved decisive."
+    },
+    "people": {
+      "source": "© Private collection of Silvana Orel Kos, http://stareslike.cerknica.org/",
+      "text": "Hunting with Italian guests near Cerknica in 1959. The Snežnik Special Purpose Hunting Ground (today Jelen SPHG), which has been sustainably managing game such as deer, roe deer, wild boar, bear, wolf and lynx, was located nearby."
+    },
+    "places": {
+      "source": "© Regional musuem of Murska Sobota, author: Jože Kološa",
+      "text": "Opened in 1967 in Murska Sobota, the Hotel Diana is named after the Roman goddess of the hunt. It was often the overnight home of foreign guests, initially mostly Italians, who hunted and fished in Prekmurje. The hotel also housed dog kennels. The hotel’s façade is decorated with artwork by Jože Horvat-Jaki depicting a deer."
+    },
+    "practices": {
+      "source": "© Regional archive of Nova Gorica",
+      "text": "Completed report on hunting revenue from 1969/70 in the municipality of Tolmin, given in US dollars. The document also shows which animals were hunted in the area (roe deer, chamois, mouflon, rabbit, black grouse, hazel grouse, rock partridge, mallard, common snipe) and which countries the hunting guests were from (Italians, French, Austrians)."
+    },
+    "title1": "Hunting and",
+    "title2": "Fishing Across the Border"
+  },
+  "mount": {
+    "author": "Marco Abram",
+    "intro": {
+      "first": "Mountains have often been represented as natural state borders and served as the ground for rival mountaineering practices aimed at planting national flags. Throughout its history, mountaineering has also brought people from different countries together – international mountaineering organisations were established in the interwar period – but this has been largely hindered in times of conflict.",
+      "second": "In the 1960s, not least because of the interest in tourism development, the traditions of \"mountaineering friendship\" that transcended national borders were publicly revived by the representatives of some important Alpine clubs from Friuli-Venezia Giulia, Slovenia, and Carinthia. They started organising annual Convegni Alpi Giulie/ Srečanje treh dežel/ Dreiländer-Treffen from 1965. Despite numerous difficulties and misunderstandings, they collaborated to reach reciprocity agreements regarding mountain huts (preferential treatment for club members in other countries’ huts), to make mountain borders more permeable, and to protect the shared environment. Several initiatives were launched to encourage mountaineers and hikers to explore the mountains across borders.  In the framework of this cross-border cooperation, mountains were depicted less as barriers of defence and more as places of encounter and exchange."
+    },
+    "people": {
+      "source": "Archives of the Republic of Slovenia",
+      "text": "Personal relationships between mountaineers were crucial in promoting cooperation. This letter was sent by an executive of the Italian Alpine Club of Gorizia to an executive of the Alpine Association of Slovenia in 1967. It emphasised the values of transnational and cross-border friendship among mountaineers."
+    },
+    "places": {
+      "source": "Planinski vestnik, Il Piccolo",
+      "text": "The Friendship Festival has been organised every year since 1980 on Mount Forno/Peč/Dreiländereck. It has attracted thousands of participants at the border crossing point between Italy, Yugoslavia (now Slovenia) and Austria. The initiative continues to this day."
+    },
+    "practices": {
+      "source": "CAI - Sezione di Gorizia; Planinska Zveza Slovenije; ÖAV - Sektionenverband Kärnten; preserved by the Museo Storico Italiano della Guerra",
+      "text": "Launched in 1972, the Friendship Peaks/Pot prijateljstva/Wege der Freundschaft initiative promoted ascents to the 30 most important peaks between Friuli-Venezia Giulia, Slovenia and Carinthia. The initiative was a resounding success. By 1990 more than 10,000 trilingual itinerary booklets were sold."
+    },
+    "title1": "MOUNT",
+    "title2": "Alpinism and Mountaineering"
+  },
+  "pass": {
+    "author": "Borut Klabjan",
+    "intro": {
+      "first": "The laissez-passer was a bilateral, multilingual passport introduced to ease the limitations of living by the border by facilitating cross-border mobility to its holders. After the Second World War, state borders were almost hermetically sealed. Only residents who had property on the other side or those who lived in a ‘100-metre zone’ were allowed to cross.",
+      "second": "However, already in the mid-1950s the right to have this personal document in the Austro-Italian-Yugoslav border areas was extended to the population within a 10-kilometre area and later also applied to a larger zone. ‘Second category’ border crossing points were created for laissez-passer holders only. Yugoslav visas were gradually abolished, making cross-border mobility part of the quotidian for many borderland residents and a regular practice for many others. This increased mobility favoured the integration of larger territories that extended far beyond a narrow border strip. With the introduction of a borderless Schengen area the laissez-passer was rendered irrelevant. Will it be introduced again?\n\n"
+    },
+    "people": {
+      "source": "© Borut Klabjan, Ana Hawlina",
+      "text": "Residents in the border zone were entitled to a laissez-passer. Unlike identity cards and passports, this document linked people to a border area rather than to one single country. Consequently, \"border dwellers\" developed a special sensitivity to regular and less restricted cross-border mobility.\n"
+    },
+    "places": {
+      "source": "©",
+      "text": "An exchange of New Year greetings at an Italian-Yugoslav border crossing point in Fernetiči/Fernetti in 1956. A series of postwar international and bilateral agreements turned crossing points into hubs and microcosms of trans-border practices.\n"
+    },
+    "practices": {
+      "source": "©",
+      "text": "People from Yugoslavia liked to go to Italy to buy coffee, clothes, household appliances or toys. Cheap alcohol, tobacco, meat and dairy products, restaurants, bars, holiday resorts, and petrol attracted Italian consumers to Slovenia. The picture shows the scene at the petrol station in Krvavi potok near Kozina during the war for Slovenian independence in 1991.\n"
+    },
+    "title1": "Laissez-passer",
+    "title2": "(lasciapassare/prepustnica/propusnica)"
+  },
+  "politics": {
+    "author": "Mateja Režek and Karlo Ruzicic-Kessler",
+    "intro": {
+      "first": "During the 1960s, amid the Cold War, a unique interregional cooperation developed between the then Yugoslav republic of Slovenia and the Austrian states of Carinthia and Styria. This was made possible by the efforts of regional dignitaries and other stakeholders who recognised that a Europe beyond ideological and political divisions could be achieved more efficiently through a regional framework.",
+      "second": "It was a remarkable accomplishment for regions that operated within different political and economic systems and shared a deeply conflicted past. Personal contacts and trust proved crucial in building interregional cooperation. Slovenian Prime Minister Stane Kavčič and Carinthian Regional Governor Hans Sima developed fruitful bilateral relations in the late 1960s and early 1970s. They also addressed sensitive topics, including the situation of the Slovenian minority in Carinthia. By strengthening regional cooperation, they not only helped border regions progress economically, but also sought to overcome a troubled past and promote reconciliation on a national level."
+    },
+    "people": {
+      "source": "© Kärntner Landesarchiv",
+      "text": "Slovenian Prime Minister Stane Kavčič and Carinthian Governor Hans Sima (centre) near Ankogel in Carinthia in 1969."
+    },
+    "places": {
+      "source": "© National Museum of Contemporary History of Slovenia, author: Edi Šelhaus",
+      "text": "Friendly relations between Austria and Yugoslavia were prominently displayed at the opening of the Bridge of Friendship over the Mura River between Gornja Radgona and Bad Radkersburg on October 12, 1969. The opening was attended by the Presidents of the two neighbouring countries, Josip Broz Tito and Franz Jonas, as well as Slovenian Prime Minister Stane Kavčič and Styrian Governor Josef Krainer."
+    },
+    "practices": {
+      "source": "© National Museum of Contemporary History of Slovenia, author: Nace Bizilj",
+      "text": "Stable neighbourly relations resulted in the joint construction of an eight kilometre-long tunnel through the Karavanke Mountains, linking Austria and Slovenia. The tunnel was officially opened for traffic on June 1, 1991, just before Slovenian independence."
+    },
+    "title1": "POLITICS Bridges of",
+    "title2": "Interregional Cooperation"
+  },
+  "punk": {
+    "author": "Federico Tenca Montini",
+    "intro": {
+      "first": "Starting from the 1980s, the alternative music scene reached a peak in popularity throughout the Alps-Adriatic area. Yugoslav bands such as Laibach, Borghesia and Kud Idijoti gained recognition beyond the local scene.",
+      "second": "Several avant-garde clubs emerged along the western border regions during this period, including CRMK in Šempeter pri Gorici and Strelišče in Dobrovo. These venues regularly attracted young Italian audiences who crossed the border as soon as they obtained their driving licenses and passports. Similarly, young Slovenians traveled to Italy to attend clubs and concerts, and in areas where it was possible, they tuned in to Udine's Radio Onde Furlane, which was known for its focus on the musical avant-garde.  Memorable concerts from that era highlight these cross-border interactions, such as Borghesia's performance at Buja’s House of Youth on May 21, 1988, and Laibach's concert at the Zanon Auditorium in Udine on March 28, 1991."
+    },
+    "people": {
+      "source": "© Federico Tenca Montini",
+      "text": "The elektro-punk band Borghesia was a true facet of trans-border influences. Founded in Ljubljana by Aldo Ivančić and Dario Seraval, both from Pula, their first album (pictured) was co-produced by a side label of the legendary Attack Punk Records from Bologna, the label which discovered the band CCCP."
+    },
+    "places": {
+      "source": "©  Francesco Tami",
+      "text": "Poster for a music event held at Strelišče in 1992, featuring a rudimentary map with instructions on how to reach the venue from Gorizia. Together with CRMK in Nova Gorica, Strelišče was a major venue for punk concerts enjoyed by a mixed Slovenian and Italian audience."
+    },
+    "practices": {
+      "source": "© Andrea Batigello",
+      "text": "In the late 1980s, the CSS Innovation Theatre of Friuli-Venezia Giulia engaged in youth music and art. This resulted in a number of events still considered legendary: Demolition Group from Slovenia and Disciplina kičme from Serbia held a concert in Udine in 1990. The documentary film about Laibach ‘Victory Under the Sun’ was also screened on that occasion."
+    },
+    "title1": "Alternativna",
+    "title2": "glasba"
+  },
+  "sport": {
+    "author": "Urban Orel and Urška Strle",
+    "intro": {
+      "first": "Sport presented one of the earliest and most vivid forms of cross-border cooperation between Italy and Yugoslavia after the border demarcation in 1947. The first sports meetings, facilitated by the Udine Agreement (1955), occurred between teams from Slovenia and of the Slovenian minority in Italy.",
+      "second": "Cross-border sport-related activities evolved along the entire border, while here the case of Gorizia and Nova Gorica is presented.\nFrom the mid-1950s onwards, local football matches and speed car races were held in Nova Gorica. In the following decade, cross-border sports activities intensified, and athletic competitions were also held."
+    },
+    "people": {
+      "source": "© Sport Association of Nova Gorica",
+      "text": "Participants before the start of the 1986 bike race. The organisers allowed cyclists to cross the border freely at the border crossings at Rožna Dolina, Solkan, Šempeter pri Gorici, and Miren. At Erjavčeva / Via S. Gabriele, the border fence was removed for this purpose."
+    },
+    "places": {
+      "source": "© Archive of AC Bor, Trieste",
+      "text": "In 1965, a competition between three Slovenian athletics clubs was held in Nova Gorica: AC Gorica, AC Torriana (Gradisca d'Isonzo) and AC Bor (Trieste). This type of event went beyond the format of a normal sporting competition due to the possibility of cross-border socialising."
+    },
+    "practices": {
+      "source": "© Regional Archive Nova Gorica",
+      "text": "A bilingual flyer for the Walk of Friendship in cooperation with the Italian Youth Social Tourism and Slovenian Sports Association Nova Gorica. The march attracted more than 55,000 participants over the years, with the highest number in 1985, when 5,500 marchers took part."
+    },
+    "title1": "Sport: The Case",
+    "title2": "of the Bordering Cities"
+  },
+  "turism": {
+    "author": "Urška Strle",
+    "intro": {
+      "first": "After the Second World War, tourism gained tremendous global momentum. Foreign visitors were recorded in Yugoslavia in the first years after the war, even though the tourism infrastructure was still quite poor at that time. From the end of the 1950s onwards, spas, seaside resorts and mountain huts hosted an increasing number of international tourists. They entered Yugoslavia with a visa mainly through Slovenia. Visitors, mostly attracted by the unspoiled nature, came from Germany, Italy, Austria, France, the USA, the United Kingdom, the Netherlands, Belgium and elsewhere. In 1963, Yugoslavia attended the United Nations Conference on International Travel and Tourism in Rome, which was a starting point for the relaxation of the visa policy.",
+      "second": "Naturism, which dates back to the 19th century in Western Europe, was a distinctive feature of Yugoslav tourist offers. Many seaside resorts along the eastern Adriatic coast offered opportunities to practice the so-called Freikörperkultur, free body culture. In 1961, the first nudist camp was set up on the initiative of the Munich Naturist Society in the Istrian village of Koversada, which could accommodate 5000 people."
+    },
+    "people": {
+      "source": "© Archives of the Republic of Slovenia",
+      "text": "The liberalisation of border crossings increased the number of foreign tourists. In parallel, it stimulated opportunities not only for Yugoslav economic growth and new jobs for locals, but also for intercultural contacts."
+    },
+    "places": {
+      "source": "© National Museum of Contemporary History of Slovenia, author: Edi Šelhaus",
+      "text": "During the summer months, motorcades from various European countries filled the regional roads to and from the sea, as shown in this photo taken on the road between Planina and Postojna in 1965. Growing international tourism prompted thoughts of creating a highway network."
+    },
+    "practices": {
+      "source": "© Jerko Sladoljev, author: Alberto Abram",
+      "text": "In 1972, the 13th International Naturist Federation Congress took place in Koversada, attracting over 200 foreign journalists. Throughout the 1970s and 1980s, Yugoslavia was one of the biggest nudist destinations in the world."
+    },
+    "title1": "TOURISM",
+    "title2": ""
+  },
+  "tvkc": {
+    "author": "Federico Tenca Montini",
+    "intro": {
+      "first": "In 1971, TV Koper-Capodistria (TV KC) transmitted its first broadcast from a TV transmitter at the summit of Mount Nanos, Slovenia, situated approximately 15 kilometres in a beeline from the Italian border. As the official broadcaster of the Italian minority in Yugoslavia, TV KC undertook the dual responsibility of serving the needs of Italians in Yugoslavia and Slovenians in Italy, while also endeavouring to enhance the image of Yugoslavia in Italy.",
+      "second": "The network swiftly established itself as a viable alternative to the Italian public television network, RAI, which in the early 1970s offered only two black-and-white channels, whereas TV KC was already broadcasting in colour. Not being under the influence of Italy’s leading political parties, the network could present alternative viewpoints, particularly around contested topics (the political situation in South America, the Vietnam War etc.).  Similarly, Yugoslavs in the area bordering Italy and along the Adriatic coast explored Italian popular culture (especially the Italian Song Festival in Sanremo) and kept themselves informed through Italian productions beyond the control of local authorities. With the gradual liberalisation of the Italian television market through the 1980s, TV KC began focusing on sports content. This evolution culminated in an agreement with Berlusconi’s media empire in 1987, positioning the network as a pioneering all-sport channel."
+    },
+    "people": {
+      "source": "© Wikipedia",
+      "text": "Sports journalist Luigi Garanzini. Apart from his work with various television stations, he collaborated with several Italian newspapers such as Corriere della Sera, La Repubblica, La Stampa, and Il Sole 24 Ore. His role as a sports commentator for TV Koper-Capodistria in the late Eighties is a symbol of the agreement reached with Berlusconi’s Fininvest during that period."
+    },
+    "places": {
+      "source": "© Wikipedia",
+      "text": "Picture of the transmitter installed on Mount Nanos, which is still operational today.  Before the creation of a network of repeaters active on Italian soil, in its early years, TV KC was available to the Italian public solely through this facility."
+    },
+    "practices": {
+      "source": "© Il Piccolo",
+      "text": "Announcement published by the Triestine newspaper Il Piccolo on July 25, 1971. The fact that colour broadcasts were otherwise unavailable in Italy meant that TV KC also had an important industrial and commercial influence."
+    },
+    "title1": "TV Koper-Capodistria",
+    "title2": ""
+  },
+  "contraband": {
+    "author": "Sabine Rutar",
+    "intro": {
+      "first": "In the Alps-Adriatic area, the locals for centuries secretly traded salt and salted fish, cattle and meat, tobacco and wool, coffee and oil, eggs, milk and cheese, even coal. During fascism, smuggling continued to be a socially accepted practice of the poor.",
+      "second": "After World War II, people became even more resourceful, as the new political borders were very difficult to cross. Now economic and labour ties were disrupted; different currencies, wage levels and prices existed. Trieste was difficult to reach; commuters were deprived of their livelihoods. The region was full of military and police who were to sanction smugglers, but in practice often looked the other way, or were even involved in smuggling themselves. Until the early 1950s many people lived on ration cards and sold goods such as sugar on the black market. Procuring materials needed for reconstruction from across the border was always an option. When the Udine Agreement (1955) liberated local sea and land border crossings between Italy and Yugoslavia, smuggling became easier again."
+    },
+    "people": {
+      "source": "© Nina Hofmann",
+      "text": "Danilo Petrinja was a leading figure in the industrialisation of Koper/Capodistria. Interviewed in 2000, he related how illegal cross-border exports to and imports from Italy helped provide electricity to Istrian villages. Similarly, it was much cheaper to illegally build water pipes across the border."
+    },
+    "places": {
+      "source": "© Koper Regional Museum",
+      "text": "In May 1950, the Slovenski poročevalec reported how workers cleared rubble at the coalmine in Sečovlje/Sicciole, Istria. The Italian graffiti hails Tito’s Yugoslavia. Borders and those in charge of coal extraction here changed twice during the mine’s short existence: Italy (1930s–40s) to Nazi Germany (1943–45) and then to Yugoslavia (1950s–70s)."
+    },
+    "practices": {
+      "source": "© CIA FOIA",
+      "text": "Due to its subversive nature, contraband is mentioned in written sources only when people got caught. The CIA, in its observations on the northeastern Adriatic, recorded such activities. The quotes stress the persisting links between Istria and Trieste in spite of the postwar border regime."
+    },
+    "title1": "Contraband",
+    "title2": ""
   }
 }
