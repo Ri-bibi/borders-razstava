@@ -1,0 +1,54 @@
+---
+import { globalTimeEnd, globalTimeStart } from "./timelineGlobals";
+
+const eventFrom = 1960;
+const eventTo = 2013;
+const important = [1950, 1961, 1989, 1999, 2007];
+
+const generateRange = (from: number, to: number) => {
+  const out = [];
+  for (let i = from; i < to; i++) {
+    out.push(i);
+  }
+  return out;
+};
+---
+
+<div class="w-full bg-brand-blue flex text-white absolute z-50">
+  <div class="font-bold text-lg border-r-2 border-white px-8 py-3">
+    Poglavja
+  </div>
+  <div class="flex justify-around flex-1 items-end">
+    {
+      generateRange(globalTimeStart, globalTimeEnd).map((year) => {
+        const component = () => {
+          if (important.includes(year)) {
+            return (
+              <div class=" flex justify-center items-center flex-col h-full">
+                <div class="flex-1 w-1 bg-white" />
+                <div class="p-1 font-black text-xl">{year}</div>
+                <div class="flex-1 w-1 bg-white" />
+              </div>
+            );
+          }
+
+          return <div class="h-4 w-[1px] bg-white/30" />;
+        };
+
+        // base component
+        if (eventFrom < year && year < eventTo) {
+          return (
+            <div class="flex-1 bg-white/20 h-full flex flex-col justify-end">
+              {component()}
+            </div>
+          );
+        }
+        return (
+          <div class="flex-1 h-full flex flex-col justify-end">
+            {component()}
+          </div>
+        );
+      })
+    }
+  </div>
+</div>
