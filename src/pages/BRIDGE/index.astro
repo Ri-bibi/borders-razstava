@@ -1,0 +1,59 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import { MapComponent } from "../../components/map/Map";
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
+import Footer from "../../components/footer/Footer.astro";
+
+import peopleImg from "./01_PEOPLE_BRIDGE.png";
+import placesImg from "./02_PLACES_BRIDGE.png";
+import practicesImg from "./03_PRACTICES_BRIDGE.png";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("bridge.title1") + " " + t("bridge.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("bridge.title1")}
+      title2={t("bridge.title2")}
+      author={t("bridge.author")}
+      body1={t("bridge.intro.first")}
+      body2={t("bridge.intro.second")}
+    />
+    <LeftText
+      body={t("bridge.people.text")}
+      image={peopleImg}
+      source={t("bridge.people.source")}
+      title={t("generic.people")}
+    />
+    <RightText
+      body={t("bridge.places.text")}
+      image={placesImg}
+      source={t("bridge.places.source")}
+      title={t("generic.places")}
+    />
+    <BlueBoxText
+      body={t("bridge.practices.text")}
+      image={practicesImg}
+      source={t("bridge.practices.source")}
+      title={t("generic.practices")}
+    />
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+</Layout>

@@ -1,0 +1,63 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import { MapComponent } from "../../components/map/Map";
+
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+
+import peopleImg from "./01_PEOPLE_ALPE-ADRIA.png";
+import placesImg from "./02_PLACES_ALPE-ADRIA.png";
+import practicesImg from "./03_PRACTICES_ALPE-ADRIA.png";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("alpeadria.title1") + " " + t("alpeadria.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("alpeadria.title1")}
+      title2={t("alpeadria.title2")}
+      author={t("alpeadria.author")}
+      body1={t("alpeadria.intro.first")}
+      body2={t("alpeadria.intro.second")}
+    />
+
+    <LeftText
+      body={t("alpeadria.people.text")}
+      image={peopleImg}
+      source={t("alpeadria.people.source")}
+      title={t("generic.people")}
+    />
+
+    <ImageTitleText
+      body={t("alpeadria.places.text")}
+      image={placesImg}
+      source={t("alpeadria.places.source")}
+      title={t("generic.places")}
+    />
+
+    <OverlayRightBox
+      body={t("alpeadria.practices.text")}
+      image={practicesImg}
+      source={t("alpeadria.practices.source")}
+      title={t("generic.practices")}
+    />
+
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+</Layout>

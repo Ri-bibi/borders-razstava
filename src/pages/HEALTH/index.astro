@@ -1,0 +1,63 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import { MapComponent } from "../../components/map/Map";
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
+import Footer from "../../components/footer/Footer.astro";
+
+import peopleImg from "./01_PEOPLE_HEALTH.png";
+import placesImg from "./02_PLACES_HEALTH.png";
+import practicesImg from "./03_PRACTICES_HEALTH_a.png";
+import OverlayText from "../../components/textIslands/OverlayText.astro";
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("health.title1") + " " + t("health.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("health.title1")}
+      title2={t("health.title2")}
+      author={t("health.author")}
+      body1={t("health.intro.first")}
+      body2={t("health.intro.second")}
+    />
+    <RightText
+      body={t("health.people.text")}
+      image={peopleImg}
+      source={t("health.people.source")}
+      title={t("generic.people")}
+    />
+    <OverlayRightBox
+      body={t("health.places.text")}
+      image={placesImg}
+      source={t("health.places.source")}
+      title={t("generic.places")}
+    />
+    <div class="py-50">
+      <LeftText
+        body={t("health.practices.text")}
+        image={practicesImg}
+        source={t("health.practices.source")}
+        title={t("generic.practices")}
+      />
+    </div>
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+</Layout>

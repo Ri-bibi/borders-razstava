@@ -14,9 +14,7 @@ const { title, body, image, source } = Astro.props;
 ---
 
 <div class="w-full grid md:grid-cols-4 grid-cols-1 py-8 lg:px-4 lg:gap-16">
-  <div
-    class="bg-gray-50 flex items-center justify-center col-span-3 lg:border-4 border-white"
-  >
+  <div class="flex items-center justify-center col-span-3 md:-ml-48">
     <ImageWraper>
       <Image src={image} alt="ajow" class="w-full h-full object-contain" />
     </ImageWraper>

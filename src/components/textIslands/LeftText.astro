@@ -16,14 +16,22 @@ const { title, body, image, source } = Astro.props;
 
 <div class="w-full grid md:grid-cols-3 grid-cols-1 py-8 lg:px-4 lg:gap-16">
   <div class="flex flex-col gap-8 w-full">
-    <TitleBox title={title} class:list="-ml-8" />
+    <!-- <TitleBox title={title} class:list="-ml-8" /> -->
+    <h3 class="text-brand-blue font-bold text-6xl">{title}</h3>
 
     <span class="text-justify lg:max-w-prose px-8 lg:px-0">
       <TextWithYears body={body} client:idle />
     </span>
-    <span class="ml-auto font-light text-brand-beige-dark px-8 lg:px-0"
-      >{source}</span
+    <span
+      class="ml-auto font-light text-brand-beige-dark px-8 lg:px-0 relative"
     >
+      {source}
+      <h3
+        class="text-[12rem] font-bold text-brand-blue absolute opacity-6 ml-2 -mt-48 tracking-widest"
+      >
+        {title}
+      </h3>
+    </span>
   </div>
 
   <div class="flex items-center justify-center col-span-2 lg:-mt-48 mt-8">
@@ -32,7 +40,7 @@ const { title, body, image, source } = Astro.props;
         <Image
           src={image}
           alt={`${title} image`}
-          class="w-full h-full object-contain"
+          class="w-full h-full object-contain max-w-2xl"
         />
       </ImageWraper>
     </div>

@@ -1,0 +1,63 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import { MapComponent } from "../../components/map/Map";
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
+import Footer from "../../components/footer/Footer.astro";
+
+import peopleImg from "./01_PEOPLE_CONTRABAND_b.png";
+import placesImg from "./02_PLACES_CONTRABAND.png";
+// import practicesImg from "./03_PRACTICES_CONTRABAND.png";
+import OverlayText from "../../components/textIslands/OverlayText.astro";
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("contraband.title1") + " " + t("contraband.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("contraband.title1")}
+      title2={t("contraband.title2")}
+      author={t("contraband.author")}
+      body1={t("contraband.intro.first")}
+      body2={t("contraband.intro.second")}
+    />
+    <LeftText
+      body={t("contraband.people.text")}
+      image={peopleImg}
+      source={t("contraband.people.source")}
+      title={t("generic.people")}
+    />
+    <RightText
+      body={t("contraband.places.text")}
+      image={placesImg}
+      source={t("contraband.places.source")}
+      title={t("generic.places")}
+    />
+    <div class="py-50">
+      <BlueBoxText
+        body={t("contraband.practices.text")}
+        image={placesImg}
+        source={t("contraband.practices.source")}
+        title={t("generic.practices")}
+      />
+    </div>
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+</Layout>

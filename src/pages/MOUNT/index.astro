@@ -1,0 +1,67 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import { MapComponent } from "../../components/map/Map";
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
+import Footer from "../../components/footer/Footer.astro";
+
+import peopleImg from "./01__PEOPLE_MOUNT_b.png";
+import placesImg from "./02_PLACES_MOUNT_a.png";
+import practicesImg from "./03_PRACTICES_MOUNT.png";
+import OverlayText from "../../components/textIslands/OverlayText.astro";
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("mount.title1") + " " + t("mount.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("mount.title1")}
+      title2={t("mount.title2")}
+      author={t("mount.author")}
+      body1={t("mount.intro.first")}
+      body2={t("mount.intro.second")}
+    />
+  </Container>
+
+  <BlueBoxText
+    body={t("mount.people.text")}
+    image={peopleImg}
+    source={t("mount.people.source")}
+    title={t("generic.people")}
+  />
+
+  <Container>
+    <div class="py-50">
+      <LeftText
+        body={t("mount.places.text")}
+        image={placesImg}
+        source={t("mount.places.source")}
+        title={t("generic.places")}
+      />
+    </div>
+    <RightText
+      body={t("mount.practices.text")}
+      image={practicesImg}
+      source={t("mount.practices.source")}
+      title={t("generic.practices")}
+    />
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+</Layout>

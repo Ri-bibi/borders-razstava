@@ -1,9 +1,9 @@
 {
   "generic": {
     "source": "Vir",
-    "people": "People",
-    "places": "Places",
-    "practices": "Practices"
+    "people": "Ljudje",
+    "places": "Kraji",
+    "practices": "Prakse"
   },
   "alpeadria": {
     "author": "Benedetto Zaccaria",

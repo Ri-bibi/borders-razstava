@@ -32,14 +32,13 @@ const { title, body, image, source } = Astro.props;
         >
           {title}
         </h3>
-        <div
-          class="flex flex-col gap-8 text-white font-bold bg-brand-blue p-16"
-        >
+        <div class="flex flex-col gap-8 text-white bg-brand-blue p-16">
           <span class="text-justify max-w-prose">
             <TextWithYears body={body} client:idle />
           </span>
 
-          <span class="font-light ml-auto px-8 py-1 bg-brand-beige-dark"
+          <span
+            class="font-light ml-auto px-2 text-md py-0.5 text-brand-beige-dark max-w-lg"
             >{source}</span
           >
         </div>

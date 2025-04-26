@@ -1,13 +1,20 @@
----
-
----
-
-<div class="relative">
-  <div class="w-full h-full absolute">
-    <div
-      class="bg-brand-blue/30 hover:bg-brand-blue/0 transition w-full h-full"
-    >
-    </div>
+<div class="relative group">
+  <!-- Image container with grayscale filter -->
+  <div
+    class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300"
+  >
+    <slot />
   </div>
-  <slot />
+
+  <!-- Blue overlay that fades on hover -->
+  <div
+    class="absolute inset-0 bg-brand-blue/10 group-hover:bg-brand-blue/0 transition-all duration-300"
+  >
+  </div>
+
+  <!-- Border that appears on hover -->
+  <div
+    class="absolute inset-0 border-1 border-transparent group-hover:shadow-2xl transition-all duration-300 pointer-events-none"
+  >
+  </div>
 </div>

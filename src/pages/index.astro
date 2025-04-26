@@ -15,10 +15,18 @@ import LeftText from "../components/textIslands/LeftText.astro";
 import OverlayRightBox from "../components/textIslands/OverlayRightBox.astro";
 import RightText from "../components/textIslands/RightText.astro";
 import Timeline from "../components/navbar/Timeline.astro";
+
+const eventFrom = 1960;
+const eventTo = 2013;
+const important = [1950, 1961, 1989, 1999, 2007];
 ---
 
 <Layout>
-  <Timeline />
+  <Timeline
+    eventFrom={eventFrom}
+    eventTo={eventTo}
+    importantEvents={important}
+  />
   <MapComponent client:load title="ojla" />
 
   <Container>

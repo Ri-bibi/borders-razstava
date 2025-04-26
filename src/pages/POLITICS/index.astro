@@ -1,0 +1,67 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import ArrowNext from "../../components/ArrowNext.astro";
+import { MapComponent } from "../../components/map/Map";
+import TitleCols from "../../components/titleSection/TitleCols.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { initializei18n } from "../../utils/i18n";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
+import Footer from "../../components/footer/Footer.astro";
+
+import peopleImg from "./01_PEOPLE_POLITICS.png";
+import placesImg from "./02_PLACES_POLITICS_a.png";
+import practicesImg from "./03_PRACTICES_POLITICS_a.png";
+import OverlayText from "../../components/textIslands/OverlayText.astro";
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout>
+  <div class="">
+    <MapComponent
+      title={t("politics.title1") + " " + t("politics.title2")}
+      client:load
+    />
+  </div>
+  <Container>
+    <TitleCols
+      title1={t("politics.title1")}
+      title2={t("politics.title2")}
+      author={t("politics.author")}
+      body1={t("politics.intro.first")}
+      body2={t("politics.intro.second")}
+    />
+  </Container>
+
+  <OverlayRightBox
+    body={t("politics.people.text")}
+    image={peopleImg}
+    source={t("politics.people.source")}
+    title={t("generic.people")}
+  />
+  <Container>
+    <div class="lg:py-48">
+      <RightText
+        body={t("politics.places.text")}
+        image={placesImg}
+        source={t("politics.places.source")}
+        title={t("generic.places")}
+      />
+    </div>
+    <BlueBoxText
+      body={t("politics.practices.text")}
+      image={practicesImg}
+      source={t("politics.practices.source")}
+      title={t("generic.practices")}
+    />
+    <div class="flex justify-end">
+      <ArrowNext />
+    </div>
+  </Container>
+</Layout>
