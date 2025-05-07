@@ -20,6 +20,10 @@ import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
+
+const from = 1947;
+const to = 1986;
+const importantDates = [1947, 1955, 1965, 1985, 1986];
 ---
 
 <Layout>
