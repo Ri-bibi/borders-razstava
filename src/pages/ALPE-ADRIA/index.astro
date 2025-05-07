@@ -22,14 +22,13 @@ const t = await initializei18n(locale);
 <Layout>
   <div class="">
     <MapComponent
-      title={t("alpeadria.title1") + " " + t("alpeadria.title2")}
+      title1={t("alpeadria.title1")}
+      title2={t("alpeadria.title2")}
       client:load
     />
   </div>
   <Container>
     <TitleCols
-      title1={t("alpeadria.title1")}
-      title2={t("alpeadria.title2")}
       author={t("alpeadria.author")}
       body1={t("alpeadria.intro.first")}
       body2={t("alpeadria.intro.second")}

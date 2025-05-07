@@ -1,5 +1,6 @@
 import { Map, Marker } from "pigeon-maps";
 import type { TileComponent } from "pigeon-maps";
+import Container from "../../layouts/Container.astro";
 
 const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   <img
@@ -23,31 +24,52 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   />
 );
 
-export const MapComponent = ({ title }: { title: string }) => {
+export const MapComponent = ({
+  title1,
+  title2,
+}: {
+  title1: string;
+  title2: string;
+}) => {
   return (
-    <div className="w-full relative">
-      <div className="w-full h-full absolute bg-brand-blue/30 z-10 flex items-end justify-center ">
-        <div className="z-30 px-8 lg:hidden pb-16">
-          <h1 className="text-8xl font-black text-white font-aleo z-30 text-center">
-            {title}
-          </h1>
-        </div>
+    <div className="">
+      <div className="bg-brand-blue pt-12 pb-28">
+        <h1 className="lg:text-9xl text-8xl font-black text-white font-aleo z-30break-normal py-0 opacity-10">
+          BRIDGE
+        </h1>
+        <h1 className="lg:text-9xl text-6xl font-extralight text-white font-aleo z-30 break-normal py-0 -mt-16">
+          {title1 + " " + title2}
+        </h1>
       </div>
-      <Map
-        tileComponent={ImgTile}
-        height="70vh"
-        defaultCenter={[46.1797619, 13.7337097]}
-        metaWheelZoom={false}
-        defaultZoom={12}
-      >
-        <Marker width={16} anchor={[46.1797619, 13.7337097]}>
-          <div className="p-6 bg-brand-blue/40 rounded-full">
-            <div className="p-6 bg-brand-blue/40 rounded-full">
-              <div className="h-4 w-4 bg-brand-blue rounded-full"></div>
+      <div className="w-full relative">
+        <div className="w-full h-full absolute bg-brand-blue/40 z-10 flex items-end px-8 ">
+          {/* <div className="lg:max-w-7xl mx-auto  w-full">
+          <div className="z-30 flex flex-col gap-12">
+            <div className="bg-brand-blue w-fit p-4 py-2 text-white text-end">
+              Jure Ramšak
             </div>
+            <h1 className="text-8xl font-black text-white font-aleo z-30 max-w-7xl break-normal pb-48 ">
+              {title1 + " " + title2}
+            </h1>
           </div>
-        </Marker>
-      </Map>
+        </div> */}
+        </div>
+        <Map
+          tileComponent={ImgTile}
+          height="50vh"
+          defaultCenter={[46.1797619, 13.7337097]}
+          metaWheelZoom={false}
+          defaultZoom={12}
+        >
+          <Marker width={16} anchor={[46.1797619, 13.7337097]}>
+            <div className="p-6 bg-brand-blue/40 rounded-full">
+              <div className="p-6 bg-brand-blue/40 rounded-full">
+                <div className="h-4 w-4 bg-brand-blue rounded-full"></div>
+              </div>
+            </div>
+          </Marker>
+        </Map>
+      </div>
     </div>
   );
 };

@@ -2,103 +2,110 @@
 import Layout from "../layouts/Layout.astro";
 import Container from "../layouts/Container.astro";
 import Image from "astro/components/Image.astro";
-import image from "./slika.png";
-import imagew from "./slika-w.png";
-import Sticky from "../components/UtilLayouts/Sticky.astro";
-import { MapComponent } from "../components/map/Map";
-import TitleCols from "../components/titleSection/TitleCols.astro";
-import ArrowNext from "../components/ArrowNext.astro";
-import OverlayText from "../components/textIslands/OverlayText.astro";
-import BlueBoxText from "../components/textIslands/BlueBoxText.astro";
-import ImageTitleText from "../components/textIslands/ImageTitleText.astro";
-import LeftText from "../components/textIslands/LeftText.astro";
-import OverlayRightBox from "../components/textIslands/OverlayRightBox.astro";
-import RightText from "../components/textIslands/RightText.astro";
-import Timeline from "../components/navbar/Timeline.astro";
 
-const eventFrom = 1960;
-const eventTo = 2013;
-const important = [1950, 1961, 1989, 1999, 2007];
+import mainImg from "./slikice.png";
 ---
 
 <Layout>
-  <Timeline
-    eventFrom={eventFrom}
-    eventTo={eventTo}
-    importantEvents={important}
-  />
-  <MapComponent client:load title="ojla" />
+  <Container>
+    <div class="pt-8">
+      <div class="bg-brand-beige-dark px-12 pr-24 py-4 w-fit text-white">
+        <h1 class="text-7xl font-aleo font-black">Never Mind</h1>
+      </div>
+      <div class="bg-brand-blue px-12 pr-24 py-4 text-white -mx-32 pb-32">
+        <div class="px-32">
+          <h1 class="text-8xl font-aleo font-black text-right">The borders</h1>
+        </div>
+      </div>
+      <Image src={mainImg} alt="title image" class="-mt-36" />
+      <!-- text -->
+      <div class="pt-12">
+        <!-- title -->
+        <div class="w-full py-8 grid grid-cols-2 text-5xl font-medium">
+          <div class="font-bold w-full flex justify-center">
+            'Never Mind <br /> The Borders'
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="bg-brand-beige-dark p-2">Places</div>
+            <div class="flex gap-8">
+              <div class="text-white bg-brand-blue p-2 -rotate-7">People</div>
+              <div class="bg-black text-white h-fit p-2">Practices</div>
+            </div>
+          </div>
+        </div>
 
-  <Container>
-    <TitleCols
-      title1="Meja in"
-      title2="Most"
-      author="Nina Hofman"
-      body1="Nekdaj času Jugoslavije je reka Kolpa/Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most. /Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most.  /Kupa predstavljala del meje med socialističnima republikama Slovenijo in Hrvaško. Leta 1957 so prebivalci obeh bregov skupaj financirali in zgradili most.   "
-      body2="Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most.  Most je od takrat propadal. Jeseni 2023 je bil dostop do reke ponovno odprt, državi pa sta po vstopu Hrvaške v EU postali sosednji državi istega sporazuma brez meja. Hkrati je civilna iniciativa, ustanovljena iz prebivalcev obeh bregov, začela financirati in obnavljati most. "
-    />
-  </Container>
-  <Container>
-    <RightText
-      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-      image={image}
-      title="People"
-      source="Source V.J."
-    />
-    <LeftText
-      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-      image={image}
-      title="People"
-      source="Source V.J."
-    />
-    <BlueBoxText
-      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-      image={imagew}
-      title="People"
-      source="Source V.J."
-    />
-    <ImageTitleText
-      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-      image={imagew}
-      title="People"
-      source="Source V.J."
-    />
-    <div class="flex justify-end">
-      <ArrowNext />
+        <!-- text -->
+        <div class="text-justify text-lg/8 max-w-prose mx-auto">
+          <p>
+            Ustaljeni pogledi na preteklost Evrope v času hladne vojne v
+            središče postavljajo neprepustnost meja med Vzhodom in Zahodom.
+            Berlinski zid se obravnava kot simbolno in dejansko osišče, okrog
+            katerega se gradi retorika o tej neprebojni ločnici. Fokus pričujoče
+            razstave Never Mind the Borders pa je usmerjen drugam, v poroznost
+            meddržavnih meja, ki jih je oblikovala blokovska ureditev. Pomena
+            berlinskega zidu v času hladne vojne sicer ne gre zanikati, a če se
+            iz Berlina preselimo v prostor Alpe-Jadran, ugotovimo, da je mogoče
+            pogled na evropsko preteklost dopolniti z drugačnimi ugotovitvami.
+            To seveda ne pomeni, da v prostoru med Alpami in Jadranom ni bilo
+            medsebojnih napetosti. Prva in predvsem druga svetovna vojna sta v
+            življenju ljudi pustili neizbrisljive sledi, ki jih ni bilo mogoče
+            zlahka premostiti. Kljub
+          </p>
+
+          <p>
+            temu pa so državniki v desetletju po vojni počasi začeli
+            prepoznavati ugodne učinke dobrososedskih odnosov na politični in
+            gospodarski, pa tudi kulturni in družbeni ravni. Tako se je v času,
+            ko so v Berlinu medsebojne težave reševali z izgradnjo zidu, na
+            južnem koncu linije – ki jo je Winston Churchill leta 1946
+            poimenoval železna zavesa – postopoma uveljavil drugačen pristop.
+            Zato se je lahko leta 1961, medtem ko je med zahodnim in vzhodnim
+            Berlinom rasel betonski zid, slovenski režiser Mako Sajko na drugem
+            koncu Evrope v svojem dokumentarnem filmu spraševal, Kje je železna
+            zavesa? A ne gre le za preusmeritev pogleda proti jugu, temveč tudi
+            za drugačno perspektivo. Ta ob vlogi pomembnih mož (bolj poredkoma
+            žensk) in državnih institucij upošteva tudi vlogo tako imenovanega
+            malega človeka in na vsakdanje življenje: prehajanje meje je namreč
+            (lahko) bilo skoraj vsakdanje opravilo. Meja je bila vseka kor
+            prisotna in jo je bilo mogoče v marsičem občutiti. A prej kot
+            nepremostljiva ovira je bila moteči element, ki pa je vendarle
+            omogočal raznolike čezmejne prakse, od nakupov živil in bele
+            tehnike, do nedeljskih kosil in poletnega dopusta. Pričujoča
+            razstava odstira pogled na ljudi, kraje in prakse, ki so zaznamovali
+            čezmejno interakcijo na vsakdanji ravni in omogočili postopno
+            integracijo. Skratka, če se z vrha berlinskega zidu preselimo v
+            prostor Alpe-Jadran, je zgodovina Evrope videti drugače.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full bg-brand-blue flex p-2 mt-32">
+        <div class="mx-auto p2 bg-brand-beige-light -rotate-10">
+          <h2 class="-mr-4 text-6xl font-black p-2 px-6 font-aleo">Razstava</h2>
+        </div>
+      </div>
+
+      <div class="w-full grid grid-cols-4 py-24 gap-2">
+        {
+          [1, 2, 3, 4, 5, 6, 7].map((i) => (
+            <div class="aspect-square relative">
+              <div class="absolute z-10 bg-black text-white ml-8 mt-4 rotate-4">
+                <h2 class="-mr-4 text-3xl font-bold p-2 px-6 ">Razstava</h2>
+              </div>
+              <img
+                class="w-full h-full absolute z-1"
+                src={`https://picsum.photos/id/${i * 31}/400/400`}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="w-full flex justify-end">
+      <a class="text-2xl font-semibold underline text-brand-blue" href="">
+        Avtorji in zahvale
+      </a>
     </div>
   </Container>
-
-  <OverlayText
-    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-    image={imagew}
-    title="People"
-    source="Source V.J."
-  />
-  <div class="py-64">.</div>
-
-  <LeftText
-    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-    image={image}
-    title="People"
-    source="Source V.J."
-  />
-  <OverlayRightBox
-    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-    image={imagew}
-    title="People"
-    source="Source V.J."
-  />
-  <div class="py-64">.</div>
-  <RightText
-    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-    image={image}
-    title="People"
-    source="Source V.J."
-  />
-  <BlueBoxText
-    body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam"
-    image={imagew}
-    title="People"
-    source="Source V.J."
-  />
 </Layout>

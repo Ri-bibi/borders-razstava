@@ -24,24 +24,26 @@ const t = await initializei18n(locale);
 <Layout>
   <div class="">
     <MapComponent
-      title={t("business.title1") + " " + t("business.title2")}
+      title1={t("business.title1")}
+      title2={t("business.title2")}
       client:load
     />
   </div>
   <Container>
     <TitleCols
-      title1={t("business.title1")}
-      title2={t("business.title2")}
       author={t("business.author")}
       body1={t("business.intro.first")}
       body2={t("business.intro.second")}
-    />
-    <RightText
-      body={t("business.people.text")}
-      image={peopleImg}
-      source={t("business.people.source")}
-      title={t("generic.people")}
-    />
+      leftQuote="Le persone potevano anche recarsi nei centri sanitari per abortire, pratica che fu legalizzata in Jugoslavia nel 1952..."
+    >
+      />
+      <RightText
+        body={t("business.people.text")}
+        image={peopleImg}
+        source={t("business.people.source")}
+        title={t("generic.people")}
+      />
+    </TitleCols>
   </Container>
 
   <OverlayRightBox
@@ -50,6 +52,7 @@ const t = await initializei18n(locale);
     source={t("business.places.source")}
     title={t("generic.places")}
   />
+
   <Container>
     <div class="py-50">
       <LeftText
