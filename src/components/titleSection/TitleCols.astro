@@ -5,12 +5,11 @@ import TextWithYears from "../yearWrapper/TextWithYears";
 interface Props {
   body1: string;
   body2: string;
-  author: string;
   leftQuote?: string;
   rightQuote?: string;
 }
 
-const { body1, body2, author, leftQuote, rightQuote } = Astro.props;
+const { body1, body2, leftQuote, rightQuote } = Astro.props;
 ---
 
 <div class="grid lg:grid-cols-2 grid-cols-1 w-full">
@@ -31,9 +30,6 @@ const { body1, body2, author, leftQuote, rightQuote } = Astro.props;
 
   <div class="flex flex-col z-30 lg:-mt-24 border-t-6 border-white/30">
     <div class="bg-white flex flex-col lg:py-8 gap-8">
-      <!-- <div class="ml-auto px-16">
-        <span class="text-brand-beige-dark text-2xl font-bold">{author}</span>
-      </div> -->
       <span
         class="lg:max-w-lg max-w-prose text-justify lg:mx-auto text-lg pt-12"
       >

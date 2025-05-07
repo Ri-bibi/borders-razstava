@@ -1,0 +1,28 @@
+---
+// src/components/StickyHeader.astro
+interface Props {
+  title1: string;
+  title2: string;
+  author: string;
+}
+
+const { title1, title2, author } = Astro.props;
+---
+
+<div class="bg-brand-blue pb-14 flex justify-center flex-col">
+  <div class="">
+    <span class="bg-white text-brand-blue text-2xl px-2">{author}</span>
+  </div>
+  <div class="flex flex-col pt-12">
+    <h1
+      class="lg:text-[10rem] text-8xl font-black text-white font-aleo z-30break-normal py-0 opacity-10"
+    >
+      {title1.toUpperCase()}
+    </h1>
+    <h1
+      class="lg:text-[11rem] text-6xl font-extralight text-white font-aleo z-30 break-normal py-0 -mt-20"
+    >
+      {title2}
+    </h1>
+  </div>
+</div>

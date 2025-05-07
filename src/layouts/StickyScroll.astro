@@ -1,0 +1,63 @@
+---
+// src/components/StickyHeader.astro
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class={`sticky-header ${className || ""}`} id="sticky-header">
+  <slot />
+</div>
+<div class="sticky-header__placeholder" id="sticky-header-placeholder"></div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.getElementById("sticky-header");
+    const placeholder = document.getElementById("sticky-header-placeholder");
+
+    if (!header || !placeholder) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          header.classList.add("sticky-header--stuck");
+          placeholder.style.height = `${header.offsetHeight}px`;
+        } else {
+          header.classList.remove("sticky-header--stuck");
+          placeholder.style.height = "0px";
+        }
+      },
+      { threshold: [0] }
+    );
+
+    observer.observe(placeholder);
+
+    // Cleanup on navigation (for SPA-like behavior)
+    window.addEventListener("beforeunload", () => {
+      observer.disconnect();
+    });
+  });
+</script>
+
+<style>
+  .sticky-header {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .sticky-header.sticky-header--stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .sticky-header__placeholder {
+    height: 0;
+    transition: height 0.3s ease;
+  }
+</style>

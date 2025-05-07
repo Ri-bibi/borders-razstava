@@ -15,24 +15,28 @@ import peopleImg from "./01_PEOPLE_BRIDGE.png";
 import placesImg from "./02_PLACES_BRIDGE.png";
 import practicesImg from "./03_PRACTICES_BRIDGE.png";
 import Timeline from "../../components/navbar/Timeline.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
 ---
 
 <Layout>
-  <Timeline eventFrom={1900} eventTo={1950} importantEvents={[1910, 1930]} />
-  <div class="text-[10rem]">Barier and the bridge</div>
+  <TitleBar
+    title1="BRIDGE"
+    }
+    title2={t("bridge.title1") + " " + t("bridge.title2")}
+    author={t("bridge.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={1900} eventTo={1950} importantEvents={[1910, 1930]} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title1={t("bridge.title1")}
-      title2={t("bridge.title2")}
-      client:load
-    />
+    <MapComponent client:load />
   </div>
   <Container>
     <TitleCols
-      author={t("bridge.author")}
       body1={t("bridge.intro.first")}
       body2={t("bridge.intro.second")}
       leftQuote="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo possimus consectetur ratione quisquam doloremque laudantium."

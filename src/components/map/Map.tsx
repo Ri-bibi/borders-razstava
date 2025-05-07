@@ -24,23 +24,9 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   />
 );
 
-export const MapComponent = ({
-  title1,
-  title2,
-}: {
-  title1: string;
-  title2: string;
-}) => {
+export const MapComponent = () => {
   return (
     <div className="">
-      <div className="bg-brand-blue pt-12 pb-28">
-        <h1 className="lg:text-9xl text-8xl font-black text-white font-aleo z-30break-normal py-0 opacity-10">
-          BRIDGE
-        </h1>
-        <h1 className="lg:text-9xl text-6xl font-extralight text-white font-aleo z-30 break-normal py-0 -mt-16">
-          {title1 + " " + title2}
-        </h1>
-      </div>
       <div className="w-full relative">
         <div className="w-full h-full absolute bg-brand-blue/40 z-10 flex items-end px-8 ">
           {/* <div className="lg:max-w-7xl mx-auto  w-full">
