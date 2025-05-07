@@ -19,6 +19,9 @@ import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro"
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
+const from = 1965;
+const to = 1990;
+const importantDates = [1965, 1967, 1972, 1980, 1990];
 ---
 
 <Layout>

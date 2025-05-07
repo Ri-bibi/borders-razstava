@@ -18,6 +18,10 @@ import Timeline from "../../components/navbar/Timeline.astro";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
+
+const from = 1957;
+const to = 2023;
+const importantDates = [1957, 1991, 2004, 2007, 2023];
 ---
 
 <Layout>
