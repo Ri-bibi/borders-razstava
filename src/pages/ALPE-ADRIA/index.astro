@@ -14,6 +14,12 @@ import LeftText from "../../components/textIslands/LeftText.astro";
 import peopleImg from "./01_PEOPLE_ALPE-ADRIA.png";
 import placesImg from "./02_PLACES_ALPE-ADRIA.png";
 import practicesImg from "./03_PRACTICES_ALPE-ADRIA.png";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+import OverlayText from "../../components/textIslands/OverlayText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -24,43 +30,51 @@ const importantDates = [1978, 1981, 1987, 1988];
 ---
 
 <Layout>
+  <TitleBar
+    title1="ALPEADRIA"
+    title2={t("alpeadria.title1") + " " + t("alpeadria.title2")}
+    author={t("alpeadria.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title1={t("alpeadria.title1")}
-      title2={t("alpeadria.title2")}
-      client:load
-    />
+    <MapComponent client:load />
   </div>
   <Container>
     <TitleCols
-      author={t("alpeadria.author")}
       body1={t("alpeadria.intro.first")}
       body2={t("alpeadria.intro.second")}
+      rightQuote="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia nesciunt."
     />
-
+    <!-- </Container> -->
+    <div class="py-24">
+      <ImageTitleText
+        body={t("alpeadria.people.text")}
+        image={peopleImg}
+        source={t("alpeadria.people.source")}
+        title={t("generic.people")}
+      />
+    </div>
+    <!-- <Container> -->
     <LeftText
-      body={t("alpeadria.people.text")}
-      image={peopleImg}
-      source={t("alpeadria.people.source")}
-      title={t("generic.people")}
-    />
-
-    <ImageTitleText
       body={t("alpeadria.places.text")}
       image={placesImg}
       source={t("alpeadria.places.source")}
       title={t("generic.places")}
     />
-
-    <OverlayRightBox
+    <div class="my-48"></div>
+    <RightText
       body={t("alpeadria.practices.text")}
       image={practicesImg}
       source={t("alpeadria.practices.source")}
       title={t("generic.practices")}
     />
 
-    <div class="flex justify-end">
-      <ArrowNext />
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/BRIDGE/", Astro.url.pathname)}
+        >{t("bridge.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

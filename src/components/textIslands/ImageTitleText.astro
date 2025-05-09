@@ -21,10 +21,17 @@ const { title, body, image, source } = Astro.props;
   </div>
 
   <div class="flex flex-col lg:py-0 py-8">
-    <TitleBox title={title} class:list="-ml-8" />
+    <div class="flex flex-col gap-8 relative">
+      <h3 class="text-brand-blue font-bold text-6xl">{title}</h3>
+      <h3
+        class="text-[12rem] font-bold text-brand-blue absolute opacity-10 -ml-3 -mt-21 tracking-widest"
+      >
+        {title}
+      </h3>
+    </div>
   </div>
 
-  <div class="col-span-full flex justify-start p-8">
+  <div class="col-span-full flex justify-start p-8 pt-0">
     <div class="flex flex-col">
       <span class="text-justify max-w-prose">
         <TextWithYears body={body} client:idle />

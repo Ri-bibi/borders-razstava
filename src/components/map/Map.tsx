@@ -1,6 +1,5 @@
 import { Map, Marker } from "pigeon-maps";
 import type { TileComponent } from "pigeon-maps";
-import Container from "../../layouts/Container.astro";
 
 const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   <img
@@ -24,7 +23,7 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   />
 );
 
-export const MapComponent = () => {
+export const MapComponent = ({ coords }: { coords: [number, number] }) => {
   return (
     <div className="">
       <div className="w-full relative">
@@ -42,12 +41,13 @@ export const MapComponent = () => {
         </div>
         <Map
           tileComponent={ImgTile}
+          // @ts-expect-error css heigh work, not only number despite it being whiney
           height="50vh"
-          defaultCenter={[46.1797619, 13.7337097]}
+          defaultCenter={coords}
           metaWheelZoom={false}
           defaultZoom={12}
         >
-          <Marker width={16} anchor={[46.1797619, 13.7337097]}>
+          <Marker width={16} anchor={coords}>
             <div className="p-6 bg-brand-blue/40 rounded-full">
               <div className="p-6 bg-brand-blue/40 rounded-full">
                 <div className="h-4 w-4 bg-brand-blue rounded-full"></div>

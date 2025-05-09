@@ -1,9 +1,21 @@
+---
+// src/components/CardLink.astro
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
 <div
-  class="bg-brand-beige-light p-8 text-xl text-white font-bold flex items-center w-fit pr-24 overflow-hidden"
+  class="bg-brand-blue p-4 text-xl text-white font-bold flex items-center w-fit pr-18 overflow-hidden -mr-18"
 >
-  <span class="max-w-64 underline">Tihotapstvo v zgodnji hladni vojni</span>
+  <a class="max-w-64 underline cursor-pointer" href={href}>
+    <slot />
+    <!-- This allows content to be passed in -->
+  </a>
   <div
-    class="border-b-8 border-r-8 border-white aspect-square p-8 -rotate-45 h-32 w-32 -my-8"
+    class="border-b-4 border-r-4 border-white aspect-square p-4 -rotate-45 h-24 w-24 -my-8"
   >
   </div>
 </div>

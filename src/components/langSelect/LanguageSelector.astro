@@ -1,0 +1,38 @@
+---
+import { defaultLanguage, languages } from "./languageutils";
+
+// Get current path and ensure trailing slash
+let currentPath = Astro.url.pathname;
+if (!currentPath.endsWith("/")) currentPath += "/";
+
+let currentLang = defaultLanguage;
+for (const lang of languages) {
+  if (currentPath.startsWith(`/${lang}/`)) {
+    currentLang = lang;
+    break;
+  }
+}
+
+// Build new URL with selected language
+const getLanguageUrl = (langCode: string) => {
+  // If current path already has a language prefix, replace it
+  if (languages.some((lang) => currentPath.startsWith(`/${lang}/`))) {
+    return `/${langCode}${currentPath.slice(3)}`;
+  }
+  // Otherwise prepend the language
+  return `/${langCode}${currentPath}`;
+};
+---
+
+<div class="flex gap-4 text-white">
+  {
+    languages.map((lang) => (
+      <a
+        href={getLanguageUrl(lang)}
+        class={`${currentLang === lang ? "font-bold underline" : "opacity-80 hover:opacity-100"}`}
+      >
+        {lang}
+      </a>
+    ))
+  }
+</div>

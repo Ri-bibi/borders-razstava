@@ -1,15 +1,26 @@
 @import "tailwindcss";
 @import "@fontsource-variable/aleo";
 
+@font-face {
+  font-family: "adapt-variable";
+  src: url("./Adapt.woff2") format("woff2");
+  font-weight: 100 900; /* Adjust this range based on your font's available weights */
+  font-style: normal;
+  font-display: swap; /* Optional: controls how the font loads */
+}
+
 @theme {
   --color-brand-blue: #005670;
   --color-brand-beige-light: #e4d0c5;
   --color-brand-beige-dark: #b09180;
   --font-aleo: "Aleo Variable", serif;
+  --font-adapt: "adapt-variable", sans-serif;
 }
+
 CSS :root {
   font-variant-numeric: tabular-nums;
 }
+
 @supports (font-variation-settings: normal) {
   /* Use variable font if supported */
   :root {
