@@ -12,16 +12,16 @@ interface Props {
 const { body1, body2, leftQuote, rightQuote } = Astro.props;
 ---
 
-<div class="grid lg:grid-cols-2 grid-cols-1 w-full font-plex">
+<div class="grid lg:grid-cols-2 grid-cols-1 w-full font-plex pb-48 px-6">
   <div class="w-full flex flex-col z-30 lg:-mt-36 border-t-6 border-white/30">
-    <div class="bg-white flex flex-col px-2 z-30 gap-2 py-8">
-      <span class="lg:max-w-lg max-w-prose text-justify lg:mx-auto text-2xl">
+    <div class="bg-white flex flex-col z-30 gap-2 py-8">
+      <span class="lg:max-w-lg max-w-prose text-justify lg:mx-auto">
         <TextInitial text={body1} />
       </span>
     </div>
     {
       leftQuote && (
-        <div class="text-2xl/8 tracking-wide italic text-brand-beige-dark/70 max-w-lg -ml-32 py-8 pt-24 ">
+        <div class="tracking-wide text-justify lg:text-left italic text-brand-beige-dark/40 lg:-ml-32 py-8 lg:pt-24  max-w-2xl lg:text-5xl text-2xl font-light">
           {leftQuote}
         </div>
       )
@@ -30,14 +30,12 @@ const { body1, body2, leftQuote, rightQuote } = Astro.props;
 
   <div class="flex flex-col z-30 lg:-mt-24 border-t-6 border-white/30">
     <div class="bg-white flex flex-col lg:py-8 gap-2">
-      <span
-        class="lg:max-w-lg max-w-prose text-justify lg:mx-auto text-2xl pt-12"
-      >
+      <span class="lg:max-w-lg max-w-prose text-justify lg:mx-auto pt-12">
         <TextWithYears body={body2} client:idle />
       </span>
       {
         rightQuote && (
-          <div class="ml-auto text-2xl/8 tracking-wide italic text-brand-beige-dark/70 max-w-lg -mr-32 py-8  pt-32 ">
+          <div class="tracking-wide italic text-brand-beige-dark/40 -mr-32 py-8 pt-24  max-w-2xl text-5xl font-light ml-auto">
             {rightQuote}
           </div>
         )

@@ -11,19 +11,21 @@ const { title1, title2, author } = Astro.props;
 
 <div class="bg-brand-blue pb-14 flex justify-center flex-col">
   <div class="flex justify-end w-full">
-    <div class="px-8 py-4 text-white text-lg">
+    <div class="px-8 py-4 text-white text-lg flex gap-4">
       <LanguageSelector />
     </div>
   </div>
   <div class="flex flex-col">
-    <span class="text-white text-2xl px-2 pb-12 font-plex">{author}</span>
+    <span class="text-white text-xl sm:text-2xl px-2 pb-12 font-plex"
+      >{author}</span
+    >
     <h1
-      class="lg:text-[10rem] text-8xl font-bold text-white font-plex z-30break-normal py-0 opacity-10"
+      class="lg:text-[10rem] text-7xl sm:text-8xl font-bold text-white font-plex z-30break-normal py-0 opacity-10"
     >
       {title1.toUpperCase()}
     </h1>
     <h1
-      class="lg:text-[11rem] text-6xl font-thin text-white font-plex z-30 break-normal py-0 -mt-20 font-stretch-75%"
+      class="lg:text-[11rem] text-6xl sm:text-8xl font-thin text-white font-plex z-30 break-normal py-0 -mt-10 lg:-mt-20 font-stretch-75%"
     >
       {title2}
     </h1>

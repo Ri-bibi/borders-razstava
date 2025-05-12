@@ -46,20 +46,27 @@ export const locations: MapLocation[] = [
     <MapComponent client:load locations={locations} />
   </div>
   <Container>
-    <TitleCols body1={t("pass.intro.first")} body2={t("pass.intro.second")} />
+    <TitleCols
+      body1={t("pass.intro.first")}
+      body2={t("pass.intro.second")}
+      leftQuote="... facendo della mobilità transfrontaliera una pratica quotidiana per molti residenti delle zone di confine e una pratica regolare per molti altri."
+    />
     <RightText
       body={t("pass.people.text")}
       image={peopleImg}
       source={t("pass.people.source")}
       title={t("generic.people")}
     />
-    <BlueBoxText
-      body={t("pass.places.text")}
-      image={placesImg}
-      source={t("pass.places.source")}
-      title={t("generic.places")}
-    />
-    <div class="py-50">
+  </Container>
+  <BlueBoxText
+    right
+    body={t("pass.places.text")}
+    image={placesImg}
+    source={t("pass.places.source")}
+    title={t("generic.places")}
+  />
+  <Container>
+    <div class="pt-48">
       <RightText
         body={t("pass.practices.text")}
         image={practicesImg}
@@ -67,11 +74,9 @@ export const locations: MapLocation[] = [
         title={t("generic.practices")}
       />
     </div>
-    <div class="flex justify-end mt-24">
-      <ArrowNext
-        href={generateLocaleLink("/ALPE-ADRIA/", Astro.url.pathname)}
-        tKey="alpeadria"
-      />
-    </div>
+    <ArrowNext
+      href={generateLocaleLink("/ALPE-ADRIA/", Astro.url.pathname)}
+      tKey="alpeadria"
+    />
   </Container>
 </Layout>

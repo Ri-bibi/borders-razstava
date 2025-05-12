@@ -14,8 +14,8 @@ const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
 ---
 
-<div class="flex flex-col my-32 w-fit ml-auto font-plex">
-  <span class="text-brand-beige-dark">Naslednje poglavje</span>
+<div class="flex flex-col my-32 w-fit lg:ml-auto mx-auto font-plex">
+  <span class="text-brand-beige-dark">{t("generic.nextPage")}</span>
   <div class="flex gap-6">
     <a
       href={href}

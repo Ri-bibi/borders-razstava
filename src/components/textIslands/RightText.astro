@@ -16,10 +16,10 @@ const { title, body, image, source } = Astro.props;
 const bodyExtracted = extractYears(body, Year);
 ---
 
-<div class="w-full grid md:grid-cols-2 grid-cols-1 lg:px-4 gap-8">
+<div class="w-full grid md:grid-cols-2 grid-cols-1 lg:px-4 gap-8 px-6">
   <!-- image -->
   <div class="flex items-end justify-end order-2 md:order-0">
-    <div class="border-4 border-white z-10 w-full max-w-xl mr-auto">
+    <div class="border-4 border-white z-10 w-full max-w-xl lg:mr-auto mx-auto">
       <ImageWraper>
         <Image
           src={image}
@@ -36,11 +36,11 @@ const bodyExtracted = extractYears(body, Year);
     <h3 class="text-brand-blue font-bold text-6xl">{title}</h3>
 
     <h3
-      class="text-[12rem] font-bold text-brand-blue absolute opacity-10 ml-2 -mt-48 tracking-widest"
+      class="text-[12rem] font-bold text-brand-blue absolute opacity-10 ml-2 -mt-48 tracking-tight"
     >
       {title}
     </h3>
-    <span class="text-justify max-w-prose px-8 lg:px-0">
+    <span class="text-justify max-w-prose">
       <TextWithYears body={body} client:idle />
     </span>
     <span class="font-light text-brand-beige-dark ml-auto lg:ml-0 px-8 lg:px-0"

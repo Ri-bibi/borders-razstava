@@ -1,5 +1,6 @@
 {
   "generic": {
+    "nextPage": "Next page",
     "exhibition": "Exhibition",
     "source": "source",
     "people": "People",
@@ -154,8 +155,8 @@
       "source": "©",
       "text": "People from Yugoslavia liked to go to Italy to buy coffee, clothes, household appliances or toys. Cheap alcohol, tobacco, meat and dairy products, restaurants, bars, holiday resorts, and petrol attracted Italian consumers to Slovenia. The picture shows the scene at the petrol station in Krvavi potok near Kozina during the war for Slovenian independence in 1991.\n"
     },
-    "title1": "Laissez-passer",
-    "title2": "(lasciapassare/prepustnica/propusnica)"
+    "title1": "Pass",
+    "title2": "prepustnica"
   },
   "politics": {
     "author": "Mateja Režek and Karlo Ruzicic-Kessler",

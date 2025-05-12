@@ -25,7 +25,7 @@ const { eventFrom, eventTo, importantEvents } = Astro.props;
     <Sidebar client:load />
   </div>
 
-  <div class="flex justify-around flex-1 items-end">
+  <div class="justify-around flex-1 items-end hidden md:flex">
     {
       generateRange(globalTimeStart, globalTimeEnd).map((year) => {
         const component = () => {
