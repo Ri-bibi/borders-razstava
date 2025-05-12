@@ -1,26 +1,21 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 import { MapComponent, type MapLocation } from "../../components/map/Map";
+import Timeline from "../../components/navbar/Timeline.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
-import { initializei18n } from "../../utils/i18n";
-import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
-import LeftText from "../../components/textIslands/LeftText.astro";
-import RightText from "../../components/textIslands/RightText.astro";
-import Footer from "../../components/footer/Footer.astro";
-import TitleBar from "../../components/Title/TitleBar.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
-import Timeline from "../../components/navbar/Timeline.astro";
-import { generateLocaleLink } from "../../components/langSelect/languageutils";
+import { initializei18n } from "../../utils/i18n";
 
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 import peopleImg from "./01_PEOPLE_POLITICS.png";
 import placesImg from "./02_PLACES_POLITICS_a.png";
 import practicesImg from "./03_PRACTICES_POLITICS_a.png";
-import OverlayText from "../../components/textIslands/OverlayText.astro";
-import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
-import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 
 export const tKey = "politics";
 export const index = 3;
@@ -53,9 +48,6 @@ export const locations: MapLocation[] = [
   </div>
   <Container>
     <TitleCols
-      title1={t("politics.title1")}
-      title2={t("politics.title2")}
-      author={t("politics.author")}
       body1={t("politics.intro.first")}
       body2={t("politics.intro.second")}
     />
@@ -69,24 +61,22 @@ export const locations: MapLocation[] = [
   />
   <Container>
     <div class="lg:py-48">
-      <RightText
+      <LeftText
         body={t("politics.places.text")}
         image={placesImg}
         source={t("politics.places.source")}
         title={t("generic.places")}
       />
     </div>
-    <BlueBoxText
+    <LeftText
       body={t("politics.practices.text")}
       image={practicesImg}
       source={t("politics.practices.source")}
       title={t("generic.practices")}
     />
-    <div class="flex justify-end mt-24">
-      <ArrowNext
-        href={generateLocaleLink("/BUSINESS/", Astro.url.pathname)}
-        tKey="business"
-      />
-    </div>
+    <ArrowNext
+      href={generateLocaleLink("/BUSINESS/", Astro.url.pathname)}
+      tKey="business"
+    />
   </Container>
 </Layout>

@@ -45,18 +45,16 @@ export const locations: MapLocation[] = [
     <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
   </StickyScroll>
   <div class="">
-    <MapComponent locations={locations} client:load />
+    <MapComponent client:load locations={locations} />
   </div>
-
   <Container>
     <TitleCols
       body1={t("alpeadria.intro.first")}
       body2={t("alpeadria.intro.second")}
-      rightQuote="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia nesciunt."
     />
 
     <!-- </Container> -->
-    <div class="py-24">
+    <div class="">
       <ImageTitleText
         body={t("alpeadria.people.text")}
         image={peopleImg}

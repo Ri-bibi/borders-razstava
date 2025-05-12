@@ -1,26 +1,22 @@
 ---
 import { getLocale } from "astro-i18n-aut";
-import ArrowNext from "../../components/ArrowNext.astro";
 import { MapComponent, type MapLocation } from "../../components/map/Map";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import { initializei18n } from "../../utils/i18n";
-import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
-import LeftText from "../../components/textIslands/LeftText.astro";
-import RightText from "../../components/textIslands/RightText.astro";
-import Footer from "../../components/footer/Footer.astro";
 
+import Timeline from "../../components/navbar/Timeline.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
 import peopleImg from "./01_PEOPLE_PUNK.png";
 import placesImg from "./02_PLACES_PUNK.png";
 import practicesImg from "./03_PRACTICES_PUNK MV.png";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
-import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
-import TitleBar from "../../components/Title/TitleBar.astro";
-import StickyScroll from "../../layouts/StickyScroll.astro";
-import Timeline from "../../components/navbar/Timeline.astro";
-import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 export const tKey = "punk";
 export const index = 13;
@@ -52,20 +48,14 @@ export const locations: MapLocation[] = [
     <MapComponent client:load locations={locations} />
   </div>
   <Container>
-    <TitleCols
-      title1={t("punk.title1")}
-      title2={t("punk.title2")}
-      author={t("punk.author")}
-      body1={t("punk.intro.first")}
-      body2={t("punk.intro.second")}
-    />
-    <BlueBoxText
-      body={t("punk.people.text")}
-      image={peopleImg}
-      source={t("punk.people.source")}
-      title={t("generic.people")}
-    />
+    <TitleCols body1={t("punk.intro.first")} body2={t("punk.intro.second")} />
   </Container>
+  <OverlayRightBox
+    body={t("punk.people.text")}
+    image={peopleImg}
+    source={t("punk.people.source")}
+    title={t("generic.people")}
+  />
 
   <div class="bg-black text-white py-48 pt-64">
     <Container>

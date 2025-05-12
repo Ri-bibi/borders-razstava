@@ -16,10 +16,8 @@ import Timeline from "../../components/navbar/Timeline.astro";
 import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 import peopleImg from "./01__PEOPLE_MOUNT_b.png";
-import placesImg from "./02_PLACES_MOUNT_a.png";
+import placesImg from "./02_PLACES_MOUNT_b.png";
 import practicesImg from "./03_PRACTICES_MOUNT.png";
-import OverlayText from "../../components/textIslands/OverlayText.astro";
-import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 
 export const tKey = "mount";
 export const index = 11;
@@ -51,11 +49,9 @@ export const locations: MapLocation[] = [
   </div>
   <Container>
     <TitleCols
-      title1={t("mount.title1")}
-      title2={t("mount.title2")}
-      author={t("mount.author")}
       body1={t("mount.intro.first")}
       body2={t("mount.intro.second")}
+      leftQuote="Postopoma se je spremenilo dojemanje gorskih vrhov, ki so namesto obrambnih ovir postajali kraji srečevanja in izmenjave."
     />
   </Container>
 

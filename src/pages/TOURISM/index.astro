@@ -1,21 +1,17 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 import { MapComponent, type MapLocation } from "../../components/map/Map";
+import Timeline from "../../components/navbar/Timeline.astro";
+import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+import RightText from "../../components/textIslands/RightText.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
-import { initializei18n } from "../../utils/i18n";
-import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
-import LeftText from "../../components/textIslands/LeftText.astro";
-import RightText from "../../components/textIslands/RightText.astro";
-import Footer from "../../components/footer/Footer.astro";
-import OverlayText from "../../components/textIslands/OverlayText.astro";
-import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
-import TitleBar from "../../components/Title/TitleBar.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
-import Timeline from "../../components/navbar/Timeline.astro";
-import { generateLocaleLink } from "../../components/langSelect/languageutils";
+import { initializei18n } from "../../utils/i18n";
 
 import peopleImg from "./01_PEOPLE_TOURISM.png";
 import placesImg from "./02_PLACES_TOURISM_a.png";
@@ -33,7 +29,7 @@ const importantDates = [1950, 1961, 1963, 1965, 1972, 1980];
 
 export const locations: MapLocation[] = [
   { name: "Koversada", coords: [45.1341571, 13.5970645] },
-  { name: "Planina", coords: [45.8392611, 14.1484975] },
+  // { name: "Planina", coords: [45.8392611, 14.1484975] },
   { name: "Postojna", coords: [45.8001619, 14.1836634] },
 ];
 ---
@@ -52,9 +48,6 @@ export const locations: MapLocation[] = [
   </div>
   <Container>
     <TitleCols
-      title1={t("tourism.title1")}
-      title2={t("tourism.title2")}
-      author={t("tourism.author")}
       body1={t("tourism.intro.first")}
       body2={t("tourism.intro.second")}
     />
@@ -66,22 +59,22 @@ export const locations: MapLocation[] = [
     />
   </Container>
 
+  <div class="mt-48"></div>
+
   <OverlayRightBox
     body={t("tourism.places.text")}
     image={placesImg}
     source={t("tourism.places.source")}
     title={t("generic.places")}
   />
+  <div class="w-full h-2 bg-brand-blue"></div>
+  <OverlayRightBox
+    body={t("tourism.practices.text")}
+    image={practicesImg}
+    source={t("tourism.practices.source")}
+    title={t("generic.practices")}
+  />
   <Container>
-    <div class="py-20">
-      <BlueBoxText
-        body={t("tourism.practices.text")}
-        image={practicesImg}
-        source={t("tourism.practices.source")}
-        title={t("generic.practices")}
-      />
-    </div>
-
     <div class="flex justify-end mt-24">
       <ArrowNext
         href={generateLocaleLink("/MOUNT/", Astro.url.pathname)}

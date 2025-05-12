@@ -2,26 +2,22 @@
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
 import { MapComponent, type MapLocation } from "../../components/map/Map";
+import LeftText from "../../components/textIslands/LeftText.astro";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import { initializei18n } from "../../utils/i18n";
-import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
-import LeftText from "../../components/textIslands/LeftText.astro";
-import RightText from "../../components/textIslands/RightText.astro";
-import Footer from "../../components/footer/Footer.astro";
 
+import OverlayText from "../../components/textIslands/OverlayText.astro";
 import peopleImg from "./01_PEOPLE_SPORT.png";
 import placesImg from "./02_PLACES_SPORT.png";
 import practicesImg from "./03_PRACTICES_SPORT.png";
-import OverlayText from "../../components/textIslands/OverlayText.astro";
-import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
-import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+import Timeline from "../../components/navbar/Timeline.astro";
+import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 import TitleBar from "../../components/Title/TitleBar.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
-import Timeline from "../../components/navbar/Timeline.astro";
-import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 export const tKey = "sport";
 export const index = 12;
@@ -52,14 +48,10 @@ export const locations: MapLocation[] = [
     <MapComponent client:load locations={locations} />
   </div>
   <Container>
-    <TitleCols
-      author={t("sport.author")}
-      body1={t("sport.intro.first")}
-      body2={t("sport.intro.second")}
-    />
+    <TitleCols body1={t("sport.intro.first")} body2={t("sport.intro.second")} />
   </Container>
 
-  <OverlayRightBox
+  <OverlayText
     body={t("sport.people.text")}
     image={peopleImg}
     source={t("sport.people.source")}
@@ -67,7 +59,7 @@ export const locations: MapLocation[] = [
   />
   <Container>
     <div class="lg:py-48">
-      <RightText
+      <ImageTitleText
         body={t("sport.places.text")}
         image={placesImg}
         source={t("sport.places.source")}

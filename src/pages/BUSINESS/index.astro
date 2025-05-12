@@ -2,24 +2,21 @@
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
 import { MapComponent, type MapLocation } from "../../components/map/Map";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import RightText from "../../components/textIslands/RightText.astro";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import { initializei18n } from "../../utils/i18n";
-import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
-import LeftText from "../../components/textIslands/LeftText.astro";
-import RightText from "../../components/textIslands/RightText.astro";
-import Footer from "../../components/footer/Footer.astro";
 
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+import Timeline from "../../components/navbar/Timeline.astro";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
 import peopleImg from "./01_PEOPLE_BUSINESS.png";
 import placesImg from "./02_PLACES_BUSINESS.png";
 import practicesImg from "./03_PRACTICES_BUSINESS.png";
-import OverlayText from "../../components/textIslands/OverlayText.astro";
-import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
-import TitleBar from "../../components/Title/TitleBar.astro";
-import StickyScroll from "../../layouts/StickyScroll.astro";
-import Timeline from "../../components/navbar/Timeline.astro";
-import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 export const tKey = "business";
 export const index = 4;
@@ -52,22 +49,19 @@ export const locations: MapLocation[] = [
   </div>
   <Container>
     <TitleCols
-      author={t("business.author")}
       body1={t("business.intro.first")}
       body2={t("business.intro.second")}
-      leftQuote="Le persone potevano anche recarsi nei centri sanitari per abortire, pratica che fu legalizzata in Jugoslavia nel 1952..."
-    >
-      />
-      <RightText
-        body={t("business.people.text")}
-        image={peopleImg}
-        source={t("business.people.source")}
-        title={t("generic.people")}
-      />
-    </TitleCols>
+      leftQuote="Trotz aller Hindernisse entstanden bis Ende der 1980er Jahre mehr als 20 Betriebe mit 800 Beschäftigten, die überwiegend aus der lokalen Bevölkerung stammten."
+    />
+    <LeftText
+      body={t("business.people.text")}
+      image={peopleImg}
+      source={t("business.people.source")}
+      title={t("generic.people")}
+    />
   </Container>
 
-  <OverlayRightBox
+  <BlueBoxText
     body={t("business.places.text")}
     image={placesImg}
     source={t("business.places.source")}
@@ -75,19 +69,17 @@ export const locations: MapLocation[] = [
   />
 
   <Container>
-    <div class="py-50">
-      <LeftText
+    <div class="pt-48">
+      <RightText
         body={t("business.practices.text")}
         image={practicesImg}
         source={t("business.practices.source")}
         title={t("generic.practices")}
       />
     </div>
-    <div class="flex justify-end mt-24">
-      <ArrowNext
-        href={generateLocaleLink("/HUNT/", Astro.url.pathname)}
-        tKey="hunt"
-      />
-    </div>
+    <ArrowNext
+      href={generateLocaleLink("/HUNT/", Astro.url.pathname)}
+      tKey="hunt"
+    />
   </Container>
 </Layout>

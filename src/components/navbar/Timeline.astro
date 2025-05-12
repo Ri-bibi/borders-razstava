@@ -33,7 +33,7 @@ const { eventFrom, eventTo, importantEvents } = Astro.props;
             return (
               <div class=" flex justify-center items-center flex-col h-full">
                 {/* <div class="flex-1 w-1 bg-white" /> */}
-                <div class="p-1 font-black text-md">{year}</div>
+                <div class="p-1 text-md">{year}</div>
                 <div class="flex-1 w-1 bg-white min-h-2" />
               </div>
             );
@@ -43,7 +43,11 @@ const { eventFrom, eventTo, importantEvents } = Astro.props;
         };
 
         // base component
-        if (eventFrom < year && year < eventTo) {
+        if (
+          (eventFrom < year && year < eventTo) ||
+          eventFrom == year ||
+          eventTo == year
+        ) {
           return (
             <div class="flex-1 bg-white/20 h-full flex flex-col justify-end">
               {component()}

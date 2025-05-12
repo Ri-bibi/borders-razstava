@@ -1,20 +1,21 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 import { MapComponent, type MapLocation } from "../../components/map/Map";
+import Timeline from "../../components/navbar/Timeline.astro";
+import LeftText from "../../components/textIslands/LeftText.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
-import { initializei18n } from "../../utils/i18n";
-import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
-import LeftText from "../../components/textIslands/LeftText.astro";
-import RightText from "../../components/textIslands/RightText.astro";
-import TitleBar from "../../components/Title/TitleBar.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
-import Timeline from "../../components/navbar/Timeline.astro";
-import { generateLocaleLink } from "../../components/langSelect/languageutils";
+import { initializei18n } from "../../utils/i18n";
 
+import DoubleImageBox from "../../components/textIslands/DoubleImageBox.astro";
+import OverlayTintBox from "../../components/textIslands/OverlayTintBox.astro";
 import peopleImg from "./01_PEOPLE_HUNT_a.png";
+import peopleImgb from "./01_PEOPLE_HUNT_b.png";
 import placesImg from "./02_PLACES_HUNT.png";
 import practicesImg from "./03_PRACTICES_HUNT.png";
 
@@ -49,12 +50,16 @@ export const locations: MapLocation[] = [
   </div>
   <Container>
     <TitleCols body1={t("hunt.intro.first")} body2={t("hunt.intro.second")} />
-    <BlueBoxText
-      body={t("hunt.people.text")}
-      image={peopleImg}
-      source={t("hunt.people.source")}
-      title={t("generic.people")}
-    />
+  </Container>
+
+  <DoubleImageBox
+    body={t("hunt.people.text")}
+    imageLeft={peopleImg}
+    imageRight={peopleImgb}
+    source={t("hunt.people.source")}
+    title={t("generic.people")}
+  />
+  <Container>
     <div class="lg:h-40"></div>
     <LeftText
       body={t("hunt.places.text")}
@@ -63,18 +68,18 @@ export const locations: MapLocation[] = [
       title={t("generic.places")}
     />
     <div class="lg:h-40"></div>
+  </Container>
 
-    <RightText
-      body={t("hunt.practices.text")}
-      image={practicesImg}
-      source={t("hunt.practices.source")}
-      title={t("generic.practices")}
+  <OverlayTintBox
+    body={t("hunt.practices.text")}
+    image={practicesImg}
+    source={t("hunt.practices.source")}
+    title={t("generic.practices")}
+  />
+  <Container>
+    <ArrowNext
+      href={generateLocaleLink("/TVKC/", Astro.url.pathname)}
+      tKey="tvkc"
     />
-    <div class="flex justify-end mt-24">
-      <ArrowNext
-        href={generateLocaleLink("/TVKC/", Astro.url.pathname)}
-        tKey="tvkc"
-      />
-    </div>
   </Container>
 </Layout>

@@ -39,7 +39,9 @@ const { title, body, image, source, right } = Astro.props;
       )
     }
 
-    <div class="flex items-center justify-center z-10 md:px-[10%] flex-col">
+    <div
+      class="flex items-center justify-center z-10 md:px-[10%] flex-col lg:-mx-16"
+    >
       <ImageWraper>
         <div class="shadow-xl">
           <Image src={image} alt="ajow" class="w-full h-full object-contain" />
