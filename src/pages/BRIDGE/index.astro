@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -16,6 +16,7 @@ import practicesImg from "./03_PRACTICES_BRIDGE.png";
 import Timeline from "../../components/navbar/Timeline.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
 import TitleBar from "../../components/Title/TitleBar.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -31,21 +32,27 @@ const places: [number, number][] = [
   [46.1828628, 13.716951],
   [46.1828628, 13.716951],
 ];
-const zoom = 15;
+export const zoom = 15;
+
+export const tKey = "bridge";
+export const index = 9;
+
+export const locations: MapLocation[] = [
+  { name: "Slavski Laz", coords: [45.4823314, 14.893984] },
+];
 ---
 
 <Layout>
   <TitleBar
-    title1="BRIDGE"
-    }
-    title2={t("bridge.title1") + " " + t("bridge.title2")}
+    title1={t("bridge.title1")}
+    title2={t("bridge.title2")}
     author={t("bridge.author")}
   />
   <StickyScroll>
     <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
   </StickyScroll>
   <div class="">
-    <MapComponent client:load coords={zoomTo} />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
@@ -60,26 +67,35 @@ const zoom = 15;
       source={t("bridge.people.source")}
       title={t("generic.people")}
     />
-  </Container>
-  <div class="bg-brand-blue/5 border-brand-blue pt-27 mt-32">
-    <Container>
-      <RightText
-        body={t("bridge.places.text")}
-        image={placesImg}
-        source={t("bridge.places.source")}
-        title={t("generic.places")}
-      />
-    </Container>
-  </div>
-  <Container>
-    <BlueBoxText
-      body={t("bridge.practices.text")}
-      image={practicesImg}
-      source={t("bridge.practices.source")}
-      title={t("generic.practices")}
+    <div class="my-48"></div>
+    <RightText
+      body={t("bridge.places.text")}
+      image={placesImg}
+      source={t("bridge.places.source")}
+      title={t("generic.places")}
     />
+    <div class="my-32"></div>
+  </Container>
+
+  <BlueBoxText
+    body={t("bridge.practices.text")}
+    image={practicesImg}
+    source={t("bridge.practices.source")}
+    title={t("generic.practices")}
+  />
+
+  <Container>
     <div class="flex justify-end">
-      <ArrowNext />
+      <div class="flex justify-end mt-24">
+        <ArrowNext href={generateLocaleLink("/BUSINESS/", Astro.url.pathname)}
+          >{t("business.title1")}</ArrowNext
+        >
+      </div>
+      <div class="flex justify-end mt-24">
+        <ArrowNext href={generateLocaleLink("/TVKC/", Astro.url.pathname)}
+          >{t("tvkc.title1")}</ArrowNext
+        >
+      </div>
     </div>
   </Container>
 </Layout>

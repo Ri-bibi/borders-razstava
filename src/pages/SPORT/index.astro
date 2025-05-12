@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -18,25 +18,41 @@ import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+
+export const tKey = "sport";
+export const index = 12;
+
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
 
 const from = 1947;
 const to = 1986;
 const importantDates = [1947, 1955, 1965, 1985, 1986];
+
+export const locations: MapLocation[] = [
+  { name: "Gorizia", coords: [45.947075, 13.5684153] },
+  { name: "Nova Gorica", coords: [45.9561726, 13.6377048] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("sport.title1")}
+    title2={t("sport.title2")}
+    author={t("sport.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title={t("sport.title1") + " " + t("sport.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
-      title1={t("sport.title1")}
-      title2={t("sport.title2")}
       author={t("sport.author")}
       body1={t("sport.intro.first")}
       body2={t("sport.intro.second")}
@@ -64,8 +80,10 @@ const importantDates = [1947, 1955, 1965, 1985, 1986];
       source={t("sport.practices.source")}
       title={t("generic.practices")}
     />
-    <div class="flex justify-end">
-      <ArrowNext />
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/PUNK/", Astro.url.pathname)}
+        >{t("punk.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

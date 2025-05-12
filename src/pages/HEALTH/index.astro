@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -16,6 +16,13 @@ import placesImg from "./02_PLACES_HEALTH.png";
 import practicesImg from "./03_PRACTICES_HEALTH_a.png";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+
+export const tKey = "health";
+export const index = 8;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -23,20 +30,28 @@ const t = await initializei18n(locale);
 const from = 1945;
 const to = 1959;
 const importantDates = [1945, 1959];
+
+export const locations: MapLocation[] = [
+  { name: "Trieste", coords: [45.694287, 13.435556] },
+  { name: "Gorizia", coords: [45.947075, 13.568415] },
+  { name: "Valdoltra Hospital in Ankaran", coords: [45.5810065, 13.7249102] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("health.title1")}
+    title2={t("health.title2")}
+    author={t("health.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title={t("health.title1") + " " + t("health.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
-      title1={t("health.title1")}
-      title2={t("health.title2")}
-      author={t("health.author")}
       body1={t("health.intro.first")}
       body2={t("health.intro.second")}
     />
@@ -60,8 +75,10 @@ const importantDates = [1945, 1959];
         title={t("generic.practices")}
       />
     </div>
-    <div class="flex justify-end">
-      <ArrowNext />
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/HUNT/", Astro.url.pathname)}
+        >{t("hunt.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent, type MapLocation } from "../../components/map/Map";
 
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
@@ -10,51 +9,51 @@ import { initializei18n } from "../../utils/i18n";
 import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 import LeftText from "../../components/textIslands/LeftText.astro";
 
-import peopleImg from "./01_PEOPLE_ALPE-ADRIA.png";
-import placesImg from "./02_PLACES_ALPE-ADRIA.png";
-import practicesImg from "./03_PRACTICES_ALPE-ADRIA.png";
+import peopleImg from "./01_PEOPLE_TVKC.png";
+import placesImg from "./02_PLACES_TVKC.png";
+import practicesImg from "./03_PRACTICES_TVKC.png";
 import TitleBar from "../../components/Title/TitleBar.astro";
 import Timeline from "../../components/navbar/Timeline.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
 import { generateLocaleLink } from "../../components/langSelect/languageutils";
 import RightText from "../../components/textIslands/RightText.astro";
-import Sidebar from "../../components/sidebar/Sidebar.astro";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
 
-export const tKey = "alpeadria";
-export const index = 2;
+export const tKey = "tvkc";
+export const index = 6;
 
-const from = 1978;
-const to = 1989;
-const importantDates = [1978, 1981, 1987, 1988];
+const from = 1971;
+const to = 1987;
+const importantDates = [1971, 1980, 1987];
 
 export const locations: MapLocation[] = [
-  { name: "Venice, Italy", coords: [45.4046658, 12.222527] },
+  { name: "Mount Nanos", coords: [45.8255695, 13.9797003] },
+  { name: "Koper", coords: [45.5406106, 13.7046291] },
+  { name: "Trieste", coords: [45.6942873, 13.4355568] },
 ];
 ---
 
 <Layout>
   <TitleBar
-    title1={t("alpeadria.title1")}
-    title2={t("alpeadria.title2")}
-    author={t("alpeadria.author")}
+    title1={t("tvkc.title1")}
+    title2={t("tvkc.title2")}
+    author={t("tvkc.author")}
   />
   <StickyScroll>
     <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
   </StickyScroll>
   <div class="">
-    <MapComponent locations={locations} client:load />
+    <MapComponent client:load locations={locations} />
   </div>
-
   <Container>
     <TitleCols
       body1={t("alpeadria.intro.first")}
       body2={t("alpeadria.intro.second")}
       rightQuote="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia nesciunt."
     />
-
     <!-- </Container> -->
     <div class="py-24">
       <ImageTitleText
@@ -81,7 +80,12 @@ export const locations: MapLocation[] = [
 
     <div class="flex justify-end mt-24">
       <ArrowNext href={generateLocaleLink("/BRIDGE/", Astro.url.pathname)}
-        >{t("bridge.title2")}</ArrowNext
+        >{t("bridge.title1")}</ArrowNext
+      >
+    </div>
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/TOURISM/", Astro.url.pathname)}
+        >{t("tourism.title1")}</ArrowNext
       >
     </div>
   </Container>

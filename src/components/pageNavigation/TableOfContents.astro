@@ -1,0 +1,61 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import { initializei18n } from "../../utils/i18n";
+import { pad } from "../../utils/yearsHighlite";
+import { generateLocaleLink } from "../langSelect/languageutils";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+
+const allPages = await import.meta.glob("/src/pages/*/index.astro");
+// Convert the object to an array of entries
+const pageEntries = Object.entries(allPages);
+
+console.log("pageEntries", pageEntries);
+
+// Process each page to extract frontmatter
+const pagesWithData = await Promise.all(
+  pageEntries.map(async ([path, module]) => {
+    const m = await module();
+    if (
+      typeof m === "object" &&
+      m !== null &&
+      "url" in m &&
+      "tKey" in m &&
+      "index" in m
+    ) {
+      console.log(m.tKey);
+
+      return {
+        url: m.url as string,
+        tKey: m.tKey as string,
+        index: m.index as number,
+      };
+    }
+    throw new Error("Unexpected module structure");
+  })
+);
+---
+
+{
+  pagesWithData
+    .sort((a, b) => a.index - b.index)
+    .map((page, i) => (
+      <div class="flex gap-4 group hover:bg-brand-blue/5 p-4 ">
+        <div class="text-5xl font-mono font-bold text-brand-blue/20">
+          {pad(page.index, 2)}
+        </div>
+        <div class="flex flex-col">
+          <a
+            class="text-2xl  font-adapt font-bold text-black/80"
+            href={generateLocaleLink(page.url, Astro.url.pathname)}
+          >
+            {t(page.tKey + ".title1")}
+          </a>
+          <span class="text-lg text-brand-beige-dark/70">
+            {t(page.tKey + ".author")}
+          </span>
+        </div>
+      </div>
+    ))
+}

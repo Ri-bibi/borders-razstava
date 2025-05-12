@@ -1,4 +1,5 @@
 ---
+import Sidebar from "../sidebar/Sidebar.astro";
 import { globalTimeEnd, globalTimeStart } from "./timelineGlobals";
 
 const generateRange = (from: number, to: number) => {
@@ -19,9 +20,11 @@ const { eventFrom, eventTo, importantEvents } = Astro.props;
 ---
 
 <div class="w-full bg-brand-blue flex text-white z-50">
-  <!-- <div class="font-bold text-lg border-r-2 border-white px-4 py-1">
-      Poglavja
-    </div> -->
+  <div class="flex gap-1 pr-16">
+    <a href="/" class="px-4 py-2 text-brand-blue bg-white">Domov</a>
+    <Sidebar client:load />
+  </div>
+
   <div class="flex justify-around flex-1 items-end">
     {
       generateRange(globalTimeStart, globalTimeEnd).map((year) => {

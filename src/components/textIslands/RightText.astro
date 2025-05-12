@@ -16,10 +16,10 @@ const { title, body, image, source } = Astro.props;
 const bodyExtracted = extractYears(body, Year);
 ---
 
-<div class="w-full grid md:grid-cols-3 grid-cols-1 lg:px-4 gap-8">
+<div class="w-full grid md:grid-cols-2 grid-cols-1 lg:px-4 gap-8">
   <!-- image -->
-  <div class="flex items-end justify-end col-span-2 order-2 md:order-0">
-    <div class="border-4 border-white z-10 w-full max-w-xl ml-auto">
+  <div class="flex items-end justify-end order-2 md:order-0">
+    <div class="border-4 border-white z-10 w-full max-w-xl mr-auto">
       <ImageWraper>
         <Image
           src={image}

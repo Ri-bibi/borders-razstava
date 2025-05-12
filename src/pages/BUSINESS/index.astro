@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -16,6 +16,13 @@ import placesImg from "./02_PLACES_BUSINESS.png";
 import practicesImg from "./03_PRACTICES_BUSINESS.png";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+
+export const tKey = "business";
+export const index = 4;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -23,15 +30,25 @@ const t = await initializei18n(locale);
 const from = 1970;
 const to = 1990;
 const importantDates = [1970, 1977, 1978, 1980, 1990];
+
+export const locations: MapLocation[] = [
+  { name: "Carinthia", coords: [46.750857, 13.2016275] },
+  { name: "Fürnitz/Brnca", coords: [46.56108, 13.7969956] },
+  { name: "Bad Eisenkappel/Železna Kapla", coords: [46.4884328, 14.5801543] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("business.title1")}
+    title2={t("business.title2")}
+    author={t("business.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title1={t("business.title1")}
-      title2={t("business.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
@@ -68,6 +85,11 @@ const importantDates = [1970, 1977, 1978, 1980, 1990];
     </div>
     <div class="flex justify-end">
       <ArrowNext />
+    </div>
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/CONTRABAND/", Astro.url.pathname)}
+        >{t("contraband.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

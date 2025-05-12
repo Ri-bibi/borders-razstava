@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -10,10 +10,17 @@ import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
 import LeftText from "../../components/textIslands/LeftText.astro";
 import RightText from "../../components/textIslands/RightText.astro";
 import Footer from "../../components/footer/Footer.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 import peopleImg from "./01_PEOPLE_HUNT_a.png";
 import placesImg from "./02_PLACES_HUNT.png";
 import practicesImg from "./03_PRACTICES_HUNT.png";
+
+export const tKey = "hunt";
+export const index = 5;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -21,15 +28,25 @@ const t = await initializei18n(locale);
 const from = 1948;
 const to = 1991;
 const importantDates = [1948, 1955, 1959, 1967, 1969, 1991];
+
+export const locations: MapLocation[] = [
+  { name: "Cerknica", coords: [45.7986442, 14.2870277] },
+  { name: "Murska Sobota", coords: [46.6533915, 16.130045] },
+  { name: "Tolmin", coords: [46.1828628, 13.716951] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("hunt.title1")}
+    title2={t("hunt.title2")}
+    author={t("hunt.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title1={t("hunt.title1")}
-      title2={t("hunt.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
@@ -60,6 +77,11 @@ const importantDates = [1948, 1955, 1959, 1967, 1969, 1991];
     />
     <div class="flex justify-end">
       <ArrowNext />
+    </div>
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/BUSINESS/", Astro.url.pathname)}
+        >{t("business.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

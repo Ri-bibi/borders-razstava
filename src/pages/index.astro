@@ -3,57 +3,67 @@ import Layout from "../layouts/Layout.astro";
 import Container from "../layouts/Container.astro";
 import Image from "astro/components/Image.astro";
 
-import mainImg from "./slikice.png";
+import mainImg from "./hero.png";
+import TextInitial from "../components/TextInitial.astro";
+import { initializei18n } from "../utils/i18n";
+import { getLocale } from "astro-i18n-aut";
+import LanguageSelector from "../components/langSelect/LanguageSelector.astro";
+import TableOfContents from "../components/pageNavigation/TableOfContents.astro";
 
-const from = 1971;
-const to = 1987;
-const importantDates = [1971, 1980, 1987];
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
 ---
 
 <Layout>
-  <Container>
-    <div class="pt-8">
-      <div class="bg-brand-beige-dark px-12 pr-24 py-4 w-fit text-white">
-        <h1 class="text-7xl font-aleo font-black">Never Mind</h1>
-      </div>
-      <div class="bg-brand-blue px-12 pr-24 py-4 text-white -mx-32 pb-32">
-        <div class="px-32">
-          <h1 class="text-8xl font-aleo font-black text-right">The borders</h1>
-        </div>
-      </div>
-      <Image src={mainImg} alt="title image" class="-mt-36" />
-      <!-- text -->
-      <div class="pt-12">
-        <!-- title -->
-        <div class="w-full py-8 grid grid-cols-2 text-5xl font-medium">
-          <div class="font-bold w-full flex justify-center">
-            'Never Mind <br /> The Borders'
+  <Image
+    src={mainImg}
+    alt="title image"
+    class="w-full h-full object-cover absolute -z-10"
+  />
+  <div class="h-6/12"></div>
+  <!-- text -->
+  <div class="z-10 w-full">
+    <!-- title -->
+
+    <!-- text -->
+    <Container>
+      <div class="text-justify text-lg/8 mx-auto bg-white px-12">
+        <div class="flex justify-between items-center">
+          <div class="max-w-sm py-18">
+            <span class="text-brand-blue text-8xl font-adapt font-extrabold"
+              >"Never Mind the borders"</span
+            >
           </div>
-          <div class="flex flex-col justify-center items-center">
-            <div class="bg-brand-beige-dark p-2">Places</div>
-            <div class="flex gap-8">
-              <div class="text-white bg-brand-blue p-2 -rotate-7">People</div>
-              <div class="bg-black text-white h-fit p-2">Practices</div>
+
+          <div
+            class="flex flex-col font-adapt font-light text-5xl text-left max-w-sm"
+          >
+            <div class="max-w-lg text-black/10">
+              <span class="">People Places Practices</span>
+            </div>
+            <div class="max-w-lg -my-7 font-bold">
+              <span class="">Ljudje, Kraji in prakse</span>
+            </div>
+            <div class="max-w-lg">
+              <span class="text-black/10">persone, luoghi e pratiche</span>
+            </div>
+            <div class="text-brand-blue py-8 text-3xl">
+              <LanguageSelector />
             </div>
           </div>
         </div>
+      </div>
+    </Container>
 
-        <!-- text -->
-        <div class="text-justify text-lg/8 max-w-prose mx-auto">
+    <div class="mx-auto bg-white w-full py-32">
+      <Container>
+        <div
+          class="max-w-3xl mr-auto text-lg text-justify px-12 border-r-3 border-dotted border-brand-blue/30"
+        >
           <p>
-            Ustaljeni pogledi na preteklost Evrope v času hladne vojne v
-            središče postavljajo neprepustnost meja med Vzhodom in Zahodom.
-            Berlinski zid se obravnava kot simbolno in dejansko osišče, okrog
-            katerega se gradi retorika o tej neprebojni ločnici. Fokus pričujoče
-            razstave Never Mind the Borders pa je usmerjen drugam, v poroznost
-            meddržavnih meja, ki jih je oblikovala blokovska ureditev. Pomena
-            berlinskega zidu v času hladne vojne sicer ne gre zanikati, a če se
-            iz Berlina preselimo v prostor Alpe-Jadran, ugotovimo, da je mogoče
-            pogled na evropsko preteklost dopolniti z drugačnimi ugotovitvami.
-            To seveda ne pomeni, da v prostoru med Alpami in Jadranom ni bilo
-            medsebojnih napetosti. Prva in predvsem druga svetovna vojna sta v
-            življenju ljudi pustili neizbrisljive sledi, ki jih ni bilo mogoče
-            zlahka premostiti. Kljub
+            <TextInitial
+              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consectetur voluptas vel nisi distinctio a ab rerum iusto amet. Incidunt enim, autem sed veritatis iste natus id similique quaerat at? Libero, iste?"
+            />
           </p>
 
           <p>
@@ -81,35 +91,32 @@ const importantDates = [1971, 1980, 1987];
             prostor Alpe-Jadran, je zgodovina Evrope videti drugače.
           </p>
         </div>
-      </div>
-
-      <div class="w-full bg-brand-blue flex p-2 mt-32">
-        <div class="mx-auto p2 bg-brand-beige-light -rotate-10">
-          <h2 class="-mr-4 text-6xl font-black p-2 px-6 font-aleo">Razstava</h2>
-        </div>
-      </div>
-
-      <div class="w-full grid grid-cols-4 py-24 gap-2">
-        {
-          [1, 2, 3, 4, 5, 6, 7].map((i) => (
-            <div class="aspect-square relative">
-              <div class="absolute z-10 bg-black text-white ml-8 mt-4 rotate-4">
-                <h2 class="-mr-4 text-3xl font-bold p-2 px-6 ">Razstava</h2>
-              </div>
-              <img
-                class="w-full h-full absolute z-1"
-                src={`https://picsum.photos/id/${i * 31}/400/400`}
-              />
-            </div>
-          ))
-        }
-      </div>
+      </Container>
     </div>
+  </div>
 
-    <div class="w-full flex justify-end">
-      <a class="text-2xl font-semibold underline text-brand-blue" href="">
-        Avtorji in zahvale
-      </a>
-    </div>
-  </Container>
+  <div class="bg-white py-24 my-64">
+    <Container>
+      <h2 class="-mr-4 text-6xl font-bold p-2 px-6 font-adapt text-brand-blue">
+        Razstava
+      </h2>
+      <h2
+        class="-mr-4 text-8xl font-bold p-2 px-6 font-adapt text-brand-blue/10 -mt-30"
+      >
+        Razstava
+      </h2>
+
+      <div
+        class="w-full grid grid-cols-3 gap-4 py-32 justify-center items-center"
+      >
+        <TableOfContents />
+      </div>
+
+      <div class="w-full flex justify-end">
+        <a class="text-2xl font-semibold underline text-brand-blue" href="">
+          Avtorji in zahvale
+        </a>
+      </div>
+    </Container>
+  </div>
 </Layout>

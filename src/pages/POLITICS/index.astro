@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -10,6 +10,10 @@ import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
 import LeftText from "../../components/textIslands/LeftText.astro";
 import RightText from "../../components/textIslands/RightText.astro";
 import Footer from "../../components/footer/Footer.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 import peopleImg from "./01_PEOPLE_POLITICS.png";
 import placesImg from "./02_PLACES_POLITICS_a.png";
@@ -18,20 +22,34 @@ import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
 
+export const tKey = "politics";
+export const index = 3;
+
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
 
 const from = 1960;
 const to = 1991;
 const importantDates = [1960, 1969, 1991];
+
+export const locations: MapLocation[] = [
+  { name: "Gornja Radgona", coords: [46.6716853, 15.9861213] },
+  { name: "Bad Radkersburg (Austria)", coords: [46.6839237, 15.9867267] },
+  { name: "Karavanke Mountains", coords: [46.4390926, 14.3706226] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("politics.title1")}
+    title2={t("politics.title2")}
+    author={t("politics.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title={t("politics.title1") + " " + t("politics.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
@@ -64,8 +82,10 @@ const importantDates = [1960, 1969, 1991];
       source={t("politics.practices.source")}
       title={t("generic.practices")}
     />
-    <div class="flex justify-end">
-      <ArrowNext />
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/PASS/", Astro.url.pathname)}
+        >{t("pass.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

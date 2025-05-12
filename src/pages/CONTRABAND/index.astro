@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -17,20 +17,40 @@ import placesImg from "./02_PLACES_CONTRABAND.png";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+
+export const tKey = "contraband";
+export const index = 7;
+
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
 
 const from = 1930;
 const to = 2000;
 const importantDates = [1930, 1943, 1945, 1950, 1955, 1970, 2000];
+
+export const locations: MapLocation[] = [
+  { name: "Trieste", coords: [45.6942873, 13.4355568] },
+  { name: "Koper", coords: [45.5406106, 13.7046291] },
+  { name: "Sečovlje", coords: [45.4691863, 13.6206965] },
+  { name: "Istria", coords: [45.1884132, 13.579401] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("contraband.title1")}
+    title2={t("contraband.title2")}
+    author={t("contraband.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title={t("contraband.title1") + " " + t("contraband.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
@@ -60,8 +80,10 @@ const importantDates = [1930, 1943, 1945, 1950, 1955, 1970, 2000];
         title={t("generic.practices")}
       />
     </div>
-    <div class="flex justify-end">
-      <ArrowNext />
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/BRIDGE/", Astro.url.pathname)}
+        >{t("bridge.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

@@ -1,59 +1,58 @@
-<div
-  class="absolute p-4 border-l-2 border-brand-blue flex flex-col m-8 gap-4 bg-white z-50 w-10 text-nowrap overflow-hidden ml-0"
+---
+import TableOfContents from "../pageNavigation/TableOfContents.astro";
+---
+
+<script>
+  let isOpen = false;
+
+  function toggleSidebar() {
+    console.log("Toggle sidebar", isOpen);
+
+    isOpen = !isOpen;
+    const sidebar = document.querySelector("#sidebar");
+    if (sidebar) {
+      (sidebar as HTMLElement).style.display = isOpen ? "block" : "none";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.querySelector("#toggle-sidebar-button");
+    if (toggleButton) {
+      toggleButton.addEventListener("click", toggleSidebar);
+    }
+  });
+
+  // toggle sidebar on clicking the blured background
+  const sidebar = document.querySelector("#sidebar");
+  if (sidebar) {
+    sidebar.addEventListener("click", (e) => {
+      if (e.target === sidebar) {
+        isOpen = false;
+        (sidebar as HTMLElement).style.display = "none";
+      }
+    });
+  }
+</script>
+
+<button
+  id="toggle-sidebar-button"
+  class="bg-white text-brand-blue px-4 py-1 font-bold cursor-pointer"
 >
-  <div class="text-2xl font-bold text-brand-blue">Kazalo</div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">01</span>
-    <span>Meja in most</span>
-  </div>
+  Table of contents</button
+>
 
-  <div class="flex text-lg gap-4">
-    <span class="font-black">02</span>
-    <span>Nek punk fora</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">03</span>
-    <span>Loveljenje zivali cez mejo</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">04</span>
-    <span>Čezmejne investicije</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">01</span>
-    <span>Meja in most</span>
-  </div>
-
-  <div class="flex text-lg gap-4">
-    <span class="font-black">02</span>
-    <span>Nek punk fora</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">03</span>
-    <span>Loveljenje zivali cez mejo</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">04</span>
-    <span>Čezmejne investicije</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">01</span>
-    <span>Meja in most</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">02</span>
-    <span>Nek punk fora</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">03</span>
-    <span>Loveljenje zivali cez mejo</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">04</span>
-    <span>Čezmejne investicije</span>
-  </div>
-  <div class="flex text-lg gap-4">
-    <span class="font-black">01</span>
-    <span>Meja in most</span>
+<div
+  class="w-full h-full fixed backdrop-blur-sm z-100 bg-white/30 overflow-hidden top-0 left-0"
+  id="sidebar"
+  style="display: none;"
+>
+  <div
+    class="bg-white h-full p-12 shadow-2xl overflow-y-auto md:w-fit max-w-prose"
+    id="inner"
+  >
+    <h3 class="px-4 py-16 text-brand-blue text-3xl font-bold">
+      Table of contents
+    </h3>
+    <TableOfContents />
   </div>
 </div>

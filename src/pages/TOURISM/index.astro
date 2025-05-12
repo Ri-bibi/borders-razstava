@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -12,10 +12,17 @@ import RightText from "../../components/textIslands/RightText.astro";
 import Footer from "../../components/footer/Footer.astro";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
 
 import peopleImg from "./01_PEOPLE_TOURISM.png";
 import placesImg from "./02_PLACES_TOURISM_a.png";
 import practicesImg from "./03_PRACTICES_TOURISM.png";
+
+export const tKey = "tourism";
+export const index = 10;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -23,48 +30,62 @@ const t = await initializei18n(locale);
 const from = 1950;
 const to = 1980;
 const importantDates = [1950, 1961, 1963, 1965, 1972, 1980];
+
+export const locations: MapLocation[] = [
+  { name: "Koversada", coords: [45.1341571, 13.5970645] },
+  { name: "Planina", coords: [45.8392611, 14.1484975] },
+  { name: "Postojna", coords: [45.8001619, 14.1836634] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("tourism.title1")}
+    title2={t("tourism.title2")}
+    author={t("tourism.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title={t("turism.title1") + " " + t("turism.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
-      title1={t("turism.title1")}
-      title2={t("turism.title2")}
-      author={t("turism.author")}
-      body1={t("turism.intro.first")}
-      body2={t("turism.intro.second")}
+      title1={t("tourism.title1")}
+      title2={t("tourism.title2")}
+      author={t("tourism.author")}
+      body1={t("tourism.intro.first")}
+      body2={t("tourism.intro.second")}
     />
     <RightText
-      body={t("turism.people.text")}
+      body={t("tourism.people.text")}
       image={peopleImg}
-      source={t("turism.people.source")}
+      source={t("tourism.people.source")}
       title={t("generic.people")}
     />
   </Container>
 
   <OverlayRightBox
-    body={t("turism.places.text")}
+    body={t("tourism.places.text")}
     image={placesImg}
-    source={t("turism.places.source")}
+    source={t("tourism.places.source")}
     title={t("generic.places")}
   />
   <Container>
     <div class="py-20">
       <BlueBoxText
-        body={t("turism.practices.text")}
+        body={t("tourism.practices.text")}
         image={practicesImg}
-        source={t("turism.practices.source")}
+        source={t("tourism.practices.source")}
         title={t("generic.practices")}
       />
     </div>
-    <div class="flex justify-end">
-      <ArrowNext />
+
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/SPORT/", Astro.url.pathname)}
+        >{t("sport.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

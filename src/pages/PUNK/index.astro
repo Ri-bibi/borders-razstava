@@ -1,7 +1,7 @@
 ---
 import { getLocale } from "astro-i18n-aut";
 import ArrowNext from "../../components/ArrowNext.astro";
-import { MapComponent } from "../../components/map/Map";
+import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -17,6 +17,13 @@ import practicesImg from "./03_PRACTICES_PUNK MV.png";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 import ImageTitleText from "../../components/textIslands/ImageTitleText.astro";
+import TitleBar from "../../components/Title/TitleBar.astro";
+import StickyScroll from "../../layouts/StickyScroll.astro";
+import Timeline from "../../components/navbar/Timeline.astro";
+import { generateLocaleLink } from "../../components/langSelect/languageutils";
+
+export const tKey = "punk";
+export const index = 13;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -24,14 +31,25 @@ const t = await initializei18n(locale);
 const from = 1980;
 const to = 1992;
 const importantDates = [1980, 1988, 1990, 1991, 1992];
+
+export const locations: MapLocation[] = [
+  { name: "Šempeter pri Gorici", coords: [45.9242319, 13.6175054] },
+  { name: "Dobrovo", coords: [45.9967425, 13.5136367] },
+  { name: "Udine", coords: [46.0561145, 13.2029629] },
+];
 ---
 
 <Layout>
+  <TitleBar
+    title1={t("punk.title1")}
+    title2={t("punk.title2")}
+    author={t("punk.author")}
+  />
+  <StickyScroll>
+    <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
+  </StickyScroll>
   <div class="">
-    <MapComponent
-      title={t("punk.title1") + " " + t("punk.title2")}
-      client:load
-    />
+    <MapComponent client:load locations={locations} />
   </div>
   <Container>
     <TitleCols
@@ -70,6 +88,11 @@ const importantDates = [1980, 1988, 1990, 1991, 1992];
     </div>
     <div class="flex justify-end">
       <ArrowNext />
+    </div>
+    <div class="flex justify-end mt-24">
+      <ArrowNext href={generateLocaleLink("/POLITICS/", Astro.url.pathname)}
+        >{t("politics.title1")}</ArrowNext
+      >
     </div>
   </Container>
 </Layout>

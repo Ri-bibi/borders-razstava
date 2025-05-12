@@ -34,3 +34,9 @@ export function extractYears(
 
   return parts;
 }
+
+export function pad(num: number, size: number) {
+  let n = num.toString();
+  while (n.length < size) n = "0" + n;
+  return n;
+}
