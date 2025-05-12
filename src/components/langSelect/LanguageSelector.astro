@@ -24,15 +24,13 @@ const getLanguageUrl = (langCode: string) => {
 };
 ---
 
-<div class="flex gap-4">
-  {
-    languages.map((lang) => (
-      <a
-        href={getLanguageUrl(lang)}
-        class={`${currentLang === lang ? "font-bold underline" : "opacity-80 hover:opacity-100"}`}
-      >
-        {lang}
-      </a>
-    ))
-  }
-</div>
+{
+  languages.map((lang) => (
+    <a
+      href={getLanguageUrl(lang)}
+      class={`${currentLang === lang ? "font-bold underline" : "opacity-80 hover:opacity-100"}`}
+    >
+      {lang}
+    </a>
+  ))
+}

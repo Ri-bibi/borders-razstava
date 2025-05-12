@@ -1,20 +1,12 @@
 @import "tailwindcss";
-@import "@fontsource-variable/aleo";
-
-@font-face {
-  font-family: "adapt-variable";
-  src: url("./Adapt.woff2") format("woff2");
-  font-weight: 100 900; /* Adjust this range based on your font's available weights */
-  font-style: normal;
-  font-display: swap; /* Optional: controls how the font loads */
-}
+@import "@fontsource-variable/ibm-plex-sans";
 
 @theme {
   --color-brand-blue: #005670;
   --color-brand-beige-light: #e4d0c5;
   --color-brand-beige-dark: #b09180;
   --font-aleo: "Aleo Variable", serif;
-  --font-adapt: "adapt-variable", sans-serif;
+  --font-plex: "IBM Plex Sans Variable", sans-serif;
 }
 
 CSS :root {

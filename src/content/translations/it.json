@@ -1,9 +1,14 @@
 {
   "generic": {
-    "source": "Source",
-    "people": "People",
-    "places": "Places",
-    "practices": "Practices"
+    "exhibition": "Mostra",
+    "source": "fonte",
+    "people": "Persone",
+    "places": "Luoghi",
+    "practices": "Pratiche"
+  },
+  "intro": {
+    "subtitle": "Persone, luoghi e pratiche transfrontaliere tra le Alpi e l'Adriatico",
+    "body": "Le interpretazioni tradizionali della storia europea durante la Guerra Fredda pongono al centro del dibattito l'impermeabilità dei confini tra Est e Ovest. Il Muro di Berlino è visto come perno simbolico e reale attorno a cui la retorica di questa divisione impenetrabile è costituita. Il focus della mostra Never Mind the Borders, invece, si rivolge altrove, alla porosità dei confini tra Stati plasmati dal sistema dei blocchi. Pur senza negare l’importanza del Muro di Berlino durante la Guerra Fredda, spostandosi da Berlino allo spazio tra le Alpi e l'Adriatico si impone una prospettiva diversa sulla storia europea. Ciò non significa, ovviamente, che nella regione non vi fossero tensioni. La Prima e, soprattutto, la Seconda Guerra Mondiale avevano lasciato tracce indelebili nelle vite delle persone, difficili da superare. Tuttavia, nel decennio successivo al conflitto, gli uomini di governo iniziarono lentamente a riconoscere gli effetti positivi in termini politici, economici, culturali e sociali di buone relazioni di vicinato. Un approccio differente si affermò così gradualmente lungo i confini tra la Jugoslavia, l'Austria e l'Italia – il margine meridionale di quella che nel 1946 Winston Churchill aveva chiamato la Cortina di Ferro. Di conseguenza, mentre a Berlino nel 1961 veniva eretto il muro di cemento tra Ovest ed Est, all’altro capo d’Europa il regista sloveno Mako Sajko si chiedeva giustamente, nel suo documentario: Dov’è la Cortina di Ferro? \n Non si tratta solo di uno slittamento dello sguardo verso sud, ma anche di un cambio di prospettiva. Accanto al ruolo di alcuni uomini importanti (meno frequentemente donne) e delle istituzioni statali, si prende in considerazione anche la dimensione della vita quotidiana. Viene così svelato il ruolo delle persone comuni nel favorire l’integrazione progressiva dell’area di confine: attraversare il confine poteva diventare quasi una routine quotidiana. Il confine era certamente presente e percepito in molti modi, ma più che un ostacolo insormontabile, costituiva un semplice elemento di disturbo che purtuttavia a molti permetteva lo sviluppo di molteplici pratiche transfrontaliere: dalla spesa alimentare all’acquisto di elettrodomestici, dai pranzi domenicali alle vacanze estive. \n Questa mostra offre uno sguardo sulle persone, i luoghi e le pratiche quotidiane transfrontaliere, rivelandoci come, se ci spostiamo dal Muro di Berlino allo spazio tra le Alpi e l'Adriatico, la storia dell'Europa assume un volto diverso. "
   },
   "alpeadria": {
     "author": "Benedetto Zaccaria",

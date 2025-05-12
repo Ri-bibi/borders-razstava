@@ -17,8 +17,6 @@ const remainingText = text.slice(1);
   {remainingText}
 </span> -->
 <span class="inline leading-2">
-  <span class="text-8xl -mr-4 pt-4 font-bold text-brand-beige-dark"
-    >{firstLetter}</span
-  >
+  <span class="text-8xl -mr-1 pt-4 text-brand-beige-dark">{firstLetter}</span>
   <TextWithYears body={remainingText} client:idle />
 </span>

@@ -9,7 +9,6 @@ import { initializei18n } from "../../utils/i18n";
 import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
 import LeftText from "../../components/textIslands/LeftText.astro";
 import RightText from "../../components/textIslands/RightText.astro";
-import Footer from "../../components/footer/Footer.astro";
 import TitleBar from "../../components/Title/TitleBar.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
 import Timeline from "../../components/navbar/Timeline.astro";
@@ -49,11 +48,7 @@ export const locations: MapLocation[] = [
     <MapComponent client:load locations={locations} />
   </div>
   <Container>
-    <TitleCols
-      author={t("hunt.author")}
-      body1={t("hunt.intro.first")}
-      body2={t("hunt.intro.second")}
-    />
+    <TitleCols body1={t("hunt.intro.first")} body2={t("hunt.intro.second")} />
     <BlueBoxText
       body={t("hunt.people.text")}
       image={peopleImg}
@@ -75,13 +70,11 @@ export const locations: MapLocation[] = [
       source={t("hunt.practices.source")}
       title={t("generic.practices")}
     />
-    <div class="flex justify-end">
-      <ArrowNext />
-    </div>
     <div class="flex justify-end mt-24">
-      <ArrowNext href={generateLocaleLink("/BUSINESS/", Astro.url.pathname)}
-        >{t("business.title1")}</ArrowNext
-      >
+      <ArrowNext
+        href={generateLocaleLink("/TVKC/", Astro.url.pathname)}
+        tKey="tvkc"
+      />
     </div>
   </Container>
 </Layout>

@@ -1,9 +1,14 @@
 {
   "generic": {
+    "exhibition": "Razstava",
     "source": "Vir",
     "people": "Ljudje",
     "places": "Kraji",
     "practices": "Prakse"
+  },
+  "intro": {
+    "subtitle": "Ljudje, prostori in čezmejne prakse med Alpami in Jadranom ",
+    "body": "Ustaljeni pogledi na preteklost Evrope v času hladne vojne postavljajo v središče neprepustnost meja med Vzhodom in Zahodom. Berlinski zid se obravnava kot simbolno in dejansko osišče, okrog katerega se gradi retorika o tej neprebojni ločnici. Fokus pričujoče razstave Never Mind the Borders pa je usmerjen drugam, v poroznost meddržavnih meja, ki jih je oblikovala blokovska ureditev. Pomena berlinskega zidu v času hladne vojne sicer ne gre zanikati, a če se iz Berlina preselimo v prostor med Alpami in Jadranom, ugotovimo, da je mogoče pogled na evropsko preteklost dopolniti z drugačnimi ugotovitvami. To seveda ne pomeni, da na tem območju ni bilo medsebojnih napetosti. Prva in predvsem druga svetovna vojna sta v življenju ljudi pustili neizbrisljive sledi, ki jih ni bilo mogoče zlahka premostiti. Kljub temu pa so državniki v desetletju po vojni počasi začeli prepoznavati ugodne učinke dobrososedskih odnosov na politični in gospodarski, pa tudi kulturni in družbeni ravni. Tako se je na državnih mejah med Jugoslavijo ter Avstrijo in Italijo – torej na južnem koncu linije, ki jo je Winston Churchill leta 1946 poimenoval železna zavesa – postopoma uveljavil drugačen pristop. Zato se je lahko leta 1961, medtem ko je med zahodnim in vzhodnim Berlinom rasel betonski zid, slovenski režiser Mako Sajko v svojem dokumentarnem filmu o italijansko-jugoslovanski meji upravičeno spraševal, Kje je železna zavesa?. \n A ne gre le za preusmeritev pogleda proti jugu, temveč tudi za drugačno perspektivo. Ta ob vlogi pomembnih mož (bolj poredkoma žensk) in državnih institucij upošteva tudi vidik vsakdanjega življenja. Razkrije se pomen običajnih ljudi, ki so soustvarjali postopno integracijo obmejnega prostora: prehajanje meje je namreč (lahko) bilo skoraj vsakdanje opravilo. Meja je bila vsekakor prisotna in jo je bilo v marsičem občutiti. A prej kot nepremostljiva ovira je bila za mnoge moteči element, ki pa je vendarle omogočal raznolike čezmejne prakse, od nakupov živil in bele tehnike, do nedeljskih kosil in poletnega dopusta. \n Pričujoča razstava torej odstira pogled na ljudi, kraje in vsakodnevne čezmejne prakse, ki nam govorijo o tem, da je, če se z berlinskega zidu spustimo v prostor med Alpami in Jadranom, zgodovina Evrope videti drugače."
   },
   "alpeadria": {
     "author": "Benedetto Zaccaria",

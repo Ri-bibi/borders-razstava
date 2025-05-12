@@ -27,92 +27,67 @@ const t = await initializei18n(locale);
 
     <!-- text -->
     <Container>
-      <div class="text-justify text-lg/8 mx-auto bg-white px-12">
-        <div class="flex justify-between items-center">
-          <div class="max-w-sm py-18">
-            <span class="text-brand-blue text-8xl font-adapt font-extrabold"
-              >"Never Mind the borders"</span
+      <div class="text-lg/8 mx-auto bg-white px-6 pt-8">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
+          <div class="py-4 mx-auto text-center">
+            <span
+              class="text-brand-blue/20 md:text-8xl text-6xl font-extrabold lg:-mr-6 -mt-4"
+              >"</span
+            >
+            <h1
+              class="text-brand-blue md:text-8xl text-7xl font-adapt font-extrabold inline"
+            >
+              Never Mind the borders
+            </h1>
+            <span
+              class="text-brand-blue/20 md:text-8xl text-6xl font-extrabold lg:-ml-6 -mt-4"
+              >"</span
             >
           </div>
-
-          <div
-            class="flex flex-col font-adapt font-light text-5xl text-left max-w-sm"
-          >
-            <div class="max-w-lg text-black/10">
-              <span class="">People Places Practices</span>
-            </div>
-            <div class="max-w-lg -my-7 font-bold">
-              <span class="">Ljudje, Kraji in prakse</span>
-            </div>
-            <div class="max-w-lg">
-              <span class="text-black/10">persone, luoghi e pratiche</span>
-            </div>
-            <div class="text-brand-blue py-8 text-3xl">
-              <LanguageSelector />
-            </div>
+        </div>
+        <h2
+          class="md:text-6xl text-4xl font-thin tracking-tight mx-auto text-center opacity-60 px-16"
+        >
+          {t("intro.subtitle")}
+        </h2>
+        <div class="w-full flex justify-center pt-12">
+          <div class="flex gap-4 text-2xl text-brand-blue">
+            <LanguageSelector />
           </div>
         </div>
       </div>
     </Container>
 
-    <div class="mx-auto bg-white w-full py-32">
+    <div class="mx-auto bg-white w-full py-48">
       <Container>
-        <div
-          class="max-w-3xl mr-auto text-lg text-justify px-12 border-r-3 border-dotted border-brand-blue/30"
-        >
-          <p>
-            <TextInitial
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consectetur voluptas vel nisi distinctio a ab rerum iusto amet. Incidunt enim, autem sed veritatis iste natus id similique quaerat at? Libero, iste?"
-            />
-          </p>
-
-          <p>
-            temu pa so državniki v desetletju po vojni počasi začeli
-            prepoznavati ugodne učinke dobrososedskih odnosov na politični in
-            gospodarski, pa tudi kulturni in družbeni ravni. Tako se je v času,
-            ko so v Berlinu medsebojne težave reševali z izgradnjo zidu, na
-            južnem koncu linije – ki jo je Winston Churchill leta 1946
-            poimenoval železna zavesa – postopoma uveljavil drugačen pristop.
-            Zato se je lahko leta 1961, medtem ko je med zahodnim in vzhodnim
-            Berlinom rasel betonski zid, slovenski režiser Mako Sajko na drugem
-            koncu Evrope v svojem dokumentarnem filmu spraševal, Kje je železna
-            zavesa? A ne gre le za preusmeritev pogleda proti jugu, temveč tudi
-            za drugačno perspektivo. Ta ob vlogi pomembnih mož (bolj poredkoma
-            žensk) in državnih institucij upošteva tudi vlogo tako imenovanega
-            malega človeka in na vsakdanje življenje: prehajanje meje je namreč
-            (lahko) bilo skoraj vsakdanje opravilo. Meja je bila vseka kor
-            prisotna in jo je bilo mogoče v marsičem občutiti. A prej kot
-            nepremostljiva ovira je bila moteči element, ki pa je vendarle
-            omogočal raznolike čezmejne prakse, od nakupov živil in bele
-            tehnike, do nedeljskih kosil in poletnega dopusta. Pričujoča
-            razstava odstira pogled na ljudi, kraje in prakse, ki so zaznamovali
-            čezmejno interakcijo na vsakdanji ravni in omogočili postopno
-            integracijo. Skratka, če se z vrha berlinskega zidu preselimo v
-            prostor Alpe-Jadran, je zgodovina Evrope videti drugače.
-          </p>
+        <div class="text-xl text-justify md:px-12 px-6">
+          <TextInitial text={t("intro.body")} />
+          <div class="w-full flex justify-end pt-16">
+            <div class="text-xl text-brand-beige-dark">Borut Klabjan</div>
+          </div>
         </div>
       </Container>
     </div>
   </div>
 
-  <div class="bg-white py-24 my-64">
+  <div class="bg-white py-24 my-64 px-8">
     <Container>
       <h2 class="-mr-4 text-6xl font-bold p-2 px-6 font-adapt text-brand-blue">
-        Razstava
+        {t("generic.exhibition")}
       </h2>
       <h2
         class="-mr-4 text-8xl font-bold p-2 px-6 font-adapt text-brand-blue/10 -mt-30"
       >
-        Razstava
+        {t("generic.exhibition")}
       </h2>
 
       <div
-        class="w-full grid grid-cols-3 gap-4 py-32 justify-center items-center"
+        class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-32 justify-center items-center"
       >
         <TableOfContents />
       </div>
 
-      <div class="w-full flex justify-end">
+      <div class="w-full flex lg:justify-end justify-center">
         <a class="text-2xl font-semibold underline text-brand-blue" href="">
           Avtorji in zahvale
         </a>

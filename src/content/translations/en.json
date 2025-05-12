@@ -1,9 +1,14 @@
 {
   "generic": {
-    "source": "Source",
+    "exhibition": "Exhibition",
+    "source": "source",
     "people": "People",
     "places": "Places",
     "practices": "Practices"
+  },
+  "intro": {
+    "subtitle": "People, Places and Cross-Border Practices between the Alps and the Adriatic",
+    "body": "Established views of Europe's Cold War past place the impermeability of borders between East and West at the centre of the debate. The Berlin Wall is seen as a symbolic and de facto fulcrum around which rhetoric about this impenetrable divide is built. The focus of the current exhibition Never Mind the Borders, however, is directed elsewhere, towards the porosity of the interstate borders shaped by the bloc system. While the importance of the Berlin Wall during the Cold War cannot be denied, if we move from Berlin to the space between the Alps and the Adriatic, a different perspective on Europe's past can be added. This does not mean, of course, that there were no tensions in the area. The First and, above all, the Second World War left indelible traces on people's lives that were not easily overcome. Nevertheless, in the decade after the war, statesmen slowly began to recognise the beneficial effects of good neighbourly relations at the political and economic, as well as cultural and social levels. A different approach gradually took hold on the borders between Yugoslavia and Austria and Italy - the southern end of what Winston Churchill called the Iron Curtain in 1946. Thus in 1961, while a concrete wall was being built between West and East Berlin, at the other end of Europe the Slovenian filmmaker Mako Sajko rightly wondered Where is the Iron Curtain? in his documentary film. \n This broader historiographic perspective is not only about a shift of gaze southwards, but also about a different perspective. Alongside the role of important men (rarely women) and state institutions, it also considers the aspect of everyday life. It reveals the role of the common people in helping to gradually integrate the border area: crossing the border could be an everyday occurrence. The border was certainly present and could be felt in many ways, but rather than being an insurmountable obstacle, it was for many a bothersome reality that allowed for a variety of cross-border practices, from shopping for groceries and home appliances to Sunday lunches and summer holidays. \n This exhibition offers a glimpse of the people, places and everyday cross-border practices which tell us that the history of Europe looks different if we move from the Berlin Wall to the space between the Alps and the Adriatic."
   },
   "alpeadria": {
     "author": "Benedetto Zaccaria",

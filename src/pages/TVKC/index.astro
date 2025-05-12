@@ -79,14 +79,10 @@ export const locations: MapLocation[] = [
     />
 
     <div class="flex justify-end mt-24">
-      <ArrowNext href={generateLocaleLink("/BRIDGE/", Astro.url.pathname)}
-        >{t("bridge.title1")}</ArrowNext
-      >
-    </div>
-    <div class="flex justify-end mt-24">
-      <ArrowNext href={generateLocaleLink("/TOURISM/", Astro.url.pathname)}
-        >{t("tourism.title1")}</ArrowNext
-      >
+      <ArrowNext
+        href={generateLocaleLink("/CONTRABAND/", Astro.url.pathname)}
+        tKey="contraband"
+      />
     </div>
   </Container>
 </Layout>
