@@ -6,37 +6,44 @@ export function extractYears(
   YearComponent: (props: { year: string }) => ReactElement
 ): ReactElement[] {
   const regex = /\b(\d{4})\b/g;
-  const parts: ReactElement[] = [];
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
 
-  while ((match = regex.exec(text)) !== null) {
-    const year = match[1];
+  return text
+    .split("\n")
+    .filter((p) => p.trim())
+    .map((paragraph, paragraphIndex) => {
+      const parts: ReactElement[] = [];
+      let lastIndex = 0;
+      let match: RegExpExecArray | null;
 
-    if (lastIndex < match.index) {
-      parts.push(
-        <Fragment key={`text-${lastIndex}`}>
-          {text.slice(lastIndex, match.index)}
-        </Fragment>
-      );
-    }
+      while ((match = regex.exec(paragraph)) !== null) {
+        const year = match[1];
 
-    parts.push(<YearComponent key={`year-${match.index}`} year={year} />);
+        if (lastIndex < match.index) {
+          parts.push(
+            <Fragment key={`text-${paragraphIndex}-${lastIndex}`}>
+              {paragraph.slice(lastIndex, match.index)}
+            </Fragment>
+          );
+        }
 
-    lastIndex = regex.lastIndex;
-  }
+        parts.push(
+          <YearComponent
+            key={`year-${paragraphIndex}-${match.index}`}
+            year={year}
+          />
+        );
 
-  if (lastIndex < text.length) {
-    parts.push(
-      <Fragment key={`text-${lastIndex}`}>{text.slice(lastIndex)}</Fragment>
-    );
-  }
+        lastIndex = regex.lastIndex;
+      }
 
-  return parts;
-}
+      if (lastIndex < paragraph.length) {
+        parts.push(
+          <Fragment key={`text-${paragraphIndex}-${lastIndex}`}>
+            {paragraph.slice(lastIndex)}
+          </Fragment>
+        );
+      }
 
-export function pad(num: number, size: number) {
-  let n = num.toString();
-  while (n.length < size) n = "0" + n;
-  return n;
+      return <p key={`para-${paragraphIndex}`}>{parts}</p>;
+    });
 }

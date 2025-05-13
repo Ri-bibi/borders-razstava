@@ -9,6 +9,7 @@ import { initializei18n } from "../utils/i18n";
 import { getLocale } from "astro-i18n-aut";
 import LanguageSelector from "../components/langSelect/LanguageSelector.astro";
 import TableOfContents from "../components/pageNavigation/TableOfContents.astro";
+import { ParagraphWrapper } from "../utils/ParagraphWrapper";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -61,7 +62,9 @@ const t = await initializei18n(locale);
     <div class="mx-auto bg-white w-full py-48">
       <Container>
         <div class="text-xl text-justify md:px-12 px-6">
-          <TextInitial text={t("intro.body")} />
+          <div class="flex">
+            <TextInitial text={t("intro.body")} />
+          </div>
           <div class="w-full flex justify-end pt-16">
             <div class="text-xl text-brand-beige-dark">Borut Klabjan</div>
           </div>
