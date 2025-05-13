@@ -6,8 +6,6 @@ import TableOfContents from "../pageNavigation/TableOfContents.astro";
   let isOpen = false;
 
   function toggleSidebar() {
-    console.log("Toggle sidebar", isOpen);
-
     isOpen = !isOpen;
     const sidebar = document.querySelector("#sidebar");
     if (sidebar) {

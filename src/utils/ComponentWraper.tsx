@@ -23,7 +23,6 @@ const processNodes = (
   // if node is a valid React element, process its children
   if (React.isValidElement(node)) {
     const { type, props } = node as any;
-    console.log("asdsadasdasda");
 
     // Handle Astro slot string case
     if (
@@ -33,7 +32,6 @@ const processNodes = (
     ) {
       const htmlContent = String(props.value);
       // Parse the HTML and recursively process each node
-      console.log("peniss");
 
       return processNodes(parse(htmlContent), processFn);
     }

@@ -30,10 +30,6 @@ export async function initializei18n(locale: string) {
     },
   });
 
-  // console.log(resources);
-  // console.log(i18next.languages, Object.keys(resources), locale);
-  console.log(t("generic.source"));
-
   isInitialized = true;
 
   return i18next.t;

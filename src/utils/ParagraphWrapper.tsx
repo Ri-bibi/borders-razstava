@@ -18,8 +18,6 @@ export const ParagraphWrapper = ({ children }: { children: ReactNode }) => {
     }
 
     if (typeof content === "string") {
-      console.log("String content:", content);
-
       return content
         .split(/\n+/) // Split on one or more newlines
         .filter((p) => p.trim()) // Remove empty paragraphs
