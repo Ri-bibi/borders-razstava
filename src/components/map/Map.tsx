@@ -43,6 +43,13 @@ function calculateBoundsZoomAndCenter(
     };
   }
 
+  if (locations.length === 1) {
+    return {
+      center: locations[0].coords,
+      zoom: 10, // Default zoom for a single location
+    };
+  }
+
   const latitudes = locations.map((loc) => loc.coords[0]);
   const longitudes = locations.map((loc) => loc.coords[1]);
 

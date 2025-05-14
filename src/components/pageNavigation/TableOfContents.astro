@@ -37,21 +37,21 @@ const pagesWithData = await Promise.all(
   pagesWithData
     .sort((a, b) => a.index - b.index)
     .map((page, i) => (
-      <div class="flex gap-4 group hover:bg-brand-blue/5 p-4 ">
+      <a
+        class="flex gap-4 group hover:bg-brand-blue/5 p-4 "
+        href={generateLocaleLink(page.url, Astro.url.pathname)}
+      >
         <div class="text-5xl font-mono font-bold text-brand-blue/20">
           {pad(page.index, 2)}
         </div>
         <div class="flex flex-col">
-          <a
-            class="lg:text-2xl text-xl font-bold text-black/90"
-            href={generateLocaleLink(page.url, Astro.url.pathname)}
-          >
+          <span class="lg:text-2xl text-xl font-bold text-black/90">
             {t(page.tKey + ".title1")}
-          </a>
+          </span>
           <span class="lg:text-lg text-md text-brand-beige-dark/80">
             {t(page.tKey + ".author")}
           </span>
         </div>
-      </div>
+      </a>
     ))
 }

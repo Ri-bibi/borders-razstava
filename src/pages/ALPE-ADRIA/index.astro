@@ -18,7 +18,6 @@ import Timeline from "../../components/navbar/Timeline.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
 import { generateLocaleLink } from "../../components/langSelect/languageutils";
 import RightText from "../../components/textIslands/RightText.astro";
-import Sidebar from "../../components/sidebar/Sidebar.astro";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -53,16 +52,12 @@ export const locations: MapLocation[] = [
       body2={t("alpeadria.intro.second")}
     />
 
-    <!-- </Container> -->
-    <div class="">
-      <ImageTitleText
-        body={t("alpeadria.people.text")}
-        image={peopleImg}
-        source={t("alpeadria.people.source")}
-        title={t("generic.people")}
-      />
-    </div>
-    <!-- <Container> -->
+    <ImageTitleText
+      body={t("alpeadria.people.text")}
+      image={peopleImg}
+      source={t("alpeadria.people.source")}
+      title={t("generic.people")}
+    />
     <LeftText
       body={t("alpeadria.places.text")}
       image={placesImg}
