@@ -1,8 +1,8 @@
 ---
-const description = "Dont mind the borders - Web exhibition";
-const title = "Dont mind the borders";
-const url = "";
-const ogImage = "/OG_ image.svg";
+const description = "Open borders - Never mind the borders";
+const title = "Never mind the borders";
+const url = "https://erc-openborders.eu/";
+// const ogImage = "/OG_ image.svg";
 ---
 
 <meta charset="UTF-8" />
@@ -11,14 +11,17 @@ const ogImage = "/OG_ image.svg";
 <!-- Basic Meta Tags -->
 <title>{title}</title>
 <meta name="description" content={description} />
-<meta name="keywords" content="TRMA, Trmamusic, DJ, DJ slovenia" />
+<meta
+  name="keywords"
+  content="Openborders, Never mind the borders, online exhibtion"
+/>
 <meta name="author" content="Lan & Tina" />
 
 <!-- Favicons -->
 <link
   rel="icon"
-  type="image.webp"
-  href="favicon/favicon-96x96.webp"
+  type="image/png"
+  href="favicon/favicon-96x96.png"
   sizes="96x96"
 />
 <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
@@ -26,9 +29,9 @@ const ogImage = "/OG_ image.svg";
 <link
   rel="apple-touch-icon"
   sizes="180x180"
-  href="favicon/apple-touch-icon.webp"
+  href="favicon/apple-touch-icon.png"
 />
-<meta name="apple-mobile-web-app-title" content="Trmamusic" />
+<meta name="apple-mobile-web-app-title" content="Nevermind the borders" />
 <link rel="manifest" href="favicon/site.webmanifest" />
 
 <!-- Open Graph / Facebook -->
@@ -36,14 +39,14 @@ const ogImage = "/OG_ image.svg";
 <meta property="og:url" content={url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={ogImage} />
+<!-- <meta property="og:image" content={ogImage} /> -->
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={ogImage} />
+<!-- <meta property="twitter:image" content={ogImage} /> -->
 
 <!-- Canonical URL -->
 <link rel="canonical" href={url} />
@@ -53,7 +56,7 @@ const ogImage = "/OG_ image.svg";
 <meta name="googlebot" content="index, follow" />
 
 <!-- Apple Touch Icon (already included in favicons, but keeping for backwards compatibility) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
 <!-- Theme Color for Mobile Browsers -->
 <meta name="theme-color" content="#ff5b23" />
