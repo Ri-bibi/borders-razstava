@@ -1,0 +1,20 @@
+{
+  "sl": {
+    "gendernotice": "Moški slovnični spol v množini se uporablja ne glede na dejanski spol oseb, navedenih na razstavnih besedilih."
+  },
+  "en": {
+    "gendernotice": "The masculine plural is used regardless of the actual gender of the persons mentioned in the exhibition texts."
+  },
+  "it": {
+    "gendernotice": "La forma maschile plurale viene utilizzata a prescindere dall'identità di genere delle persone citate nei testi della mostra."
+  },
+  "fu": {
+    "gendernotice": "Il plurâl masculin al è doprât a pressindi dal gjenar reâl des personis menzonadis tai tescj de mostre."
+  },
+  "hr": {
+    "gendernotice": "Muški rod u množini koristi se bez obzira na stvarni spol osoba spomenutih u tekstovima izložbe."
+  },
+  "de": {
+    "gendernotice": "In den Ausstellungstexten wird unabhängig vom tatsächlichen Geschlecht im Plural zumeist das generische Maskulinum verwendet."
+  }
+}

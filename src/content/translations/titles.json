@@ -1,0 +1,248 @@
+{
+  "hr": {
+    "alpeadria": {
+      "title1": "Alpe-Adria"
+    },
+    "bridge": {
+      "title1": "Most"
+    },
+    "business": {
+      "title1": "Investicije"
+    },
+    "health": {
+      "title1": "Zdravstvo"
+    },
+    "hunt": {
+      "title1": "Lov"
+    },
+    "mount": {
+      "title1": "Planinarenje"
+    },
+    "pass": {
+      "title1": "Propustnica"
+    },
+    "politics": {
+      "title1": "Politika prijateljstva"
+    },
+    "punk": {
+      "title1": "Alternativna glazba"
+    },
+    "sport": {
+      "title1": "Šport"
+    },
+    "tourism": {
+      "title1": "Turizam"
+    },
+    "tvkc": {
+      "title1": "Televizija"
+    },
+    "contraband": {
+      "title1": "Krijumčarenje"
+    }
+  },
+  "sl": {
+    "alpeadria": {
+      "title1": "Alpe-Adria"
+    },
+    "bridge": {
+      "title1": "Most"
+    },
+    "business": {
+      "title1": "Investicije"
+    },
+    "health": {
+      "title1": "Zdravstvo"
+    },
+    "hunt": {
+      "title1": "Lov"
+    },
+    "mount": {
+      "title1": "Planinarjenje"
+    },
+    "pass": {
+      "title1": "Prepustnica"
+    },
+    "politics": {
+      "title1": "Politika prijateljstva"
+    },
+    "punk": {
+      "title1": "Alternativna glasba"
+    },
+    "sport": {
+      "title1": "Šport"
+    },
+    "tourism": {
+      "title1": "Turizem"
+    },
+    "tvkc": {
+      "title1": "Televizija"
+    },
+    "contraband": {
+      "title1": "Tihotapstvo"
+    }
+  },
+  "en": {
+    "alpeadria": {
+      "title1": "Alpe-Adria"
+    },
+    "bridge": {
+      "title1": "Bridge"
+    },
+    "business": {
+      "title1": "Investments"
+    },
+    "health": {
+      "title1": "Healthcare"
+    },
+    "hunt": {
+      "title1": "Hunt"
+    },
+    "mount": {
+      "title1": "Mountaineering"
+    },
+    "pass": {
+      "title1": "Laissez-Passier"
+    },
+    "politics": {
+      "title1": "Politics of Friendship"
+    },
+    "punk": {
+      "title1": "Alternative Music"
+    },
+    "sport": {
+      "title1": "Sport"
+    },
+    "tourism": {
+      "title1": "Tourism"
+    },
+    "tvkc": {
+      "title1": "Television"
+    },
+    "contraband": {
+      "title1": "Contraband"
+    }
+  },
+  "it": {
+    "alpeadria": {
+      "title1": "Alpe-Adria"
+    },
+    "bridge": {
+      "title1": "Ponte"
+    },
+    "business": {
+      "title1": "Investimenti"
+    },
+    "health": {
+      "title1": "Sanità"
+    },
+    "hunt": {
+      "title1": "Caccia"
+    },
+    "mount": {
+      "title1": "Escursionismo alpino"
+    },
+    "pass": {
+      "title1": "Lasciapassare"
+    },
+    "politics": {
+      "title1": "Politica di amicizia"
+    },
+    "punk": {
+      "title1": "Musica alternativa"
+    },
+    "sport": {
+      "title1": "Sport"
+    },
+    "tourism": {
+      "title1": "Turismo"
+    },
+    "tvkc": {
+      "title1": "Televisione"
+    },
+    "contraband": {
+      "title1": "Contrabbando"
+    }
+  },
+  "de": {
+    "alpeadria": {
+      "title1": "Alpe-Adria"
+    },
+    "bridge": {
+      "title1": "Brücke"
+    },
+    "business": {
+      "title1": "Investitionen"
+    },
+    "health": {
+      "title1": "Gesundheitsversorgung"
+    },
+    "hunt": {
+      "title1": "Jagd"
+    },
+    "mount": {
+      "title1": "Bergwandern"
+    },
+    "pass": {
+      "title1": "Passierschein"
+    },
+    "politics": {
+      "title1": "Politik der Freundschaft"
+    },
+    "punk": {
+      "title1": "Alternative Musik"
+    },
+    "sport": {
+      "title1": "Sport"
+    },
+    "tourism": {
+      "title1": "Tourismus"
+    },
+    "tvkc": {
+      "title1": "Fernsehen"
+    },
+    "contraband": {
+      "title1": "Schmuggel"
+    }
+  },
+  "fu": {
+    "alpeadria": {
+      "title1": "Alpe-Adria"
+    },
+    "bridge": {
+      "title1": "Puint"
+    },
+    "business": {
+      "title1": "Investiments"
+    },
+    "health": {
+      "title1": "Sanitât"
+    },
+    "hunt": {
+      "title1": "Cjace"
+    },
+    "mount": {
+      "title1": "Ator pai monts"
+    },
+    "pass": {
+      "title1": "Laissez-passer"
+    },
+    "politics": {
+      "title1": "Politiche di amicizie"
+    },
+    "punk": {
+      "title1": "Musiche alternative"
+    },
+    "sport": {
+      "title1": "Sport"
+    },
+    "tourism": {
+      "title1": "Turisim"
+    },
+    "tvkc": {
+      "title1": "Television"
+    },
+    "contraband": {
+      "title1": "Cuintribant"
+    }
+  }
+}

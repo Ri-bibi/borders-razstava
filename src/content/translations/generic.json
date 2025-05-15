@@ -1,0 +1,68 @@
+{
+  "de": {
+    "generic": {
+      "people": "Menschen",
+      "places": "Orte",
+      "practices": "Praktiken",
+      "exhibition": "Ausstellung",
+      "nextpage": "Nächste Seite",
+      "home": "Startseite",
+      "tableofcontents": "Inhaltsverzeichnis"
+    }
+  },
+  "sl": {
+    "generic": {
+      "people": "Ljudje",
+      "places": "Kraji",
+      "practices": "Prakse",
+      "exhibition": "Razstava",
+      "nextpage": "Naslednja stran",
+      "home": "Domov",
+      "tableofcontents": "Kazalo"
+    }
+  },
+  "en": {
+    "generic": {
+      "people": "People",
+      "places": "Places",
+      "practices": "Practices",
+      "exhibition": "Exhibition",
+      "nextpage": "Next page",
+      "home": "Home",
+      "tableofcontents": "Table of contents"
+    }
+  },
+  "it": {
+    "generic": {
+      "people": "Persone",
+      "places": "Luoghi",
+      "practices": "Pratiche",
+      "exhibition": "Mostra",
+      "nextpage": "Pagina successiva",
+      "home": "Pagina iniziale",
+      "tableofcontents": "Indice"
+    }
+  },
+  "fu": {
+    "generic": {
+      "people": "Personis",
+      "places": "Lûcs",
+      "practices": "Pratichis",
+      "exhibition": "Mostre",
+      "nextpage": "Pagjine dopo",
+      "home": "Inizi",
+      "tableofcontents": "Tabele dai contignûts"
+    }
+  },
+  "hr": {
+    "generic": {
+      "people": "Ljudi",
+      "places": "Mjesta",
+      "practices": "Prakse",
+      "exhibition": "Izložba",
+      "nextpage": "Sljedeća stranica",
+      "home": "Početna",
+      "tableofcontents": "Sadržaj"
+    }
+  }
+}

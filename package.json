@@ -18,6 +18,7 @@
     "@types/react-dom": "^19.1.2",
     "astro": "^5.7.2",
     "astro-i18n-aut": "^0.7.3",
+    "html-react-parser": "^5.2.5",
     "i18next": "^25.0.1",
     "pigeon-maps": "^0.22.1",
     "react": "^19.1.0",

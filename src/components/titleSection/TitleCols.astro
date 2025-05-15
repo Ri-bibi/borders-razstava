@@ -20,13 +20,13 @@ const { body1, body2, leftQuote, rightQuote } = Astro.props;
         <TextInitial text={body1} />
       </span>
     </div>
-    {
+    <!-- {
       leftQuote && (
         <div class="tracking-wide text-justify lg:text-left italic text-brand-beige-dark/40 lg:-ml-32 py-8 lg:pt-24  max-w-2xl lg:text-5xl text-2xl font-light">
           {leftQuote}
         </div>
       )
-    }
+    } -->
   </div>
 
   <div class="flex flex-col z-30 lg:-mt-24 border-t-6 border-white/30">
@@ -34,13 +34,13 @@ const { body1, body2, leftQuote, rightQuote } = Astro.props;
       <span class="lg:max-w-lg max-w-prose text-justify mx-auto pt-12">
         <TextWithYears body={body2} client:idle />
       </span>
-      {
+      <!-- {
         rightQuote && (
           <div class="tracking-wide italic text-brand-beige-dark/40 -mr-32 py-8 pt-24  max-w-2xl text-5xl font-light ml-auto">
             {rightQuote}
           </div>
         )
-      }
+      } -->
     </div>
   </div>
 </div>

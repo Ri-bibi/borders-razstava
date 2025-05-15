@@ -13,6 +13,9 @@ const locales = {
   en: "en-US",
   sl: "sl-SI",
   it: "it-IT",
+  de: "de-DE",
+  hr: "hr-HR",
+  fu: "it-FI"
 };
 
 export default defineConfig({

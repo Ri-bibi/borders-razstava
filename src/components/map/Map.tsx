@@ -122,11 +122,11 @@ export const MapComponent = ({ locations }: { locations: MapLocation[] }) => {
                   <div className="p-6 bg-brand-blue/40 rounded-full">
                     <div className="h-4 w-4 bg-brand-blue rounded-full"></div>
                   </div>
-                  <div>
+                  {/* <div>
                     <span className="bg-white text-brand-blue px-4 py-1">
                       {location.name}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </Marker>
             );

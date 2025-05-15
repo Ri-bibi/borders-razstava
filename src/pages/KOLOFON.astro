@@ -1,17 +1,101 @@
 ---
+import { getLocale } from "astro-i18n-aut";
 import Container from "../layouts/Container.astro";
 import Layout from "../layouts/Layout.astro";
+import { initializei18n } from "../utils/i18n";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
 ---
 
 <Layout>
-  <div class="min-h-screen py-24">
+  <div class="min-h-screen pt-24 pb-4 text-2xl">
     <Container>
-      <h1 class="font-plex font-bold text-6xl text-brand-blue">Kolofon</h1>
-      <h2 class="font-plex text-4xl text-brand-blue py-6">
-        Avtorji in zahvale
+      <div class="py-8 pb-16">
+        <a
+          class="font-bold text-xl bg-brand-beige-dark py-2 px-6 text-white"
+          href="/"
+        >
+          {t("generic.home")}
+        </a>
+      </div>
+      <h1 class="font-plex font-bold text-6xl text-brand-blue">
+        NEVER MIND THE BORDERS
+      </h1>
+      <h2
+        class="font-plex text-5xl text-brand-blue py-2 font-light tracking-wide"
+      >
+        {t("thanks")}
       </h2>
 
-      <div class=""></div>
+      <div class="py-16 flex flex-col gap-18">
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("organizing_committee")}
+          </div>
+          <p class="max-w-prose">
+            Nina Hofmann, Borut Klabjan, Urška Strle, Benedetto Zaccaria
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("authors")}
+          </div>
+          <p class="max-w-prose">
+            Marco Abram, Nina Hofmann, Borut Klabjan, Urban Orel, Jure Ramšak,
+            Mateja Režek, Sabine Rutar, Karlo Ruzicic-Kessler, Urška Strle,
+            Federico Tenca Montini, Marta Verginella, Benedetto Zaccaria
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("financial_manager")}
+          </div>
+          <p class="max-w-prose">Ana Šajn</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("graphic_design")}
+          </div>
+          <p class="max-w-prose">Ana Hawlina</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("web_design")}
+          </div>
+          <p class="max-w-prose">Tina Florjančič</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("web_development")}
+          </div>
+          <p class="max-w-prose">Lan Vukušič</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="text-3xl text-brand-beige-dark font-bold">
+            {t("special_thanks")}
+          </div>
+          <p class="max-w-prose text-xl">
+            Pauli Cantarut (Radio Onde Furlane), Karry Close, Jerko Sladoljev,
+            Miloš Toni (stareslike.org), Kaja Širok, Jani Rijavec, Stojan Pelko
+            (GO!2025), Marko Klavora (GM), Ivana Kovač (SŽ), Sabina Vučemilović
+            (SŽ), Tadeja Andrejek (Pokrajinski muzej Murska Sobota), Štefan Čok,
+            Gabrijela Caharija (NŠK), Petko Grabljić (SADAR + VUGA d.d.), Kris
+            Jogan (PANG), Elena Makorič (PANG), Franc Ekar, Aldo Rupel, Club
+            AIpino Italiano – Sezione di Gorizia, Planinska Zveza Slovenije.
+          </p>
+        </div>
+
+        <div class="text-brand-beige-dark py-32 text-justify">
+          {t("eu_funding")}
+        </div>
+      </div>
     </Container>
   </div>
 </Layout>

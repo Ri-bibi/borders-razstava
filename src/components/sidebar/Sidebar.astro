@@ -1,5 +1,10 @@
 ---
+import { getLocale } from "astro-i18n-aut";
+import { initializei18n } from "../../utils/i18n";
 import TableOfContents from "../pageNavigation/TableOfContents.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
 ---
 
 <script>
@@ -36,7 +41,7 @@ import TableOfContents from "../pageNavigation/TableOfContents.astro";
   id="toggle-sidebar-button"
   class="bg-white text-brand-blue px-4 py-1 cursor-pointer"
 >
-  Table of contents</button
+  {t("generic.tableofcontents")}</button
 >
 
 <div

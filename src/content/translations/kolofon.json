@@ -1,0 +1,35 @@
+{
+  "en": {
+    "thanks": "Authors and special thanks",
+    "organizing_committee": "Organising Committee",
+    "authors": "Authors",
+    "financial_manager": "Financial Manager",
+    "graphic_design": "Graphic Design",
+    "web_design": "Web Design",
+    "web_development": "Web Development",
+    "special_thanks": "Acknowledgements",
+    "eu_funding": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them."
+  },
+  "sl": {
+    "thanks": "Avtorji in posebne zahvale",
+    "organizing_committee": "Organizacijski odbor",
+    "authors": "Avtorji",
+    "financial_manager": "Finančni vodja",
+    "graphic_design": "Grafično oblikovanje",
+    "web_design": "Oblikovanje spletnih strani",
+    "web_development": "Spletni razvoj",
+    "special_thanks": "Posebne zahvale",
+    "eu_funding": "Financirano s strani Evropske unije. Izražena stališča in mnenja so zgolj stališča avtorja(-ev) in ne odražajo nujno stališč Evropske unije. Niti Evropska unija niti organ, ki dodeljuje sredstva, ne moreta biti odgovorna za njih."
+  },
+  "it": {
+    "thanks": "Autori e ringraziamenti speciali",
+    "organizing_committee": "Comitato organizzativo",
+    "authors": "Autori",
+    "financial_manager": "Responsabile finanziario",
+    "graphic_design": "Progettazione grafica",
+    "web_design": "Web design",
+    "web_development": "Sviluppo web",
+    "special_thanks": "Ringraziamenti speciali",
+    "eu_funding": "Finanziato dall'Unione Europea. Le opinioni espresse appartengono tuttavia esclusivamente all'autore/i e non riflettono necessariamente quelle dell'Unione Europea. Né l'Unione Europea né l'autorità concedente possono essere ritenute responsabili delle stesse."
+  }
+}
