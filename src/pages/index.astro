@@ -9,7 +9,6 @@ import { initializei18n } from "../utils/i18n";
 import { getLocale } from "astro-i18n-aut";
 import LanguageSelector from "../components/langSelect/LanguageSelector.astro";
 import TableOfContents from "../components/pageNavigation/TableOfContents.astro";
-import { ParagraphWrapper } from "../utils/ParagraphWrapper";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
@@ -68,6 +67,13 @@ const t = await initializei18n(locale);
           <div class="w-full flex justify-end pt-16">
             <div class="text-xl text-brand-beige-dark">Borut Klabjan</div>
           </div>
+
+          <div class="pt-24 italic opacity-80">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            voluptas ea explicabo, excepturi quod voluptates molestias ut
+            accusamus delectus non quo nesciunt ab maxime! Aspernatur modi
+            distinctio sapiente ab exercitationem.
+          </div>
         </div>
       </Container>
     </div>
@@ -91,7 +97,10 @@ const t = await initializei18n(locale);
       </div>
 
       <div class="w-full flex lg:justify-end justify-center">
-        <a class="text-2xl font-semibold underline text-brand-blue" href="">
+        <a
+          class="text-2xl font-semibold underline text-brand-blue"
+          href="/KOLOFON/"
+        >
           Avtorji in zahvale
         </a>
       </div>
