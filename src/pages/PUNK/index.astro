@@ -12,9 +12,9 @@ import { initializei18n } from "../../utils/i18n";
 import Timeline from "../../components/navbar/Timeline.astro";
 import TitleBar from "../../components/Title/TitleBar.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
-import peopleImg from "./01_PEOPLE_PUNK.png";
-import placesImg from "./02_PLACES_PUNK.png";
-import practicesImg from "./03_PRACTICES_PUNK MV.png";
+import peopleImg from "./01_PEOPLE_PUNK.webp";
+import placesImg from "./02_PLACES_PUNK.webp";
+import practicesImg from "./03_PRACTICES_PUNK MV.webp";
 import OverlayText from "../../components/textIslands/OverlayText.astro";
 import OverlayRightBox from "../../components/textIslands/OverlayRightBox.astro";
 
@@ -53,7 +53,7 @@ export const locations: MapLocation[] = [
   <OverlayRightBox
     body={t("punk.people.text")}
     image={peopleImg}
-    source={t("punk.people.source")}
+    source={"©" + t("punk.people.source")}
     title={t("generic.people")}
   />
 
@@ -62,7 +62,7 @@ export const locations: MapLocation[] = [
       <RightText
         body={t("punk.places.text")}
         image={placesImg}
-        source={t("punk.places.source")}
+        source={"©" + t("punk.places.source")}
         title={t("generic.places")}
       />
     </Container>
@@ -72,7 +72,7 @@ export const locations: MapLocation[] = [
       <LeftText
         body={t("punk.practices.text")}
         image={practicesImg}
-        source={t("punk.practices.source")}
+        source={"©" + t("punk.practices.source")}
         title={t("generic.practices")}
       />
     </div>

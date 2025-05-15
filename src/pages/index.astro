@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Container from "../layouts/Container.astro";
 import { Image } from "astro:assets";
 
-import mainImg from "./hero.png";
+import mainImg from "./hero.webp";
 import TextInitial from "../components/TextInitial.astro";
 import { initializei18n } from "../utils/i18n";
 import { getLocale } from "astro-i18n-aut";
@@ -22,11 +22,7 @@ const t = await initializei18n(locale);
     class="w-full h-full object-cover absolute -z-10"
   />
   <div class="h-6/12"></div>
-  <!-- text -->
   <div class="z-10 w-full">
-    <!-- title -->
-
-    <!-- text -->
     <Container>
       <div class="text-lg/8 mx-auto bg-white px-6 pt-8">
         <div class="flex justify-between items-center flex-col lg:flex-row">
@@ -99,7 +95,7 @@ const t = await initializei18n(locale);
           class="text-2xl font-semibold underline text-brand-blue"
           href={generateLocaleLink("/KOLOFON/", Astro.url.pathname)}
         >
-          Avtorji in zahvale
+          {t("thanks")}
         </a>
       </div>
     </Container>

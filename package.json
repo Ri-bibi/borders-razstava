@@ -6,7 +6,11 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "webp": "simple-webp-converter"
+  },
+  "simple-webp-converter": {
+    "src": "src/**/*..webp,jpg}"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.4",
@@ -24,6 +28,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-i18next": "^15.4.1",
+    "simple-webp-converter": "^1.0.3",
     "tailwindcss": "^4.1.4"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
