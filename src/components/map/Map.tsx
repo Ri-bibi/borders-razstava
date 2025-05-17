@@ -103,7 +103,7 @@ export const MapComponent = ({ locations }: { locations: MapLocation[] }) => {
         <Map
           tileComponent={ImgTile}
           // @ts-expect-error css height works, not only number despite it being whiney
-          height="50vh"
+          height="60vh"
           center={mapCenter} // Use dynamic center
           zoom={mapZoom} // Use dynamic zoom
           metaWheelZoom={false}
