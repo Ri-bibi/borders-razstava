@@ -1,5 +1,9 @@
 import { Fragment } from "react";
 import type { ReactElement } from "react";
+import {
+  globalTimeEnd,
+  globalTimeStart,
+} from "../components/navbar/timelineGlobals";
 
 export function extractYears(
   text: string,
@@ -17,23 +21,26 @@ export function extractYears(
 
       while ((match = regex.exec(paragraph)) !== null) {
         const year = match[1];
+        const yearNum = parseInt(year, 10);
+        // Only extract year if within globalTimeStart and globalTimeEnd (inclusive)
+        if (yearNum >= globalTimeStart && yearNum <= globalTimeEnd) {
+          if (lastIndex < match.index) {
+            parts.push(
+              <Fragment key={`text-${paragraphIndex}-${lastIndex}`}>
+                {paragraph.slice(lastIndex, match.index)}
+              </Fragment>
+            );
+          }
 
-        if (lastIndex < match.index) {
           parts.push(
-            <Fragment key={`text-${paragraphIndex}-${lastIndex}`}>
-              {paragraph.slice(lastIndex, match.index)}
-            </Fragment>
+            <YearComponent
+              key={`year-${paragraphIndex}-${match.index}`}
+              year={year}
+            />
           );
+
+          lastIndex = regex.lastIndex;
         }
-
-        parts.push(
-          <YearComponent
-            key={`year-${paragraphIndex}-${match.index}`}
-            year={year}
-          />
-        );
-
-        lastIndex = regex.lastIndex;
       }
 
       if (lastIndex < paragraph.length) {
