@@ -16,6 +16,7 @@ import { initializei18n } from "../../utils/i18n";
 import peopleImg from "./01_PEOPLE_TOURISM.webp";
 import placesImg from "./02_PLACES_TOURISM_a.webp";
 import practicesImg from "./03_PRACTICES_TOURISM.webp";
+import { Graf } from "../../components/chart/chart";
 
 export const tKey = "tourism";
 export const index = 10;
@@ -51,13 +52,18 @@ export const locations: MapLocation[] = [
       body1={t("tourism.intro.first")}
       body2={t("tourism.intro.second")}
     />
-    <RightText
-      body={t("tourism.people.text")}
-      image={peopleImg}
-      source={t("tourism.people.source")}
-      title={t("generic.people")}
-    />
+    <div class="-z-100">
+      <RightText
+        body={t("tourism.people.text")}
+        image={peopleImg}
+        source={t("tourism.people.source")}
+        title={t("generic.people")}
+      />
+    </div>
   </Container>
+  <div class="w-full -mt-48 lg:h-150 h-100 z-100 relative">
+    <Graf client:load />
+  </div>
 
   <div class="mt-48"></div>
 
