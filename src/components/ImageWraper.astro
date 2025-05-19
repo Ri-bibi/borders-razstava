@@ -1,4 +1,4 @@
-<div class="relative group">
+<div class="relative group" tabindex="0">
   <!-- Image container with grayscale filter -->
   <div
     class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300"
@@ -17,4 +17,32 @@
     class="absolute inset-0 border-1 border-transparent group-hover:shadow-2xl transition-all duration-300 pointer-events-none"
   >
   </div>
+  <script is:inline>
+    // Add touch/click support for hover effect on iOS Safari
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".group").forEach(function (el) {
+        el.addEventListener("touchend", function (e) {
+          e.preventDefault();
+          el.classList.toggle("hovered");
+        });
+        el.addEventListener("click", function (e) {
+          el.classList.toggle("hovered");
+        });
+      });
+    });
+  </script>
+  <style>
+    .group.hovered .w-full.h-full {
+      filter: none;
+      transition: all 0.3s;
+    }
+    .group.hovered .absolute.inset-0.bg-brand-blue\/10 {
+      background-color: rgba(var(--brand-blue), 0);
+      transition: all 0.3s;
+    }
+    .group.hovered .absolute.inset-0.border-1 {
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s;
+    }
+  </style>
 </div>
