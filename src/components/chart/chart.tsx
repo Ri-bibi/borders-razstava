@@ -77,6 +77,9 @@ export const Graf = () => {
           />
         </LineChart>
       </ResponsiveContainer>
+      <h3 className="text-brand-beige-dark font-bold font-plex   text-xl lg:text-2xl ">
+        PRENOČITVE: 1955–1962
+      </h3>
     </div>
   );
 };
