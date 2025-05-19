@@ -7,7 +7,7 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<div class={`sticky-header ${className || ""}`} id="sticky-header">
+<div class={`max-h-[90vh] sticky-header ${className || ""}`} id="sticky-header">
   <slot />
 </div>
 <div class="sticky-header__placeholder" id="sticky-header-placeholder"></div>
