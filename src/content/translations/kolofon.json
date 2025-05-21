@@ -31,5 +31,38 @@
     "web_development": "Sviluppo web",
     "special_thanks": "Ringraziamenti speciali",
     "eu_funding": "Finanziato dall'Unione Europea. Le opinioni espresse appartengono tuttavia esclusivamente all'autore/i e non riflettono necessariamente quelle dell'Unione Europea. Né l'Unione Europea né l'autorità concedente possono essere ritenute responsabili delle stesse."
+  },
+  "de": {
+    "thanks": "Autoren und besonderer Dank",
+    "organizing_committee": "Ausstellungsorganisation",
+    "authors": "Marco Abram, Nina Hofmann, Borut Klabjan, Urban Orel, Jure Ramšak, Mateja Režek, Sabine Rutar, Karlo Ruzicic-Kessler, Urška Strle, Federico Tenca Montini, Marta Verginella, Benedetto Zaccaria",
+    "financial_manager": "Ana Šajn",
+    "graphic_design": "Ana Hawlina",
+    "web_design": "Tina Florjančič",
+    "web_development": "Lan Vukušič",
+    "special_thanks": "Pauli Cantarut (Radio Onde Furlane), Karry Close, Jerko Sladoljev, Miloš Toni (stareslike.org), Kaja Širok, Jani Rijavec, Stojan Pelko (GO!2025), Marko Klavora (GM), Ivana Kovač (SŽ), Sabina Vučemilović (SŽ), Tadeja Andrejek (Regionalmuseum Murska Sobota), Štefan Čok, Gabrijela Caharija (NŠK), Petko Grabljić (SADAR + VUGA d.d.), Kris Jogan (PANG), Elena Makorič (PANG), Franc Ekar, Aldo Rupel, Club AIpino Italiano – Sektion Gorizia, Planinska Zveza Slovenije",
+    "eu_funding": "Finanziert durch die Europäische Union. Die geäußerten Ansichten und Meinungen liegen ausschließlich bei den Autoren und geben nicht notwendigerweise die Sichtweise der Europäischen Union wieder. Weder die Europäische Union noch die Bewilligungsbehörde können für den Inhalt verantwortlich gemacht werden."
+  },
+  "fur": {
+    "thanks": "Autôrs e ringraciaments speciâi",
+    "organizing_committee": "Comitât organizadôr",
+    "authors": "Autôrs",
+    "financial_manager": "Gjestôr finanziari",
+    "graphic_design": "Dissen Grafic",
+    "web_design": "Progjetazion Web",
+    "web_development": "Svilup dal Web",
+    "special_thanks": "Ringraciaments",
+    "eu_funding": "Finanziât de Union Europeane. Lis visions e lis opinion esprimudis a son in ogni câs nome chês dai autôrs e no rifletin par fuarce chês de Union Europeane. Ni la Union Europeane ni l'autoritât che e à concedût a puedin jessi tignudis responsabii di lôr."
+  },
+  "hr": {
+    "thanks": "Autori i posebne zahvale",
+    "organizing_committee": "Organizacijski odbor",
+    "authors": "Autori",
+    "financial_manager": "Financijski direktor",
+    "graphic_design": "Grafički dizajn",
+    "web_design": "Web dizajn",
+    "web_development": "Web razvoj",
+    "special_thanks": "Priznanja",
+    "eu_funding": "Financira Europska unija. Izneseni stavovi i mišljenja samo su autorova i ne odražavaju nužno službena stajališta Europske unije ili Europske komisije. Ni Europska unija ni tijelo koje dodjeljuje potporu ne mogu se smatrati odgovornima za njih."
   }
 }
