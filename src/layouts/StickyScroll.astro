@@ -7,12 +7,24 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<div class={`sticky-header ${className || ""}`} id="sticky-header">
+<div class={`max-h-[90vh] sticky-header ${className || ""}`} id="sticky-header">
   <slot />
 </div>
 <div class="sticky-header__placeholder" id="sticky-header-placeholder"></div>
 
 <script is:inline>
+  function updateStickyState(header, placeholder) {
+    if (!header || !placeholder) return;
+    const rect = placeholder.getBoundingClientRect();
+    if (rect.top <= 0) {
+      header.classList.add("sticky-header--stuck");
+      placeholder.style.height = `${header.offsetHeight}px`;
+    } else {
+      header.classList.remove("sticky-header--stuck");
+      placeholder.style.height = "0px";
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("sticky-header");
     const placeholder = document.getElementById("sticky-header-placeholder");
@@ -34,9 +46,17 @@ const { class: className } = Astro.props;
 
     observer.observe(placeholder);
 
+    // Redundancy: check sticky state on load, scroll, and resize
+    const handleUpdate = () => updateStickyState(header, placeholder);
+    window.addEventListener("scroll", handleUpdate, { passive: true });
+    window.addEventListener("resize", handleUpdate);
+    setTimeout(handleUpdate, 0); // Ensure state is correct after initial paint
+
     // Cleanup on navigation (for SPA-like behavior)
     window.addEventListener("beforeunload", () => {
       observer.disconnect();
+      window.removeEventListener("scroll", handleUpdate);
+      window.removeEventListener("resize", handleUpdate);
     });
   });
 </script>

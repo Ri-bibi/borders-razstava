@@ -14,9 +14,11 @@ import StickyScroll from "../../layouts/StickyScroll.astro";
 import { initializei18n } from "../../utils/i18n";
 
 import peopleImg from "./01_PEOPLE_TOURISM.webp";
-import placesImg from "./02_PLACES_TOURISM_a.webp";
+import placesImg from "./02_PLACES_TOURISM_b.jpg";
 import practicesImg from "./03_PRACTICES_TOURISM.webp";
 import { Graf } from "../../components/chart/chart";
+import TextOnly from "../../components/textIslands/TextOnly.astro";
+import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
 
 export const tKey = "tourism";
 export const index = 10;
@@ -53,15 +55,16 @@ export const locations: MapLocation[] = [
       body2={t("tourism.intro.second")}
     />
     <div class="-z-100">
-      <RightText
+      <TextOnly
         body={t("tourism.people.text")}
-        image={peopleImg}
         source={t("tourism.people.source")}
         title={t("generic.people")}
       />
     </div>
   </Container>
-  <div class="w-full -mt-48 lg:h-150 h-100 z-100 relative">
+  <div
+    class="w-full lg:-mt-8 mt-8 lg:h-150 h-100 z-100 relative lg:px-32 border-brand-blue"
+  >
     <Graf client:load />
   </div>
 
@@ -73,8 +76,8 @@ export const locations: MapLocation[] = [
     source={t("tourism.places.source")}
     title={t("generic.places")}
   />
-  <div class="w-full h-2 bg-brand-blue"></div>
-  <OverlayRightBox
+  <div class="md:h-48"></div>
+  <BlueBoxText
     body={t("tourism.practices.text")}
     image={practicesImg}
     source={t("tourism.practices.source")}

@@ -50,6 +50,7 @@ export const Graf = () => {
             bottom: 5,
           }}
         >
+          {/* <CartesianGrid color="#e4d0c5" opacity={0.5} /> */}
           <XAxis dataKey="year" />
           <Tooltip />
           <Legend />
@@ -58,24 +59,27 @@ export const Graf = () => {
             type="linear"
             dataKey="total"
             stroke="#e4d0c5"
-            strokeWidth={3}
+            strokeWidth={5}
           />
           <Line
             animationDuration={200}
             type="linear"
             dataKey="domestic"
             stroke="#005670"
-            strokeWidth={3}
+            strokeWidth={5}
           />
           <Line
             animationDuration={600}
             type="linear"
             dataKey="foreign"
             stroke="#b09180"
-            strokeWidth={3}
+            strokeWidth={5}
           />
         </LineChart>
       </ResponsiveContainer>
+      <h3 className="text-brand-beige-dark font-bold font-plex   text-xl lg:text-2xl ">
+        PRENOČITVE: 1955–1962
+      </h3>
     </div>
   );
 };
