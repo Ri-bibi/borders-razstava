@@ -1,0 +1,23 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import { MapView } from "../components/map/MapView";
+import Layout from "../layouts/Layout.astro";
+import { initializei18n } from "../utils/i18n";
+import Sidebar from "../components/sidebar/Sidebar.astro";
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+---
+
+<Layout nofoot>
+  <div class="overflow-hidden h-screen w-screen">
+    <div class="w-full bg-brand-blue flex gap-4">
+      <a href="/" class="px-4 py-2 text-brand-blue bg-white"
+        >{t("generic.home")}</a
+      >
+      <Sidebar />
+      <div class="flex-1"></div>
+    </div>
+    <MapView client:idle />
+  </div>
+</Layout>

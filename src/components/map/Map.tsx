@@ -23,10 +23,18 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   />
 );
 
-export interface MapLocation {
+export interface GeoLocation {
+  name: string;
+  gejson: any;
+  type?: "river" | "area" | "border";
+}
+export interface PlaceLocation {
   name: string;
   coords: [number, number];
+  type?: "place" | "mountain" | "border";
 }
+
+export type MapLocation = PlaceLocation | GeoLocation;
 
 function calculateBoundsZoomAndCenter(
   locations: MapLocation[],

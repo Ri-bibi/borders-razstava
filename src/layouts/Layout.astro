@@ -1,7 +1,14 @@
 ---
+import { undefined } from "astro:schema";
 import Footer from "../components/footer/Footer.astro";
 import BaseHead from "../components/SEO/BaseHead.astro";
 import "/src/styles/global.css";
+
+interface Props {
+  nofoot?: boolean;
+}
+
+const { nofoot } = Astro.props;
 ---
 
 <html lang="en">
@@ -10,7 +17,7 @@ import "/src/styles/global.css";
   </head>
   <body class="font-plex">
     <slot />
-    <Footer />
+    {!nofoot && <Footer />}
   </body>
 </html>
 

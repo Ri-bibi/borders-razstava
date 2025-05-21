@@ -32,6 +32,31 @@ const importantDates = [1947, 1955, 1965, 1985, 1986];
 export const locations: MapLocation[] = [
   { name: "Gorizia", coords: [45.947075, 13.5684153] },
   { name: "Nova Gorica", coords: [45.9561726, 13.6377048] },
+  {
+    name: "Gradisca d’Isonzo/Gradišče ob Soči",
+    coords: [45.8897737, 13.4887461],
+  },
+  { name: "Trieste/Trst", coords: [45.6494004, 13.7765968] },
+  {
+    name: "Erjavčeva / Via S. Gabriele",
+    type: "border",
+    gejson: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {},
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [13.64776, 45.956265],
+              [13.628616, 45.951012],
+            ],
+          },
+        },
+      ],
+    },
+  },
 ];
 ---
 
