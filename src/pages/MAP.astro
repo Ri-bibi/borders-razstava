@@ -1,12 +1,40 @@
 ---
 import { getLocale } from "astro-i18n-aut";
-import { MapView } from "../components/map/MapView";
+import { MapView, type PageLocation } from "../components/map/MapView";
 import Layout from "../layouts/Layout.astro";
 import { initializei18n } from "../utils/i18n";
 import Sidebar from "../components/sidebar/Sidebar.astro";
+import type { MapLocation } from "../components/map/Map";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
+
+const allPages = await import.meta.glob("/src/pages/*/index.astro");
+// Convert the object to an array of entries
+const pageEntries = Object.entries(allPages);
+
+// Process each page to extract frontmatter
+const pagesWithData: PageLocation[] = await Promise.all(
+  pageEntries.map(async ([path, module]) => {
+    const m = await module();
+    if (
+      typeof m === "object" &&
+      m !== null &&
+      "url" in m &&
+      "tKey" in m &&
+      "index" in m &&
+      "locations" in m
+    ) {
+      return {
+        url: m.url as string,
+        tKey: m.tKey as string,
+        index: m.index as number,
+        locations: m.locations as MapLocation[],
+      };
+    }
+    throw new Error("Unexpected module structure");
+  })
+);
 ---
 
 <Layout nofoot>
@@ -18,6 +46,6 @@ const t = await initializei18n(locale);
       <Sidebar />
       <div class="flex-1"></div>
     </div>
-    <MapView client:idle />
+    <MapView client:idle pageLocations={pagesWithData} />
   </div>
 </Layout>

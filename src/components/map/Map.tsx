@@ -26,7 +26,7 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
 export interface GeoLocation {
   name: string;
   gejson: any;
-  type?: "river" | "area" | "border";
+  type?: "river" | "street";
 }
 export interface PlaceLocation {
   name: string;
@@ -41,7 +41,15 @@ function calculateBoundsZoomAndCenter(
   bounds: { topLeft: [number, number]; bottomRight: [number, number] },
   padding: number = 0.1 // Default padding of 10%
 ) {
-  if (locations.length === 0) {
+  const filteredLocations: PlaceLocation[] = locations.filter(
+    (location) =>
+      location.type == undefined ||
+      location.type == "place" ||
+      location.type == "border" ||
+      location.type == "mountain"
+  ) as PlaceLocation[];
+
+  if (filteredLocations.length === 0) {
     return {
       center: [
         (bounds.topLeft[0] + bounds.bottomRight[0]) / 2,
@@ -51,15 +59,15 @@ function calculateBoundsZoomAndCenter(
     };
   }
 
-  if (locations.length === 1) {
+  if (filteredLocations.length === 1) {
     return {
-      center: locations[0].coords,
+      center: filteredLocations[0].coords,
       zoom: 10, // Default zoom for a single location
     };
   }
 
-  const latitudes = locations.map((loc) => loc.coords[0]);
-  const longitudes = locations.map((loc) => loc.coords[1]);
+  const latitudes = filteredLocations.map((loc) => loc.coords[0]);
+  const longitudes = filteredLocations.map((loc) => loc.coords[1]);
 
   const minLat = Math.min(...latitudes);
   const maxLat = Math.max(...latitudes);
@@ -116,29 +124,66 @@ export const MapComponent = ({ locations }: { locations: MapLocation[] }) => {
           zoom={mapZoom} // Use dynamic zoom
           metaWheelZoom={false}
         >
-          {locations.map((location) => {
-            return (
-              <Marker
-                key={location.name}
-                width={16}
-                anchor={location.coords}
-                onClick={() => {
-                  console.log(location.name);
-                }}
-              >
-                <div className="flex items-center gap-4">
-                  <div className="p-6 bg-brand-blue/40 rounded-full">
-                    <div className="h-4 w-4 bg-brand-blue rounded-full"></div>
-                  </div>
-                  {/* <div>
-                    <span className="bg-white text-brand-blue px-4 py-1">
-                      {location.name}
-                    </span>
-                  </div> */}
-                </div>
-              </Marker>
-            );
-          })}
+          {locations
+            .filter(
+              (location) =>
+                location.type == undefined ||
+                location.type == "place" ||
+                location.type == "border" ||
+                location.type == "mountain"
+            )
+            .map((location) => {
+              return (
+                <Marker
+                  key={location.name}
+                  width={24}
+                  // @ts-expect-error but types are all correct due to filtering
+                  anchor={location.coords}
+                  onClick={() => {
+                    console.log(location.name);
+                  }}
+                >
+                  {(location.type == "place" || location.type == undefined) && (
+                    <div className="flex items-center gap-4">
+                      <div className="p-6 bg-brand-blue/40 rounded-full">
+                        <div className="h-4 w-4 bg-brand-blue rounded-full"></div>
+                      </div>
+                      <div>
+                        <span className="bg-white text-brand-blue px-4 py-1 opacity-70">
+                          {location.name}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {location.type == "mountain" && (
+                    <div className="flex items-center gap-4">
+                      <div className="p-6 bg-brand-beige-dark/40 rounded-full">
+                        <div className="h-4 w-4 bg-brand-beige-dark rounded-full"></div>
+                      </div>
+                      <div>
+                        <span className="bg-brand-beige-dark text-white px-4 py-1 opacity-70">
+                          {location.name}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {location.type == "border" && (
+                    <div className="flex items-center gap-4">
+                      <div className="p-6 bg-white rounded-full">
+                        <div className="h-4 w-4 bg-black/30 rounded-full"></div>
+                      </div>
+                      <div>
+                        <span className="bg-white text-brand-white px-4 py-1 opacity-70">
+                          {location.name}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </Marker>
+              );
+            })}
         </Map>
       </div>
     </div>
