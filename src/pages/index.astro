@@ -91,7 +91,7 @@ const t = await initializei18n(locale);
               href={generateLocaleLink("/MAP/", Astro.url.pathname)}
               class="pl-8 py-6 bg-brand-blue text-white lg:text-3xl text-xl font-plex font-bold tracking-tight inline-flex overflow-hidden"
             >
-              Zemljevid
+              {t("generic.map")}
               <Image
                 alt=""
                 src={mapImg}
