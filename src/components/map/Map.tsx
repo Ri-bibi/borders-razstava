@@ -1,6 +1,9 @@
 import { Map, Marker } from "pigeon-maps";
 import type { TileComponent } from "pigeon-maps";
 import { useEffect, useState } from "react";
+import type { Resource } from "i18next";
+import { useClientTranslation } from "../../utils/usei18n";
+import { generateLocaleLink } from "../langSelect/languageutils";
 
 const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   <img
@@ -26,12 +29,12 @@ const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
 export interface GeoLocation {
   name: string;
   gejson: any;
-  type?: "river" | "street";
+  type: "river" | "street";
 }
 export interface PlaceLocation {
   name: string;
   coords: [number, number];
-  type?: "place" | "mountain" | "border";
+  type: "place" | "mountain" | "border";
 }
 
 export type MapLocation = PlaceLocation | GeoLocation;
@@ -96,7 +99,16 @@ function calculateBoundsZoomAndCenter(
   return { center, zoom: Math.floor(zoom) };
 }
 
-export const MapComponent = ({ locations }: { locations: MapLocation[] }) => {
+export const MapComponent = ({
+  locations,
+  locale,
+  resources,
+}: {
+  locations: MapLocation[];
+  locale: string;
+  resources: Resource;
+}) => {
+  const t = useClientTranslation(locale, resources);
   const [mapCenter, setMapCenter] = useState<[number, number]>([0, 0]);
   const [mapZoom, setMapZoom] = useState<number>(11);
 
@@ -114,8 +126,15 @@ export const MapComponent = ({ locations }: { locations: MapLocation[] }) => {
 
   return (
     <div className="">
-      <div className="w-full relative">
-        <div className="w-full h-full absolute bg-brand-blue/15 z-10 flex items-end px-8 "></div>
+      <div className="w-full relative group">
+        <div className="w-full h-full absolute bg-brand-blue/15 z-10 flex  px-8 group-hover:bg-brand-blue/40 transtion duration-400 justify-end items-end">
+          <a
+            className="text-xl text-brand-blue font-plex bg-white  px-18 py-6 font-bold underline tracking-widest opacity-0 group-hover:opacity-100 transtion duration-400 delay-200 mb-16"
+            href={generateLocaleLink("/MAP/", window.location.pathname)}
+          >
+            {t("generic.viewonthemap")}
+          </a>
+        </div>
         <Map
           tileComponent={ImgTile}
           // @ts-expect-error css height works, not only number despite it being whiney

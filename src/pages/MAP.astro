@@ -2,12 +2,10 @@
 import { getLocale } from "astro-i18n-aut";
 import { MapView, type PageLocation } from "../components/map/MapView";
 import Layout from "../layouts/Layout.astro";
-import { initializei18n } from "../utils/i18n";
+import { generateTranslationContent, initializei18n } from "../utils/i18n";
 import Sidebar from "../components/sidebar/Sidebar.astro";
 import type { MapLocation } from "../components/map/Map";
-
-const locale = getLocale(Astro.url);
-const t = await initializei18n(locale);
+import LanguageSelector from "../components/langSelect/LanguageSelector.astro";
 
 const allPages = await import.meta.glob("/src/pages/*/index.astro");
 // Convert the object to an array of entries
@@ -35,6 +33,10 @@ const pagesWithData: PageLocation[] = await Promise.all(
     throw new Error("Unexpected module structure");
   })
 );
+
+const locale = getLocale(Astro.url);
+const t = await initializei18n(locale);
+const resources = await generateTranslationContent();
 ---
 
 <Layout nofoot>
@@ -44,8 +46,17 @@ const pagesWithData: PageLocation[] = await Promise.all(
         >{t("generic.home")}</a
       >
       <Sidebar />
-      <div class="flex-1"></div>
+      <div class="flex-1 flex justify-end items-center">
+        <div class="flex text-white gap-4 px-8 items-center">
+          <LanguageSelector />
+        </div>
+      </div>
     </div>
-    <MapView client:idle pageLocations={pagesWithData} />
+    <MapView
+      client:only
+      pageLocations={pagesWithData}
+      locale={locale}
+      resources={resources}
+    />
   </div>
 </Layout>

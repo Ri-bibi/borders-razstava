@@ -5,7 +5,7 @@ import { MapComponent, type MapLocation } from "../../components/map/Map";
 import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
-import { initializei18n } from "../../utils/i18n";
+import { generateTranslationContent, initializei18n } from "../../utils/i18n";
 import BlueBoxText from "../../components/textIslands/BlueBoxText.astro";
 import LeftText from "../../components/textIslands/LeftText.astro";
 import RightText from "../../components/textIslands/RightText.astro";
@@ -24,6 +24,7 @@ export const index = 11;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
+const resources = await generateTranslationContent();
 const from = 1965;
 const to = 1990;
 const importantDates = [1965, 1967, 1972, 1980, 1990];
@@ -49,7 +50,12 @@ export const locations: MapLocation[] = [
     <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
   </StickyScroll>
   <div class="">
-    <MapComponent client:load locations={locations} />
+    <MapComponent
+      client:only
+      locations={locations}
+      locale={locale}
+      resources={resources}
+    />
   </div>
   <Container>
     <TitleCols

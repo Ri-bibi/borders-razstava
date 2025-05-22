@@ -7,7 +7,9 @@
       "exhibition": "Ausstellung",
       "nextpage": "Nächste Seite",
       "home": "Startseite",
-      "tableofcontents": "Inhaltsverzeichnis"
+      "tableofcontents": "Inhaltsverzeichnis",
+      "map": "Karte",
+      "viewonthemap": "Auf der Karte ansehen"
     }
   },
   "sl": {
@@ -18,7 +20,9 @@
       "exhibition": "Razstava",
       "nextpage": "Naslednja stran",
       "home": "Domov",
-      "tableofcontents": "Kazalo"
+      "tableofcontents": "Kazalo",
+      "map": "Zemljevid",
+      "viewonthemap": "Ogled na zemljevidu"
     }
   },
   "en": {
@@ -29,7 +33,9 @@
       "exhibition": "Exhibition",
       "nextpage": "Next page",
       "home": "Home",
-      "tableofcontents": "Table of contents"
+      "tableofcontents": "Table of contents",
+      "map": "Map",
+      "viewonthemap": "View on the map"
     }
   },
   "it": {
@@ -40,7 +46,9 @@
       "exhibition": "Mostra",
       "nextpage": "Pagina successiva",
       "home": "Pagina iniziale",
-      "tableofcontents": "Indice"
+      "tableofcontents": "Indice",
+      "map": "Mappa",
+      "viewonthemap": "Vedi sulla mappa"
     }
   },
   "fu": {
@@ -51,7 +59,9 @@
       "exhibition": "Mostre",
       "nextpage": "Pagjine dopo",
       "home": "Inizi",
-      "tableofcontents": "Tabele dai contignûts"
+      "tableofcontents": "Tabele dai contignûts",
+      "map": "Mape",
+      "viewonthemap": "Viodi te mape"
     }
   },
   "hr": {
@@ -62,7 +72,9 @@
       "exhibition": "Izložba",
       "nextpage": "Sljedeća stranica",
       "home": "Početna",
-      "tableofcontents": "Sadržaj"
+      "tableofcontents": "Sadržaj",
+      "map": "Karta",
+      "viewonthemap": "Pogledaj na karti"
     }
   }
 }

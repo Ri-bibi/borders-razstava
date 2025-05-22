@@ -11,7 +11,7 @@ import TitleCols from "../../components/titleSection/TitleCols.astro";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import StickyScroll from "../../layouts/StickyScroll.astro";
-import { initializei18n } from "../../utils/i18n";
+import { generateTranslationContent, initializei18n } from "../../utils/i18n";
 
 import peopleImg from "./01_PEOPLE_TOURISM.webp";
 import placesImg from "./02_PLACES_TOURISM_b.jpg";
@@ -25,15 +25,20 @@ export const index = 10;
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
+const resources = await generateTranslationContent();
 
 const from = 1950;
 const to = 1980;
 const importantDates = [1950, 1961, 1963, 1965, 1972, 1980];
 
 export const locations: MapLocation[] = [
-  { name: "Koversada", coords: [45.1341571, 13.5970645] },
-  { name: "Postojna/Postumia", coords: [45.8001619, 14.1836634] },
-  { name: "Planina", coords: [45.829816, 14.2516255] },
+  { name: "Koversada", coords: [45.1341571, 13.5970645], type: "place" },
+  {
+    name: "Postojna/Postumia",
+    coords: [45.8001619, 14.1836634],
+    type: "place",
+  },
+  { name: "Planina", coords: [45.829816, 14.2516255], type: "place" },
 ];
 ---
 
@@ -47,7 +52,12 @@ export const locations: MapLocation[] = [
     <Timeline eventFrom={from} eventTo={to} importantEvents={importantDates} />
   </StickyScroll>
   <div class="">
-    <MapComponent client:load locations={locations} />
+    <MapComponent
+      client:only
+      locations={locations}
+      locale={locale}
+      resources={resources}
+    />
   </div>
   <Container>
     <TitleCols

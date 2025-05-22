@@ -4,6 +4,8 @@ import Container from "../layouts/Container.astro";
 import { Image } from "astro:assets";
 
 import mainImg from "./hero.webp";
+import mapImg from "./map.png";
+
 import TextInitial from "../components/TextInitial.astro";
 import { initializei18n } from "../utils/i18n";
 import { getLocale } from "astro-i18n-aut";
@@ -27,13 +29,11 @@ const t = await initializei18n(locale);
       <div class="text-lg/8 mx-auto bg-white px-6 pt-8">
         <div class="flex justify-between items-center flex-col lg:flex-row">
           <div class="py-4 mx-auto text-center">
-          
             <h1
               class="text-brand-blue md:text-8xl text-7xl font-adapt font-extrabold inline"
             >
               Never Mind the Borders
             </h1>
-           
           </div>
         </div>
         <h2
@@ -84,7 +84,25 @@ const t = await initializei18n(locale);
         <TableOfContents />
       </div>
 
-      <div class="w-full flex lg:justify-end justify-center">
+      <div class="flex w-full">
+        <div class="px-6 pt-16">
+          <div class="group hover:shadow-xl transition duration-300">
+            <a
+              href={generateLocaleLink("/MAP/", Astro.url.pathname)}
+              class="pl-8 py-6 bg-brand-blue text-white lg:text-3xl text-xl font-plex font-bold tracking-tight inline-flex overflow-hidden"
+            >
+              Zemljevid
+              <Image
+                alt=""
+                src={mapImg}
+                class="w-96 object-contain -my-12 -mr-8 saturate-0 group-hover:saturate-100"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex lg:justify-end justify-center pt-32">
         <a
           class="text-2xl font-semibold underline text-brand-blue"
           href={generateLocaleLink("/KOLOFON/", Astro.url.pathname)}

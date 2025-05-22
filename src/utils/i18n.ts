@@ -1,7 +1,7 @@
 import { getCollection } from "astro:content";
 import i18next, { type Resource } from "i18next";
 
-function deepMerge(target: any, source: any): any {
+export function deepMerge(target: any, source: any): any {
   const output = { ...target };
   for (const key in source) {
     if (
@@ -18,16 +18,14 @@ function deepMerge(target: any, source: any): any {
   return output;
 }
 
-function isObject(value: any): value is Record<string, any> {
+export function isObject(value: any): value is Record<string, any> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 let isInitialized = false;
 let lastLocale: string | null = null;
 
-export async function initializei18n(locale: string) {
-  if (isInitialized && lastLocale === locale) return i18next.t;
-
+export async function generateTranslationContent() {
   const translationEntries = await getCollection("translations");
   const resources: Resource = {};
 
@@ -45,6 +43,14 @@ export async function initializei18n(locale: string) {
       );
     }
   }
+
+  return resources;
+}
+
+export async function initializei18n(locale: string) {
+  if (isInitialized && lastLocale === locale) return i18next.t;
+
+  const resources = await generateTranslationContent();
 
   await i18next.init({
     preload: Object.keys(resources),
