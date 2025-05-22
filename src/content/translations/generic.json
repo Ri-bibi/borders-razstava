@@ -9,7 +9,10 @@
       "home": "Startseite",
       "tableofcontents": "Inhaltsverzeichnis",
       "map": "Karte",
-      "viewonthemap": "Auf der Karte ansehen"
+      "viewonthemap": "Auf der Karte ansehen",
+      "noyearselected": "Kein Jahr ausgewählt",
+      "clickyeartosee": "Klicken Sie oben auf ein Jahr, um die Details zu sehen",
+      "timeline": "Zeitleiste"
     }
   },
   "sl": {
@@ -22,7 +25,10 @@
       "home": "Domov",
       "tableofcontents": "Kazalo",
       "map": "Zemljevid",
-      "viewonthemap": "Ogled na zemljevidu"
+      "viewonthemap": "Ogled na zemljevidu",
+      "noyearselected": "Leto ni izbrano",
+      "clickyeartosee": "Kliknite na leto na vrhu, če želite videti podrobnosti",
+      "timeline": "Časovnica"
     }
   },
   "en": {
@@ -35,7 +41,10 @@
       "home": "Home",
       "tableofcontents": "Table of contents",
       "map": "Map",
-      "viewonthemap": "View on the map"
+      "viewonthemap": "View on the map",
+      "noyearselected": "No year selected",
+      "clickyeartosee": "Click on a year at the top to see the details",
+      "timeline": "Timeline"
     }
   },
   "it": {
@@ -48,7 +57,10 @@
       "home": "Pagina iniziale",
       "tableofcontents": "Indice",
       "map": "Mappa",
-      "viewonthemap": "Vedi sulla mappa"
+      "viewonthemap": "Vedi sulla mappa",
+      "noyearselected": "Nessun anno selezionato",
+      "clickyeartosee": "Clicca su un anno in alto per vedere i dettagli",
+      "timeline": "Cronologia"
     }
   },
   "fu": {
@@ -61,7 +73,10 @@
       "home": "Inizi",
       "tableofcontents": "Tabele dai contignûts",
       "map": "Mape",
-      "viewonthemap": "Viodi te mape"
+      "viewonthemap": "Viodi te mape",
+      "noyearselected": "Nissun an selezionât",
+      "clickyeartosee": "Clicje suntun an in cjâf par viodi i detais",
+      "timeline": "Linee dal timp"
     }
   },
   "hr": {
@@ -74,7 +89,10 @@
       "home": "Početna",
       "tableofcontents": "Sadržaj",
       "map": "Karta",
-      "viewonthemap": "Pogledaj na karti"
+      "viewonthemap": "Pogledaj na karti",
+      "noyearselected": "Nije odabrana godina",
+      "clickyeartosee": "Kliknite na godinu na vrhu da vidite pojedinosti",
+      "timeline": "Vremenska crta"
     }
   }
 }
