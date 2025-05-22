@@ -1,5 +1,4 @@
 ---
-import { undefined } from "astro:schema";
 import Footer from "../components/footer/Footer.astro";
 import BaseHead from "../components/SEO/BaseHead.astro";
 import "/src/styles/global.css";
@@ -11,9 +10,6 @@ interface Props {
 }
 
 const { nofoot } = Astro.props;
-
-const locale = getLocale(Astro.url);
-const resources = await generateTranslationContent();
 ---
 
 <html lang="en">

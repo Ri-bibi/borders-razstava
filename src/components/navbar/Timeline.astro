@@ -3,14 +3,7 @@ import { getLocale } from "astro-i18n-aut";
 import { initializei18n } from "../../utils/i18n";
 import Sidebar from "../sidebar/Sidebar.astro";
 import { globalTimeEnd, globalTimeStart } from "./timelineGlobals";
-
-const generateRange = (from: number, to: number) => {
-  const out = [];
-  for (let i = from; i < to; i++) {
-    out.push(i);
-  }
-  return out;
-};
+import { generateRange } from "../interactiveTimeline/timelineUtils";
 
 interface Props {
   eventFrom: number;
