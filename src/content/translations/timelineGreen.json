@@ -22,18 +22,108 @@
     }
   },
   "en": {
-    "global": {}
+    "global": {
+      "1945a": "The end of World War II in Europe",
+      "1947a": "Peace Treaty between Italy and the Allied Powers enacts the Free Territory of Trieste, controlled by the British and US forces (Zone A) and Yugoslavia (Zone B)",
+      "1948a": "The Tito-Stalin split changes geopolitical relations in Southeastern Europe and influences the regional socio-political development and local life",
+      "1954a": "The London Memorandum of Understanding divides the Free Territory of Trieste into Zone A (Italian administration) and Zone B (Yugoslav administration)",
+      "1955a": "The Austrian State Treaty grants Austria full sovereignty and provides the withdrawal of the Allied military troops",
+      "1961a": "The first summit of the Non-Aligned Movement in Belgrade, Yugoslavia",
+      "1975a": "The Treaty of Osimo de jure recognises the division of the Free Territory of Trieste between Italy (Zone A) and Yugoslavia (Zone B)",
+      "1980a": "Death of Josip Broz -Tito",
+      "1989a": "The Fall of the Berlin Wall and the collapse of communism in Central and Eastern Europe",
+      "1991a": "Declaration of Slovenian and Croatian independence and the beginning of the Yugoslav wars",
+      "1995a": "Austria joins the EU",
+      "1996a": "Slovenia signs Association Agreement with the European Union",
+      "2004a": "Slovenia joins the EU",
+      "2007a": "Slovenia joins the Schengen Area",
+      "2013a": "Croatia joins the EU",
+      "2015a": "Austria reintroduces border controls with Slovenia amid rising migration along the Balkan Route",
+      "2023a": "Croatia joins the Schengen Area",
+      "2023b": "Italy reintroduces border controls with Slovenia"
+    }
   },
   "it": {
-    "global": {}
+    "global": {
+      "1945a": "Fine della Seconda guerra mondiale in Europa",
+      "1947a": "Il Trattato di pace tra l’Italia e gli Alleati stabilisce la creazione del Territorio libero di Trieste, amministrato rispettivamente da forze statunitensi e britanniche (la Zona A) e jugoslave (la Zona B)",
+      "1948a": "La rottura tra Tito e Stalin determina un cambiamento nei rapporti tra gli Stati dell’Europa sudorientale, influenza lo sviluppo sociopolitico e la vita delle comunità a livello regionale",
+      "1954a": "Il Memorandum di Londra divide il Territorio libero di Trieste assegnando la Zona A all’Italia e la Zona B alla Jugoslavia",
+      "1955a": "Il Trattato di Stato austriaco sancisce la piena indipendenza dell’Austria e il ritiro delle truppe alleate",
+      "1961a": "Primo vertice dei Paesi non allineati a Belgrado, Jugoslavia",
+      "1975a": "Gli Accordi di Osimo riconoscono de jure la divisione del Territorio libero di Trieste tra l’Italia (Zona A) e la Jugoslavia (Zona B)",
+      "1980a": "Morte di Josip Broz – Tito",
+      "1989a": "Caduta del Muro di Berlino e crollo del comunismo in Europa centrale e orientale",
+      "1991a": "Dichiarazione d’indipendenza di Slovenia e Croazia e inizio delle Guerre jugoslave",
+      "1995a": "L’Austria entra nell’Unione Europea",
+      "1996a": "La Slovenia firma l’Accordo di Associazione con l’Unione Europea",
+      "2004a": "La Slovenia entra nell’Unione Europea",
+      "2007a": "La Slovenia entra nell’Area Schengen",
+      "2013a": "La Croazia entra nell’Unione Europea",
+      "2023a": "La Croazia entra nell’Area Schengen"
+    }
   },
   "hr": {
-    "global": {}
+    "global": {
+      "1945a": "Kraj Drugog svjetskog rata u Europi",
+      "1947a": "Mirovni sporazum između Italije i savezničkih sila donio je Slobodni teritorij Trsta, kojim su upravljali zapadni saveznici (Zona A) i Jugoslavija (Zona B)",
+      "1948a": "Razor Tita i Staljina mijenja geopolitičke odnose u jugoistočnoj Europi i utječe na regionalni društveno-politički razvoj i lokalni život",
+      "1954a": "Londonski memorandum o razumijevanju dijeli Slobodni teritorij Trsta na Zonu A (talijanska uprava) i Zonu B (jugoslavenska uprava)",
+      "1955a": "Austrijski Državni ugovor daje Austriji puni suverenitet i omogućuje povlačenje savezničkih vojnih trupa",
+      "1961a": "Prvi summit Pokreta nesvrstanih u Beogradu, Jugoslavija",
+      "1975a": "Osimski ugovor de jure priznaje podjelu Slobodnog teritorija Trsta između Italije (Zona A) i Jugoslavije (Zona B)",
+      "1980a": "Smrt Josipa Broza-Tita",
+      "1989a": "Pad Berlinskog zida i slom komunizma u srednjoj i istočnoj Europi",
+      "1991a": "Proglašenje neovisnosti Slovenije i Hrvatske i početak jugoslavenskih ratova",
+      "1995a": "Austrija ulazi u Europsku uniju",
+      "1996a": "Slovenija potpisuje Sporazum o pridruživanju s Europskom unijom",
+      "2004a": "Slovenija se pridružuje EU",
+      "2007a": "Slovenija se pridružuje Schengenskom prostoru",
+      "2013a": "Hrvatska se pridružuje EU",
+      "2015a": "Austrija ponovno uvodi granične kontrole sa Slovenijom usred porasta migracija duž balkanske rute", 
+      "2023a": "Hrvatska se pridružuje Schengenskom prostoru"
+    }
   },
   "de": {
-    "global": {}
+    "global": {
+      "1945a": "Ende des Zweiten Weltkriegs in Europa",
+      "1947a": "Der Friedensvertrag zwischen Italien und den Alliierten sieht die Errichtung eines Freien Territorium Triest vor, das von US-amerikanischen und britischen (Zone A) sowie jugoslawischen Truppen (Zone B) militärisch verwaltet wird",
+      "1948a": "Der Bruch zwischen Tito und Stalin verändert die geopolitischen Beziehungen und beeinflusst die regionale soziopolitische Entwicklung",
+      "1954a": "Das Londoner Memorandum verfügt, dass Zone A des Freien Territoriums Triest künftig von Italien verwaltet wird und Zone B von Jugoslawien. Die bisherigen Militärverwaltungen fallen weg, es gibt nun eine de facto Staatsgrenze zwischen Italien und Jugoslawien",
+      "1955a": "Der österreichische Staatsvertrag gewährt Österreich volle Souveränität und beinhaltet den Abzug alliierter Truppen",
+      "1961a": "Der jugoslawische Staatspräsident Tito ist Gastgeber des ersten Gipfeltreffens der Bewegung der Blockfreien Staaten in Belgrad",
+      "1975a": "Der Vertrag von Osimo anerkennt nun de jure die Aufteilung des Freien Territoriums Triest zwischen Italien (Zone A) und Jugoslawien (Zone B)",
+      "1980a": "Josip Broz Tito stirbt",
+      "1989a": "Fall der Berliner Mauer und Zusammenbruch des Kommunismus in Mittel- und Osteuropa",
+      "1991a": "Slowenien und Kroatien erklären sich von Jugoslawien unabhängig; Beginn der Jugoslawienkriege",
+      "1995a": "Österreich tritt der Europäischen Union (EU) bei",
+      "1996a": "Slowenien unterzeichnet das EU-Assoziierungsabkommen",
+      "2004a": "Slowenien tritt der EU bei",
+      "2007a": "Slowenien tritt dem Schengen-Raum bei",
+      "2013a": "Kroatien tritt der EU bei",
+      "2015a": "Österreich führt angesichts der wachsenden Migration über die so genannte Balkanroute Kontrollen an der Grenze zu Slowenien ein.", 
+      "2023a": "Kroatien tritt dem Schengen-Raum bei"
+    }
   },
   "fu": {
-    "global": {}
+    "global": {
+      "1945a": "fin de seconde vuere mondiâl in Europe",
+      "1947a": "il tratât di pâs jenfri l’Italie e i Aleâts al stabilis la creazion dal Teritori Libar di Trieste, aministrât par lis fuarcis americanis e britanichis (Zone A) e lis fuarcis jugoslavis (Zone B)",
+      "1948a": "la division jenfri Tito e Stalin e puarte a un cambiament des relazions jenfri i stâts de Europe sudorientâl, influençant il disvilup sociopolitic e la vite comunitarie a nivel regjonâl",
+      "1954a": "il protocol di Londre al divît il Teritori Libar di Trieste, assegnant la Zone A ae Italie e la Zone B ae Jugoslavie",
+      "1955a": "il tratât di stât austriac al stabilis la plene indipendence de Austrie e la ritirade des trupis aleadis",
+      "1961a": "prin cumitât no-alinade a Belgrad, in Jugoslavie",
+      "1975a": "i acuardis di Osimo a ricognossin di dirit la division dal Teritori Libar di Trieste jenfri la Italie (Zone A) e la Jugoslavie (Zone B)",
+      "1980a": "Muart di Josip Broz – Tito",
+      "1989a": "disfate dal mûr di Berlin e disfate dal comunisim in Europe centrâl e orientâl",
+      "1991a": "declarazion di indipendence de Slovenie e de Croazie e l’inizi des vueris jugoslavis",
+      "1995a": "l’Austrie e jentre inte Union Europeane",
+      "1996a": "la Slovenie e firma l’acuardi di associazion cu la Union Europeane",
+      "2004a": "la Slovenie e jentre dentri de Union Europeane",
+      "2007a": "la Slovenie e jentre inte Aree Schengen",
+      "2013a": "la Croazie e jentre inte Union Europeane",
+      "2015a": "la Slovenie e met sù une ricinzion di fîl spinât sul flum Kolpa/Kupa par fermâ l’arrivâ dai migrants traviers da Vie dai Balcans.",
+      "2023a": "la Croazie e jentre dentri de Aree Schengen"
+    }
   }
 }
