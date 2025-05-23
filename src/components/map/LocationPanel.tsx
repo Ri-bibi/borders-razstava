@@ -22,20 +22,20 @@ export const LocationPanel = ({
             duration: 0.2,
             bounce: 0.1,
           }}
-          className="absolute bg-white p-6 px-48 pl-12 bottom-0 right-0 border-t-8 border-brand-blue/20"
+          className="absolute bg-white p-6 px-18 pl-12 bottom-0 right-0 border-t-8 border-brand-blue/20 md:w-fit w-full lg:max-w-prose"
         >
           <div className="max-w-prose">
-            <h1 className="font-plex font-bold text-brand-blue/70 text-5xl tracking-wide">
+            <h1 className="font-plex font-bold text-brand-blue/70 lg:text-5xl text-3xl tracking-wide">
               {selectedPageLoc.location.name}
             </h1>
             {selectedPageLoc.page.map((onePage) => (
               <motion.a
                 whileHover={{ x: 5 }}
-                className="flex mt-16 mb-8 items-center gap-8"
+                className="flex lg:mt-16 mt-6 mb-2 lg:mb-6 items-center gap-8"
                 href={generateLocaleLink(onePage.url, window.location.pathname)}
               >
                 <div className="">
-                  <span className="text-brand-blue font-plex font-bold text-3xl tracking-tight">
+                  <span className="text-brand-blue font-plex font-bold lg:text-3xl text-xl tracking-tight">
                     {}
                     {t(onePage.tKey + ".title1")}
                   </span>

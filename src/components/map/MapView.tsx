@@ -112,6 +112,7 @@ export const MapView = ({
   return (
     <div className="">
       <PigeonMap
+        twoFingerDrag={true}
         onBoundsChanged={({ center, bounds, zoom }) => {
           setMapZoom(zoom);
           setIsCentered(true);
@@ -125,8 +126,6 @@ export const MapView = ({
         height="100vh"
         center={mapCenter} // Use dynamic center
         metaWheelZoom={false}
-        // zoomSnap={false}
-        // limitBounds="center"
         onClick={() => {
           setSelectedPageLoc(undefined);
         }}
