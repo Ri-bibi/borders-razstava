@@ -2,7 +2,7 @@ export function YearText({ year }: { year: string }) {
   return (
     <span
       onClick={() => console.log(`Clicked ${year}`)}
-      className="underline cursor-pointer text-brand-beige-dark font-bold"
+      className="underline text-brand-beige-dark font-bold"
     >
       {year}
     </span>

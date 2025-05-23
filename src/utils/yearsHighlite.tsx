@@ -52,7 +52,7 @@ export function extractYears(
       }
 
       return (
-        <p className="py-2" key={`para-${paragraphIndex}`}>
+        <p className="py-2y" key={`para-${paragraphIndex}`}>
           {parts}
         </p>
       );
