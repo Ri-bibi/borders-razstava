@@ -63,7 +63,7 @@ export const MainTimeline = ({
       <div className="relative">
         <div className="absolute bg-white w-1 h-full mx-24"></div>
         <div className="w-full overflow-x-auto flex" ref={scrollContainerRef}>
-          <div className="bg-brand-blue py-20 flex items-center pr-[100vw]">
+          <div className="bg-brand-blue lg:py-20 py-8 flex items-center pr-[100vw]">
             {generateRange(globalTimeStart, globalTimeEnd).map((year, i) => {
               return (
                 <motion.div
@@ -87,7 +87,7 @@ export const MainTimeline = ({
                           setSelectedYearIndex(i);
                         }}
                         className={
-                          "text-white text-3xl font-plex font-bold cursor-pointer pl-8 -mr-8 " +
+                          "text-white lg:text-3xl text-2xl font-plex font-bold cursor-pointer pl-8 -mr-8 " +
                           (i % 2 == 0 ? "opacity-0" : "opacity-100")
                         }
                       >
@@ -132,7 +132,7 @@ export const MainTimeline = ({
                           setSelectedYearIndex(i);
                         }}
                         className={
-                          "text-white text-3xl font-plex font-bold pl-8 cursor-pointer -mr-8 " +
+                          "text-white lg:text-3xl text-2xl font-plex font-bold pl-8 cursor-pointer -mr-8 " +
                           (i % 2 == 1 ? "opacity-0" : "opacity-100")
                         }
                       >
@@ -149,12 +149,12 @@ export const MainTimeline = ({
 
       <div className="w-full flex justify-between pl-24">
         {selectedYear ? <div className="w-1  bg-brand-blue"></div> : <div />}
-        <div className="flex flex-col items-end pt-18 pr-16">
-          <h3 className="text-brand-blue font-bold text-6xl">
+        <div className="flex flex-col items-end pt-18 pb-12 lg:pb-0 pr-16">
+          <h3 className="text-brand-blue font-bold lg:text-6xl text-5xl">
             {t("generic.timeline")}
           </h3>
 
-          <h3 className="text-9xl font-bold text-brand-blue  opacity-10  -mt-18 tracking-tight">
+          <h3 className="lg:text-9xl text-7xl font-bold text-brand-blue  opacity-10  -mt-18 tracking-tight hidden sm:block">
             {t("generic.timeline")}
           </h3>
         </div>
@@ -166,7 +166,7 @@ export const MainTimeline = ({
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="pl-16 text-brand-blue font-plex font-bold text-7xl py-4"
+        className="pl-16 text-brand-blue font-plex font-bold lg:text-7xl text-5xl py-4"
       >
         {selectedYear}
       </motion.div>
@@ -176,8 +176,7 @@ export const MainTimeline = ({
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={{}}
-            className="border-l-3 border-brand-blue flex flex-col gap-14 "
+            className="border-l-3 border-brand-blue flex flex-col gap-14 pr-8"
           >
             <>
               <motion.div
@@ -211,7 +210,7 @@ export const MainTimeline = ({
                             },
                           },
                         }}
-                        className="flex items-start gap-4 max-w-prose text-3xl font-plex font-light text-black/70"
+                        className="flex items-start gap-4 max-w-prose lg:text-3xl text-xl font-plex font-light text-black/70"
                       >
                         <div className="w-8 h-0.5 bg-brand-blue/50 mt-4"></div>
                         <div className="">
@@ -244,7 +243,7 @@ export const MainTimeline = ({
                             },
                           },
                         }}
-                        className="flex items-start gap-4 max-w-prose text-3xl font-plex  text-brand-blue"
+                        className="flex items-start gap-4 max-w-prose lg:text-3xl text-xl font-plex  text-brand-blue"
                       >
                         <div className="w-8 h-0.5 bg-brand-blue/50 mt-4"></div>
                         <div className="">
@@ -277,12 +276,12 @@ export const MainTimeline = ({
                             },
                           },
                         }}
-                        className="flex items-start gap-4 text-2xl "
+                        className="flex items-start gap-4 lg:text-2xl text-xl "
                       >
                         {/* why the fck do i need manual 2px.... h-0.5 fcks it up randomly */}
                         <div className="w-8 h-[2px] bg-brand-blue/50 mt-4" />
                         <div className="max-w-prose ">
-                          <div className="text-brand-blue text-3xl font-plex font-medium">
+                          <div className="text-brand-blue lg:text-3xl text-xl font-plex font-medium">
                             <p> {t(`chapter.${chap.year}${indexed[i]}`)}</p>
 
                             <div className="flex gap-8 pt-2">
