@@ -1,15 +1,16 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { globalTimeStart, globalTimeEnd } from "../navbar/timelineGlobals";
 import { content } from "./content";
 import { generateRange } from "./timelineUtils";
 import { globalYears } from "./content/global";
-import { other } from "./content/other";
+import { other, otherRange, type IRangeTimeline } from "./content/other";
 import type { Resource } from "i18next";
 import { useClientTranslation } from "../../utils/usei18n";
-import { chapterTimeline } from "./content/chapter";
+import { chapterRangeTimeline, chapterTimeline } from "./content/chapter";
 import { generateLocaleLink } from "../langSelect/languageutils";
 import { div } from "framer-motion/client";
+import { RangeComponent } from "./RangeComponent";
 
 export interface pagesDump {
   url: string;
@@ -21,7 +22,7 @@ const chapterYears = chapterTimeline.map((obj) => obj.year);
 const yearsToMatch = globalYears.concat(other, chapterYears);
 const indexed = ["a", "b", "c", "d", "e"];
 
-console.log(yearsToMatch.sort());
+const chapterRange: IRangeTimeline[] = otherRange.concat(chapterRangeTimeline);
 
 export const MainTimeline = ({
   locale,
@@ -33,6 +34,7 @@ export const MainTimeline = ({
   pages: pagesDump[];
 }) => {
   const [selectedYear, setSelectedYear] = useState<number>();
+  const [selectedYearIndex, setSelectedYearIndex] = useState<number>();
   const t = useClientTranslation(locale, resources);
 
   // Ref for the scroll container
@@ -40,8 +42,24 @@ export const MainTimeline = ({
   // Store refs for each year element
   const yearRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+  useEffect(() => {
+    if (!selectedYear || !selectedYearIndex) {
+      return;
+    }
+
+    const container = scrollContainerRef.current;
+    const yearEl = yearRefs.current[selectedYearIndex];
+    if (container && yearEl) {
+      const scrollLeft = yearEl.offsetLeft - container.offsetLeft;
+      container.scrollTo({
+        left: scrollLeft - (96 / 2 - 26),
+        behavior: "smooth",
+      });
+    }
+  }, [selectedYear]);
+
   return (
-    <div className="w-full h-full ">
+    <div className="w-full">
       <div className="relative">
         <div className="absolute bg-white w-1 h-full mx-24"></div>
         <div className="w-full overflow-x-auto flex" ref={scrollContainerRef}>
@@ -50,35 +68,23 @@ export const MainTimeline = ({
               return (
                 <motion.div
                   className={
-                    "flex flex-col px-8 items-center min-w-32 transition-opacity duration-200 " +
-                    (selectedYear && selectedYear === year
-                      ? "opacity-0 pointer-events-none"
-                      : "opacity-100")
+                    "flex flex-col px-8 items-center min-w-32 relative "
                   }
                   key={year}
                   ref={(el) => {
                     yearRefs.current[i] = el;
                   }}
                   animate={{
-                    opacity: !selectedYear || selectedYear !== year ? 1 : 0,
+                    opacity: !selectedYear || selectedYear !== year ? 1 : 0.15,
                   }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
                 >
                   {yearsToMatch.includes(year) && (
                     <>
                       <div
                         onClick={() => {
                           setSelectedYear(year);
-                          const container = scrollContainerRef.current;
-                          const yearEl = yearRefs.current[i];
-                          if (container && yearEl) {
-                            const scrollLeft =
-                              yearEl.offsetLeft - container.offsetLeft;
-                            container.scrollTo({
-                              left: scrollLeft - (96 / 2 - 26),
-                              behavior: "smooth",
-                            });
-                          }
+                          setSelectedYearIndex(i);
                         }}
                         className={
                           "text-white text-3xl font-plex font-bold cursor-pointer pl-8 -mr-8 " +
@@ -95,7 +101,23 @@ export const MainTimeline = ({
                       ></div>
                     </>
                   )}
-                  <div className="w-1 h-6 bg-white"></div>
+
+                  <div className="w-1 h-6 bg-white">
+                    {chapterRange
+                      .map((range) => range.yearFrom)
+                      .includes(year) && (
+                      <RangeComponent
+                        onClick={(year) => {
+                          setSelectedYear(year);
+                          setSelectedYearIndex(i);
+                        }}
+                        range={
+                          chapterRange.find((range) => range.yearFrom == year)!
+                        }
+                        key={year}
+                      />
+                    )}
+                  </div>
                   {yearsToMatch.includes(year) && (
                     <>
                       <div
@@ -107,16 +129,7 @@ export const MainTimeline = ({
                       <div
                         onClick={() => {
                           setSelectedYear(year);
-                          const container = scrollContainerRef.current;
-                          const yearEl = yearRefs.current[i];
-                          if (container && yearEl) {
-                            const scrollLeft =
-                              yearEl.offsetLeft - container.offsetLeft;
-                            container.scrollTo({
-                              left: scrollLeft - (96 / 2 - 26),
-                              behavior: "smooth",
-                            });
-                          }
+                          setSelectedYearIndex(i);
                         }}
                         className={
                           "text-white text-3xl font-plex font-bold pl-8 cursor-pointer -mr-8 " +
@@ -264,10 +277,11 @@ export const MainTimeline = ({
                             },
                           },
                         }}
-                        className="flex items-start gap-4 max-w-prose text-2xl "
+                        className="flex items-start gap-4 text-2xl "
                       >
-                        <div className="w-8 h-0.5 bg-brand-blue/50 mt-4"></div>
-                        <div className="">
+                        {/* why the fck do i need manual 2px.... h-0.5 fcks it up randomly */}
+                        <div className="w-8 h-[2px] bg-brand-blue/50 mt-4" />
+                        <div className="max-w-prose ">
                           <div className="text-brand-blue text-3xl font-plex font-medium">
                             <p> {t(`chapter.${chap.year}${indexed[i]}`)}</p>
 

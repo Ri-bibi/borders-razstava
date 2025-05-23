@@ -38,8 +38,8 @@ const resources = await generateTranslationContent();
 ---
 
 <Layout>
-  <div class="w-screen h-screen mb-56">
-    <div class="overflow-hidden h-screen w-screen">
+  <div class="w-screen mb-56">
+    <div class="overflow-hidden w-screen pb-8">
       <div class="w-full bg-brand-blue flex gap-4 mb-8 py-4 pl-4">
         <a href="/" class="px-4 py-2 text-brand-blue bg-white"
           >{t("generic.home")}</a
@@ -51,12 +51,14 @@ const resources = await generateTranslationContent();
           </div>
         </div>
       </div>
-      <MainTimeline
-        client:load
-        locale={locale}
-        resources={resources}
-        pages={pagesWithData}
-      />
+      <div class="pb-32">
+        <MainTimeline
+          client:load
+          locale={locale}
+          resources={resources}
+          pages={pagesWithData}
+        />
+      </div>
     </div>
   </div>
 </Layout>
