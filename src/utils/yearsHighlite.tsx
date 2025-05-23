@@ -51,6 +51,10 @@ export function extractYears(
         );
       }
 
-      return <p key={`para-${paragraphIndex}`}>{parts}</p>;
+      return (
+        <p className="py-2" key={`para-${paragraphIndex}`}>
+          {parts}
+        </p>
+      );
     });
 }

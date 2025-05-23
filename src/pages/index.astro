@@ -12,6 +12,7 @@ import { getLocale } from "astro-i18n-aut";
 import LanguageSelector from "../components/langSelect/LanguageSelector.astro";
 import TableOfContents from "../components/pageNavigation/TableOfContents.astro";
 import { generateLocaleLink } from "../components/langSelect/languageutils";
+import { ParagraphWrapper } from "../utils/ParagraphWrapper";
 
 const locale = getLocale(Astro.url);
 const t = await initializei18n(locale);
