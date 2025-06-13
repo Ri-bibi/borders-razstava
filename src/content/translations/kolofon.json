@@ -35,13 +35,13 @@
   "de": {
     "thanks": "Autoren und besonderer Dank",
     "organizing_committee": "Ausstellungsorganisation",
-    "authors": "Marco Abram, Nina Hofmann, Borut Klabjan, Urban Orel, Jure Ramšak, Mateja Režek, Sabine Rutar, Karlo Ruzicic-Kessler, Urška Strle, Federico Tenca Montini, Marta Verginella, Benedetto Zaccaria",
-    "financial_manager": "Ana Šajn",
-    "graphic_design": "Ana Hawlina",
-    "web_design": "Tina Florjančič",
-    "web_development": "Lan Vukušič",
-    "special_thanks": "Pauli Cantarut (Radio Onde Furlane), Karry Close, Jerko Sladoljev, Miloš Toni (stareslike.org), Kaja Širok, Jani Rijavec, Stojan Pelko (GO!2025), Marko Klavora (GM), Ivana Kovač (SŽ), Sabina Vučemilović (SŽ), Tadeja Andrejek (Regionalmuseum Murska Sobota), Štefan Čok, Gabrijela Caharija (NŠK), Petko Grabljić (SADAR + VUGA d.d.), Kris Jogan (PANG), Elena Makorič (PANG), Franc Ekar, Aldo Rupel, Club AIpino Italiano – Sektion Gorizia, Planinska Zveza Slovenije",
-    "eu_funding": "Finanziert durch die Europäische Union. Die geäußerten Ansichten und Meinungen liegen ausschließlich bei den Autoren und geben nicht notwendigerweise die Sichtweise der Europäischen Union wieder. Weder die Europäische Union noch die Bewilligungsbehörde können für den Inhalt verantwortlich gemacht werden."
+    "authors": "Autoren",
+    "financial_manager": "Finanzmanager",
+    "graphic_design": "Grafikdesign",
+    "web_design": "Webdesign",
+    "web_development": "Webentwicklung",
+    "special_thanks": "Danksagungen",
+    "eu_funding": "Finanziert durch die Europäische Union. Die geäußerten Ansichten und Meinungen liegen jedoch ausschließlich bei den Autoren und spiegeln nicht notwendigerweise die Ansichten der Europäischen Union wider. Weder die Europäische Union noch die Bewilligungsbehörde können dafür verantwortlich gemacht werden."
   },
   "fu": {
     "thanks": "Autôrs e ringraciaments speciâi",
