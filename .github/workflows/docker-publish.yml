@@ -30,5 +30,5 @@ jobs:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ghcr.io/Ri-bibi/borders-razstava:latest
-            ghcr.io/Ri-bibi/borders-razstava:${{ github.sha }}
+            ghcr.io/ri-bibi/borders-razstava:latest
+            ghcr.io/ri-bibi/borders-razstava:${{ github.sha }}
