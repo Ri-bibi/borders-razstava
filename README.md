@@ -1,52 +1,42 @@
-# Astro Starter Kit: Basics
+# Borders Exhibition - Docker Setup Guide
 
-```sh
-yarn create astro@latest -- --template basics
+## Quick Start
+
+```bash
+docker run -d -p 8080:80 --name borders-exhibition ghcr.io/ri-bibi/borders-razstava:latest
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Access at: [http://localhost:8080](http://localhost:8080)
 
-> Ã°ÂÂ§ÂÃ¢ÂÂÃ°ÂÂÂ **Seasoned astronaut?** Delete this file. Have fun!
+## Changing the Port
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+To change the port, modify the `-p` option in the `docker run` command. For example, to use port 9090:
 
-## Ã°ÂÂÂ Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ public/
-Ã¢ÂÂ   Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ favicon.svg
-Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ src/
-Ã¢ÂÂ   Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ layouts/
-Ã¢ÂÂ   Ã¢ÂÂ   Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Layout.astro
-Ã¢ÂÂ   Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ pages/
-Ã¢ÂÂ       Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ index.astro
-Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ package.json
+```bash
+docker run -d -p 9090:80 --name borders-exhibition ghcr.io/ri-bibi/borders-razstava:latest
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Docker Compose method
 
-## Ã°ÂÂ§Â Commands
+create a `docker-compose.yml` file:
 
-All commands are run from the root of the project, from a terminal:
+```yaml
+version: '3.8'
+services:
+  borders-exhibition:
+    image: ghcr.io/ri-bibi/borders-razstava:latest
+    ports:
+      - "8080:80"
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `yarn install`             | Installs dependencies                            |
-| `yarn dev`             | Starts local dev server at `localhost:4321`      |
-| `yarn build`           | Build your production site to `./dist/`          |
-| `yarn preview`         | Preview your build locally, before deploying     |
-| `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `yarn astro -- --help` | Get help using the Astro CLI                     |
+Then run:
 
-## Ã°ÂÂÂ Want to learn more?
+```bash
+docker-compose up
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+to run in detached mode, use:
 
-2025-05-20T16:05:18.637Z
-
-2025-05-20T16:06:12.730Z
+```bash
+docker-compose up -d
+```
